@@ -1,0 +1,82 @@
+%\nocite{a565d200}
+In this chapter we want to reconsider chapter \ref{chap:initcontext} with respect to chapter \ref{chap:cattg} to guide the reader towards \cite{a565d200} which sort of caries on our work. So remember that our overall question was how to use (higher) category theory in physics. In chapter \ref{chap:initcontext} we pondered about synthetic continuity and some important principles of physics. We found that physical spaces should be smooth continuums allowing to do homotopy theory. Classically, we thought of $n$-dimensional manifolds: topological spaces which look like $\mathbb{R}^{n}$ locally in a smooth way. But in chapter \ref{chap:cattg} we learned about the problems of topological spaces w.r.t. homotopy theory and we opted to rather look at homotopy types: synthetically in UFP-HoTT or as objects of an $(\infty,1)$-topos modeled in TG or whatever seems equivalent. However, we didn't say what it means to be {\glqq}smooth{\grqq} for such homotopy spaces but there is a way to make these homotopy types behave like smooth spaces/homotopy types. The definition is similar to the traditional one of manifolds and described right at the beginning of \cite{a565d200}. Further following the attitude from chapter \ref{chap:cattg} that spaces should be generalized spaces then we end up with:
+\begin{enumerate}
+\item[$\bullet$]
+The $(\infty,1)$-topos of (smooth) $(\infty,1)$-sheaves on the {\glqq}correct{\grqq} $(\infty,1)$-site provides a setting for physiscs.
+\end{enumerate}
+Another important point in chapter \ref{chap:initcontext} were fields and their local symmtery. There we identified {\glqq}gauge fields with local symmetry (Lie) group $G${\grqq} with {\glqq}$G$-principal bundles with connection (in $\mathbf{Diff}_{\infty}$){\grqq}. We hinted at a classification which does unfortunately not work in the $\mathbf{Diff}_{\infty}$-case. But interestingly, a version of the classification tracking the symmetry information makes sense for $(\infty,1)$-topoi in general and hence also for the aformentioned setting for physics. A proper treatment is the subject of \cite{a565d200}. We only try to tool up the reader with some important ideas and intuition involved in that treatment. To this end let us first look at the traditional version of the classification we learned a bit about in chapter \ref{chap:cattg}: for $\mathbf{Top}^{\textrm{CW}}$ we stated in theorem \ref{thm:repofbundlefunc} the representabilty of $\mathcal{P}_{G}$, that is,
+\begin{align*}
+  \mathcal{P}_{G}
+  &\cong
+  \mathrm{hom}_{\mathbf{HTop}^{\textrm{CW}}}(\cdot,\mathrm{B}G)
+\end{align*}
+for some representing object $\mathrm{B}G$. It is also justified to call this object classifying space here since it classifies isomorphism classes of principal bundles. Moreover, for $G$ abelian, one can deduce from the Brown representability theorem mentioned in example \ref{exa:loopradjoint} that
+\begin{align*}
+  \mathrm{hom}_{\mathbf{HTop}_{\ast}^{\textrm{CW}}}(\cdot,\mathrm{B}G)
+  &\cong
+  h_{G}^{1}
+\end{align*}
+if $h_{G}^{1}$ denotes the first reduced singular cohomology functor. And, as we have pointed out in section \ref{sec:sset} of chapter \ref{chap:cattg}, it can be calculated as \v{C}ech cohomology $\check{H}_{G}^{1}$. So how does this translate? First we have to fix some notation: let ${}_{(\infty,1)}\mathbf{C}$ denote an $(\infty,1)$-topos and for objects $X_{1},X_{2}$ of ${}_{(\infty,1)}\mathbf{C}$ let us denote the $\infty$-groupoid of morphisms from $X_{1}$ to $X_{2}$ as
+\begin{align*}
+  {}_{(\infty,1)}\mathbf{C}
+  \left(
+    X_{1},
+    X_{2}
+  \right)
+\end{align*}
+Moreover let $\mathbf{PB}_{G}(X)$ denote the $\infty$-groupoid of $G$-principal bundles in ${}_{(\infty,1)}\mathbf{C}$ over $X$ for some group $G$ and object $X$ of ${}_{(\infty,1)}\mathbf{C}$. Then the representability of $\mathcal{P}_{G}$ translates to the following: there is an object $\mathrm{B}G$ in ${}_{(\infty,1)}\mathbf{C}$ such that
+\begin{align*}
+  \mathbf{PB}_{G}(X)
+  &\simeq
+  {}_{(\infty,1)}\mathbf{C}
+  \left(
+    X,
+    \mathrm{B}G
+  \right)
+\end{align*}
+This equivalence of $\infty$-groupoids/homotopy types can be taken as mapping an object $f$ of
+\begin{align*}
+  {}_{(\infty,1)}\mathbf{C}
+  \left(
+    X,
+    \mathrm{B}G
+  \right)
+\end{align*}
+to the projection of the homotopy fiber of $f$ w.r.t. some $y$ of type $\mathrm{B}G$ to the first coordinate. Note that in UFP-HoTT the homotopy fiber of $f$ w.r.t. some $y$ of type $\mathrm{B}G$ is
+\begin{align*}
+  \mathrm{fib}_{f}(y)
+  &:=
+  \sum_{x \colon X}
+  f(x)
+  =_{\mathrm{B}G}
+  y
+\end{align*}
+This can be read as: the homotopy fiber of $f$ w.r.t. $y$ are all $(x,p)$ such that $p$ is a path from $f(x)$ to $y$. Note that the idea makes sense in an $(\infty,1)$-topos, too.\footnote{in fact, also in classical homotopy theory where you will most likely encounter this idea when fiber sequences are discussed} Anyways, in UFP-HoTT we get a function
+\begin{align*}
+  \pi_{f}
+  :=
+  \left(
+    (x,p)
+    \mapsto
+    x
+  \right)
+  \colon
+  \mathrm{fib}_{f}(y)
+  &\rightarrow
+  X
+\end{align*}
+and the equivalence we mean is then defined by
+\begin{align*}
+  f
+  &\mapsto
+  \pi_{f}
+\end{align*}
+$\mathrm{B}G$ is then the classifying space (or better say moduli space and perhaps moduli stack) of the $G$-principle bundles over $X$. But contrary to the classical case it contains all available symmetry information.\footnote{in the guise of all the homotopy information} What is quite interesting now is that
+\begin{align*}
+  {}_{(\infty,1)}\mathbf{C}
+  \left(
+    X,
+    \mathrm{B}G
+  \right)
+\end{align*}
+allows for a more or less direct interpretation as cohomology. We will present this idea in section \ref{sec:cohomology} of this chapter. This is followed by an elaboration on the {\glqq}\v{C}ech-ideas{\grqq} from section \ref{sec:sset} of chapter \ref{chap:cattg} in section \ref{sec:check} of this chapter which leads towards a way to {\glqq}calculate{\grqq} this new cohomology.\footnote{When also taking connections into account one gets a moduli stack $\mathrm{B}G_{\textrm{conn}}$ {\glqq}over{\grqq} $\mathrm{B}G$ containing the information about physical fields with local symmetry. But this is not taking into account here but only in \cite{a565d200}.}
