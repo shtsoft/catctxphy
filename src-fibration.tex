@@ -1,9 +1,18 @@
 %\nocite{c82f5e22}
 %\nocite{78202e13}
 %\nocite{ab8cfa22}
-This section is dedicated to fibrations. Fibrations (and their duals - cofibrations) originally come from classical homotopy theory. They can be thought of a bit as homotopy-theoretic fiber bundles there with the fiber only up to homotopy. In this section we use categorical means to say what a fibration is really characterized by in our context of homotopy theory. In this context it makes also sense to discuss Grothendieck fibrations as we will see and hence the Grothendieck construction establishing an equivalence of the Grothendieck fibrations to a certain variant of functors. This is a really important part of category theory we will not fully discuss here. Important to us here is that in the end we get in some sense a $(2,1)$-categorical version of sheaves called stacks which qualify as generalized spaces. One consistency condition for stacks is formally the ($1$-)cocycle condition we know from the bundles 2 example \ref{exa:bundles2} and from the discussion of \v{C}ech cohomology in the last section \ref{sec:sset} .
+This section is dedicated to fibrations.
+Fibrations (and their duals - cofibrations) originally come from classical homotopy theory.
+They can be thought of a bit as homotopy-theoretic fiber bundles there with the fiber only up to homotopy.
+In this section we use categorical means to say what a fibration is really characterized by in our context of homotopy theory.
+In this context it makes also sense to discuss Grothendieck fibrations as we will see and hence the Grothendieck construction establishing an equivalence of the Grothendieck fibrations to a certain variant of functors.
+This is a really important part of category theory we will not fully discuss here.
+Important to us here is that in the end we get in some sense a $(2,1)$-categorical version of sheaves called stacks which qualify as generalized spaces.
+One consistency condition for stacks is formally the ($1$-)cocycle condition we know from the bundles 2 example \ref{exa:bundles2} and from the discussion of \v{C}ech cohomology in the last section \ref{sec:sset} .
 \\\\
-In subsubsection \ref{sec:coyoneda2} we made extensive use of the category of coelements and the projection functor $\pi_{P}$ for some presheaf $P$ on $\mathbf{J}$. This is presumably the first known Grothendieck fibration and it makes didactically sense to abstract the notion from this example. To this end note that
+In subsubsection \ref{sec:coyoneda2} we made extensive use of the category of coelements and the projection functor $\pi_{P}$ for some presheaf $P$ on $\mathbf{J}$.
+This is presumably the first known Grothendieck fibration and it makes didactically sense to abstract the notion from this example.
+To this end note that
 \begin{align*}
   \pi_{P}
   \colon
@@ -101,7 +110,8 @@ If we take $\mathbf{J}$ to be a groupoid then also
   \int_{\mathbf{J}}^{\prime}
   P
 \end{align*}
-is a groupoid and hence it makes sense to consider the morphisms in these categories as paths. In topological language, $\pi_{P}$ then allows lifting of paths since any path $j_{12}$ is {\glqq}lifted{\grqq} for $z_{2} \in P(J_{2})$ to
+is a groupoid and hence it makes sense to consider the morphisms in these categories as paths.
+In topological language, $\pi_{P}$ then allows lifting of paths since any path $j_{12}$ is {\glqq}lifted{\grqq} for $z_{2} \in P(J_{2})$ to
 \begin{align*}
   j_{12}
   &\in
@@ -120,9 +130,11 @@ such that
   &=
   j_{12}
 \end{align*}
-And these lifted paths are universal in the sense that any other path to $(J_{2},z_{2})$ factors through them uniquely. Hence the lifts should be unique up to homotopy.
+And these lifted paths are universal in the sense that any other path to $(J_{2},z_{2})$ factors through them uniquely.
+Hence the lifts should be unique up to homotopy.
 \\
-Lifting can be defined categorically. Given a category $\mathbf{C}$ and objects $E,B$ as well as a morphism
+Lifting can be defined categorically.
+Given a category $\mathbf{C}$ and objects $E,B$ as well as a morphism
 \begin{align*}
   p
   &\in
@@ -210,9 +222,11 @@ commutes.\footnote{it is common in literature to refer to the lifting property a
 To make sense of the above take $\mathbf{Top}$ as $\mathbf{C}$ and
 \begin{enumerate}
 \item[$\bullet$]
-in the lifting case the (closed) unit interval $[0,1]$ as $X$. Then we would talk about the lift of a path or ipso facto of {\glqq}path lifting{\grqq}.
+in the lifting case the (closed) unit interval $[0,1]$ as $X$.
+Then we would talk about the lift of a path or ipso facto of {\glqq}path lifting{\grqq}.
 \item[$\bullet$]
-in the case of extensions $i$ as inclusion. Then we would clearly extend a map.
+in the case of extensions $i$ as inclusion.
+Then we would clearly extend a map.
 \end{enumerate}
 Now for a space $Y$ let
 \begin{align*}
@@ -228,7 +242,8 @@ Now for a space $Y$ let
   &\mapsto
   (y,0)
 \end{align*}
-Then a map $p \colon E \rightarrow B$ which has the lifting property with respect to $i_{0}^{Y}$ for all $Y$ is called \textbf{(Hurewicz) fibration} and if it only has the lifting property w.r.t. $i_{0}^{Y}$ with $Y$ a CW complex one says that $p$ is a \textbf{Serre fibration}. On the other hand, for a space $Y$ let
+Then a map $p \colon E \rightarrow B$ which has the lifting property with respect to $i_{0}^{Y}$ for all $Y$ is called \textbf{(Hurewicz) fibration} and if it only has the lifting property w.r.t. $i_{0}^{Y}$ with $Y$ a CW complex one says that $p$ is a \textbf{Serre fibration}.
+On the other hand, for a space $Y$ let
 \begin{align*}
   p_{0}^{Y}
   \colon
@@ -248,7 +263,10 @@ where we require $\mathrm{mor}_{\mathbf{Top}}([0,1],Y)$ to be topologized such t
   &\rightarrow
   \mathrm{mor}_{\mathbf{Top}}([0,1],Y_{2})
 \end{align*}
-is continuous if and only if the curried one is continuous. This is one reason why one demands a convenient category of spaces for the purpose of (classical) homotopy theory. Anyways, a map $i \colon A \rightarrow X$ which has the extension property with respect to $p_{0}^{Y}$ for all $Y$ is called \textbf{cofibration}. The duality between fibrations and cofibrations is sometimes referred to as Eckmann-Hilton duality.
+is continuous if and only if the curried one is continuous.
+This is one reason why one demands a convenient category of spaces for the purpose of (classical) homotopy theory.
+Anyways, a map $i \colon A \rightarrow X$ which has the extension property with respect to $p_{0}^{Y}$ for all $Y$ is called \textbf{cofibration}.
+The duality between fibrations and cofibrations is sometimes referred to as Eckmann-Hilton duality.
 \end{exa}
 \begin{prf}
 Look at \cite{8b5861fc} and \cite{78202e13} if you do not exactly know what we are talking about but want to know.
@@ -257,7 +275,8 @@ Look at \cite{8b5861fc} and \cite{78202e13} if you do not exactly know what we a
 \hfill
 $\square$
 \end{prf}
-This example \ref{exa:liftextintop} suggests to define fibration as something having the lifting property w.r.t. to a bunch of arrows and dually a cofibration as something having the extension property w.r.t. to a bunch of arrows. So let
+This example \ref{exa:liftextintop} suggests to define fibration as something having the lifting property w.r.t. to a bunch of arrows and dually a cofibration as something having the extension property w.r.t. to a bunch of arrows.
+So let
 \begin{align*}
   M
   \subset
@@ -275,9 +294,19 @@ is called \textbf{(generalized) fibration (in $\mathbf{C}$ w.r.t $M$)} if $p$ ha
   &\in
   \mathrm{mor}_{\mathbf{C}}(A,X)
 \end{align*}
-is called \textbf{(generalized) cofibration (in $\mathbf{C}$ w.r.t $M$)} if $i$ has the extension property w.r.t. all $m \in M$. This definition is a little too broad for the purpose of homotopy theory. Therefore we used {\glqq}generalized{\grqq}. For fibration in the model category sense one only demands lifting w.r.t. cofibrations that are weak equivalences - so called acyclic cofibrations. And for cofibration in the model category sense one only demands extension w.r.t. fibrations that are weak equivalences - so called acyclic fibrations. In particular fibrations and cofibrations are not independent of each other.
+is called \textbf{(generalized) cofibration (in $\mathbf{C}$ w.r.t $M$)} if $i$ has the extension property w.r.t. all $m \in M$.
+This definition is a little too broad for the purpose of homotopy theory.
+Therefore we used {\glqq}generalized{\grqq}.
+For fibration in the model category sense one only demands lifting w.r.t. cofibrations that are weak equivalences - so called acyclic cofibrations.
+And for cofibration in the model category sense one only demands extension w.r.t. fibrations that are weak equivalences - so called acyclic fibrations.
+In particular fibrations and cofibrations are not independent of each other.
 \\
-After this terminology interlude we turn back to $\pi_{P}$. Given a universe large enough we recognize $\pi_{P}$ for $\mathbf{J}$ a groupoid as a fibration in $\mathbf{Grpd}$ w.r.t. to functors $I$ which are an equivalence and for which $I_{\textrm{ob}}$ is the inclusion.\footnote{the keywords are isofibration and the canonical model structure on $\mathbf{Grpd}$} In the general case of $\pi_{P}$ a morphism in $\mathbf{Cat}$ the functor $\pi_{P}$ still satisfies some lifting property. Hence we might hope to abstract a definition for a special sort of fibration in $\mathbf{Cat}$ from $\pi_{P}$. This works and leads to the notion of Grothendieck fibration. Let $\mathbf{E}$ and $\mathbf{B}$ be small categories for the rest of this subsection. Moreover let
+After this terminology interlude we turn back to $\pi_{P}$.
+Given a universe large enough we recognize $\pi_{P}$ for $\mathbf{J}$ a groupoid as a fibration in $\mathbf{Grpd}$ w.r.t. to functors $I$ which are an equivalence and for which $I_{\textrm{ob}}$ is the inclusion.\footnote{the keywords are isofibration and the canonical model structure on $\mathbf{Grpd}$} In the general case of $\pi_{P}$ a morphism in $\mathbf{Cat}$ the functor $\pi_{P}$ still satisfies some lifting property.
+Hence we might hope to abstract a definition for a special sort of fibration in $\mathbf{Cat}$ from $\pi_{P}$.
+This works and leads to the notion of Grothendieck fibration.
+Let $\mathbf{E}$ and $\mathbf{B}$ be small categories for the rest of this subsection.
+Moreover let
 \begin{align*}
   \pi
   \colon
@@ -297,7 +326,8 @@ be a functor and agree to the notation
   &\in
   \mathrm{ob}_{\mathbf{E}}
 \end{align*}
-for the rest of this subsection. Then
+for the rest of this subsection.
+Then
 \begin{enumerate}
 \item[(1T)]
 for
@@ -425,7 +455,8 @@ $\pi$ is a \textbf{(terminal Grothendieck) fibration} if there is a terminally $
     \pi(E_{2})
   \right)
 \end{align*}
-$\mathbf{E}$ is said to be \textbf{(terminally) fibered (over $\mathbf{B}$)} if $\pi$ is a terminal Grothendieck fibration. Furthermore $\mathbf{E}$ is called \textbf{total category of $\pi$} while $\mathbf{B}$ is called \textbf{base category of $\pi$}.
+$\mathbf{E}$ is said to be \textbf{(terminally) fibered (over $\mathbf{B}$)} if $\pi$ is a terminal Grothendieck fibration.
+Furthermore $\mathbf{E}$ is called \textbf{total category of $\pi$} while $\mathbf{B}$ is called \textbf{base category of $\pi$}.
 \\
 Since for a fibration $\pi$ we must provide a terminally $\pi$-cartesian arrow $\tilde{b}$ for all
 \begin{align*}
@@ -461,7 +492,11 @@ there is a function mapping $(b,E_{2})$ to $\tilde{b}$, that is, we have a funct
   &\mapsto
   \tilde{b}
 \end{align*}
-where $\tilde{b}$ denotes the same morphism as above. $\gamma_{\pi}$ is called \textbf{cleavage (for $\pi$)}. It is clear that cleavages which respect identity arrows and composition of arrows are particularly nice (as functors are). In this case one speaks of splitting. Formally, a cleavage $\gamma_{\pi}$ for $\pi$ is a \textbf{splitting (of $\pi$)} if
+where $\tilde{b}$ denotes the same morphism as above.
+$\gamma_{\pi}$ is called \textbf{cleavage (for $\pi$)}.
+It is clear that cleavages which respect identity arrows and composition of arrows are particularly nice (as functors are).
+In this case one speaks of splitting.
+Formally, a cleavage $\gamma_{\pi}$ for $\pi$ is a \textbf{splitting (of $\pi$)} if
 \begin{enumerate}
 \item[(TS1)]
 for $B = \pi(E_{2})$ the equation
@@ -635,7 +670,8 @@ $\pi$ is a \textbf{(initial Grothendieck) fibration} if there is an initially $\
     B
   \right)
 \end{align*}
-$\mathbf{E}$ is said to be \textbf{(initially) fibered (over $\mathbf{B}$)} if $\pi$ is an initial Grothendieck fibration. Furthermore $\mathbf{E}$ is called \textbf{total category of $\pi$} while $\mathbf{B}$ is called \textbf{base category of $\pi$}.
+$\mathbf{E}$ is said to be \textbf{(initially) fibered (over $\mathbf{B}$)} if $\pi$ is an initial Grothendieck fibration.
+Furthermore $\mathbf{E}$ is called \textbf{total category of $\pi$} while $\mathbf{B}$ is called \textbf{base category of $\pi$}.
 \\
 Since for a fibration $\pi$ we must provide an initially $\pi$-cartesian arrow $\tilde{b}$ for all
 \begin{align*}
@@ -671,7 +707,10 @@ there is a function mapping $(b,E_{1})$ to $\tilde{b}$, that is, we have a funct
   &\mapsto
   \tilde{b}
 \end{align*}
-where $\tilde{b}$ denotes the same morphism as above. $\gamma_{\pi}$ is called \textbf{cleavage (for $\pi$)}. Again those functorial cleavages seem nice. So a cleavage $\gamma_{\pi}$ for $\pi$ is a \textbf{splitting (of $\pi$)} if
+where $\tilde{b}$ denotes the same morphism as above.
+$\gamma_{\pi}$ is called \textbf{cleavage (for $\pi$)}.
+Again those functorial cleavages seem nice.
+So a cleavage $\gamma_{\pi}$ for $\pi$ is a \textbf{splitting (of $\pi$)} if
 \begin{enumerate}
 \item[(IS1)]
 for $B = \pi(E_{1})$ the equation
@@ -720,7 +759,14 @@ the equation
 holds
 \end{enumerate}
 \end{enumerate}
-It is common to forgo the word {\glqq}terminal{\grqq} here and replace {\glqq}initial{\grqq} by {\glqq}op{\grqq}. That is, people usually speak of fibrations and opfibrations instead of terminal and initial fibrations, respectively. Grothendieck fibrations are not necessarily the fibrations of some model structure for $\mathbf{Cat}$. An exception is the groupoid case $\mathbf{Grpd}$ where Grothendieck fibrations are the same as so-called isofibrations. The problem is the universality condition for lifts. However, since the basic mathematical objects in UFP-HoTT are ($\infty$-)groupoids, Grothendieck fibrations are the models of fibrations of UFP-HoTT when interpreting UFP-HoTT in category theory. Moreover Grothendieck fibrations clearly satisfy a lifting property and hence can be considered generalized fibrations further vindicating the terminology. Next is an example.
+It is common to forgo the word {\glqq}terminal{\grqq} here and replace {\glqq}initial{\grqq} by {\glqq}op{\grqq}.
+That is, people usually speak of fibrations and opfibrations instead of terminal and initial fibrations, respectively.
+Grothendieck fibrations are not necessarily the fibrations of some model structure for $\mathbf{Cat}$.
+An exception is the groupoid case $\mathbf{Grpd}$ where Grothendieck fibrations are the same as so-called isofibrations.
+The problem is the universality condition for lifts.
+However, since the basic mathematical objects in UFP-HoTT are ($\infty$-)groupoids, Grothendieck fibrations are the models of fibrations of UFP-HoTT when interpreting UFP-HoTT in category theory.
+Moreover Grothendieck fibrations clearly satisfy a lifting property and hence can be considered generalized fibrations further vindicating the terminology.
+Next is an example.
 \\
 \begin{exa}
 \label{exa:catofarrpb}
@@ -815,7 +861,8 @@ such that the diagram
   X_{1}
 \end{tikzcd}
 \]
-commutes. If $\mathbf{C}$ has pullbacks then $f_{02}^{!}$ can be chosen as in the pullback diagram
+commutes.
+If $\mathbf{C}$ has pullbacks then $f_{02}^{!}$ can be chosen as in the pullback diagram
 \[
 \begin{tikzcd}[sep=huge]
   E_{0}
@@ -851,7 +898,14 @@ On the other hand, if $(\tilde{f}_{21},f_{21})$ is a cartesian arrow then the ca
   &=
   \mathrm{id}_{X_{2}}
 \end{align*}
-shows that $p^{\ast}$ is a pullback of $p$ along $f_{21}$. Hence $\pi_{\rightarrow}$ is a terminal Grothendieck fibration if and only if $\mathbf{C}$ has pullbacks. Pullbacks are sometimes called cartesian squares. Therefore the terminology cartesian arrows. Note that a cleavage for $\pi_{\rightarrow}$ as we would get from above is in general not a splitting. This is essentially since universals are only unique up to unique isomorphism. In this case this means pulling back $p$ along $f_{21}$ to get $p^{\ast}$ and then pulling back $p$ along $f_{32}$ is in general not equal but only isomorphic to pulling back $p$ along $f_{32} \circ f_{21}$. This is boldly expressed here by
+shows that $p^{\ast}$ is a pullback of $p$ along $f_{21}$.
+Hence $\pi_{\rightarrow}$ is a terminal Grothendieck fibration if and only if $\mathbf{C}$ has pullbacks.
+Pullbacks are sometimes called cartesian squares.
+Therefore the terminology cartesian arrows.
+Note that a cleavage for $\pi_{\rightarrow}$ as we would get from above is in general not a splitting.
+This is essentially since universals are only unique up to unique isomorphism.
+In this case this means pulling back $p$ along $f_{21}$ to get $p^{\ast}$ and then pulling back $p$ along $f_{32}$ is in general not equal but only isomorphic to pulling back $p$ along $f_{32} \circ f_{21}$.
+This is boldly expressed here by
 \begin{align*}
   \left(
     f_{21}
@@ -865,7 +919,10 @@ shows that $p^{\ast}$ is a pullback of $p$ along $f_{21}$. Hence $\pi_{\rightarr
     f_{21}^{\ast}(E_{1})
   \right)
 \end{align*}
-It is just an expression of the fact that pulling back along something respects composition up to isomorphism which is all we can expect from a universal construction. This {\glqq}is up to isomorphism by pulling back{\grqq} setting is exactly what (terminal) Grothendieck fibrations shall formalize. Of course, it is instructive to consider the case $\mathbf{C} = \mathbf{Top}$ here. We recommend to ponder this a bit in the light of the pullback intuition in this case from example \ref{exa:oflimits} where we defined pullbacks.
+It is just an expression of the fact that pulling back along something respects composition up to isomorphism which is all we can expect from a universal construction.
+This {\glqq}is up to isomorphism by pulling back{\grqq} setting is exactly what (terminal) Grothendieck fibrations shall formalize.
+Of course, it is instructive to consider the case $\mathbf{C} = \mathbf{Top}$ here.
+We recommend to ponder this a bit in the light of the pullback intuition in this case from example \ref{exa:oflimits} where we defined pullbacks.
 \end{exa}
 \begin{prf}
 The details are left to the reader.
@@ -874,7 +931,8 @@ The details are left to the reader.
 \hfill
 $\square$
 \end{prf}
-Let us elaborate further on this example \ref{exa:catofarrpb}. It seems to be a key to understand terminal Grothendieck fibrations better in general.\footnote{as an exercise you can try to translate the following discussion to initial Grothendieck fibrations where possible (see also \cite{ab8cfa22} which is in general a nice introduction to Grothendieck fibrations in some respect deeper than here)} To this end fix a terminal Grothendieck fibration
+Let us elaborate further on this example \ref{exa:catofarrpb}.
+It seems to be a key to understand terminal Grothendieck fibrations better in general.\footnote{as an exercise you can try to translate the following discussion to initial Grothendieck fibrations where possible (see also \cite{ab8cfa22} which is in general a nice introduction to Grothendieck fibrations in some respect deeper than here)} To this end fix a terminal Grothendieck fibration
 \begin{align*}
   \pi
   \colon
@@ -882,7 +940,10 @@ Let us elaborate further on this example \ref{exa:catofarrpb}. It seems to be a 
   &\rightarrow
   \mathbf{B}
 \end{align*}
-and assume a cleavage $\gamma_{\pi}$ for $\pi$. We introduced the terminology {\glqq}$\mathbf{E}$ is fibered over $\mathbf{B}${\grqq} and to make sense of this we would expect that there is a fiber over $B \in \mathrm{ob}_{\mathbf{B}}$ which yields a subcategory of $\mathbf{E}$ if we also take morphisms into account. In fact, this is true. For each $B \in \mathrm{ob}_{\mathbf{B}}$ define the subcategory $\mathbf{F}_{\pi}^{B}$ of $\mathbf{E}$ by
+and assume a cleavage $\gamma_{\pi}$ for $\pi$.
+We introduced the terminology {\glqq}$\mathbf{E}$ is fibered over $\mathbf{B}${\grqq} and to make sense of this we would expect that there is a fiber over $B \in \mathrm{ob}_{\mathbf{B}}$ which yields a subcategory of $\mathbf{E}$ if we also take morphisms into account.
+In fact, this is true.
+For each $B \in \mathrm{ob}_{\mathbf{B}}$ define the subcategory $\mathbf{F}_{\pi}^{B}$ of $\mathbf{E}$ by
 \begin{enumerate}
 \item[$\bullet$]
 restricting the object set $\mathrm{ob}_{\mathbf{E}}$ to the set
@@ -915,7 +976,8 @@ restricting the morphism set $\mathrm{mor}_{\mathbf{E}}(E,E^{\backprime})$ for a
   \right\rbrace
 \end{align*}
 \end{enumerate}
-This is well-defined as can be shown and we call $\mathbf{F}_{\pi}^{B}$ the \textbf{fiber (category over $B$ of $\pi$)}. It is clear that this defines a function
+This is well-defined as can be shown and we call $\mathbf{F}_{\pi}^{B}$ the \textbf{fiber (category over $B$ of $\pi$)}.
+It is clear that this defines a function
 \begin{align*}
   f_{\pi}
   \colon
@@ -927,7 +989,8 @@ This is well-defined as can be shown and we call $\mathbf{F}_{\pi}^{B}$ the \tex
   &\mapsto
   \mathbf{F}_{\pi}^{B}
 \end{align*}
-and if we make it to define functions on morphisms we can dream of a functor $F_{\pi} \colon \mathbf{B} \rightarrow \mathbf{Cat}$. So let's try to find a function
+and if we make it to define functions on morphisms we can dream of a functor $F_{\pi} \colon \mathbf{B} \rightarrow \mathbf{Cat}$.
+So let's try to find a function
 \begin{align*}
   f(B_{1},B_{2})
   \colon
@@ -939,7 +1002,9 @@ and if we make it to define functions on morphisms we can dream of a functor $F_
     \mathbf{F}_{\pi}^{B_{2}}
   \right)
 \end{align*}
-for all $B_{1},B_{2} \in \mathrm{ob}_{\mathbf{B}}$. The only thing we have roughly meeting the requirement of mapping a morphism in $\mathbf{B}$ to one in $\mathbf{E}$ is the cleavage $\gamma_{\pi}$. However, we then have to adjust the setting a bit to $F_{\gamma_{\pi}} \colon \mathbf{B}^{\mathrm{op}} \rightarrow \mathbf{Cat}$ since then we have
+for all $B_{1},B_{2} \in \mathrm{ob}_{\mathbf{B}}$.
+The only thing we have roughly meeting the requirement of mapping a morphism in $\mathbf{B}$ to one in $\mathbf{E}$ is the cleavage $\gamma_{\pi}$.
+However, we then have to adjust the setting a bit to $F_{\gamma_{\pi}} \colon \mathbf{B}^{\mathrm{op}} \rightarrow \mathbf{Cat}$ since then we have
 \begin{align*}
   f_{\gamma_{\pi}}(B_{1},B_{2})
   \colon
@@ -1034,7 +1099,10 @@ where the exclamation mark means the unique morphism we get by the universal pro
   \pi(E^{\backprime})
 \end{tikzcd}
 \]
-That $b^{\ast}$ is in fact a functor can be seen from pasting such pictures together with the same method as in lemma \ref{lem:adjointto} where we constructed a unique functor for an adjoint and a certain choice function. In general, if a functor on morphisms is defined by the uniqueness coming from a universal property this strategy to show functorialty seems to work always. At least, we are not aware of any counter example. Now while $b^{\ast}$ is a functor we cannot expect that for
+That $b^{\ast}$ is in fact a functor can be seen from pasting such pictures together with the same method as in lemma \ref{lem:adjointto} where we constructed a unique functor for an adjoint and a certain choice function.
+In general, if a functor on morphisms is defined by the uniqueness coming from a universal property this strategy to show functorialty seems to work always.
+At least, we are not aware of any counter example.
+Now while $b^{\ast}$ is a functor we cannot expect that for
 \begin{align*}
   b_{21}
   &\in
@@ -1044,7 +1112,11 @@ That $b^{\ast}$ is in fact a functor can be seen from pasting such pictures toge
   &\in
   \mathrm{mor}_{\mathbf{B}}(B_{3},B_{2})
 \end{align*}
-$b_{32}^{\ast} \circ b_{21}^{\ast}$ is equal to $(b_{21} \circ b_{32})^{\ast}$ as we saw by the counter example provided by example \ref{exa:catofarrpb}. Hence we cannot define a functor $F_{\gamma_{\pi}} \colon \mathbf{B}^{\mathrm{op}} \rightarrow \mathbf{Cat}$ we dreamed of in the way proposed. But example \ref{exa:catofarrpb} also suggests that we might hope for an isomorphism which is actually just as good. This would then result in something like a functor up to isomorphism which is often called \textit{pseudo functor}. We will not introduce this terminology here formally in a general form since we only need the pseudo functor made up by $f_{\pi}$ and $f_{\gamma_{\pi}}$.\footnote{if you have enough time then think about how to abstract a pseudo functor definition from the following properties ($\psi$),($\psi1$) and ($\psi$2)} Yet we will a bit informally and inconsistently refer to
+$b_{32}^{\ast} \circ b_{21}^{\ast}$ is equal to $(b_{21} \circ b_{32})^{\ast}$ as we saw by the counter example provided by example \ref{exa:catofarrpb}.
+Hence we cannot define a functor $F_{\gamma_{\pi}} \colon \mathbf{B}^{\mathrm{op}} \rightarrow \mathbf{Cat}$ we dreamed of in the way proposed.
+But example \ref{exa:catofarrpb} also suggests that we might hope for an isomorphism which is actually just as good.
+This would then result in something like a functor up to isomorphism which is often called \textit{pseudo functor}.
+We will not introduce this terminology here formally in a general form since we only need the pseudo functor made up by $f_{\pi}$ and $f_{\gamma_{\pi}}$.\footnote{if you have enough time then think about how to abstract a pseudo functor definition from the following properties ($\psi$),($\psi1$) and ($\psi$2)} Yet we will a bit informally and inconsistently refer to
 \begin{align*}
   F_{\gamma_{\pi}}
   \colon
@@ -1057,7 +1129,8 @@ $b_{32}^{\ast} \circ b_{21}^{\ast}$ is equal to $(b_{21} \circ b_{32})^{\ast}$ a
     f_{\gamma_{\pi}}
   \right)
 \end{align*}
-as pseudo functor. What now follows are the properties which make $F_{\gamma_{\pi}}$ a pseudo functor:
+as pseudo functor.
+What now follows are the properties which make $F_{\gamma_{\pi}}$ a pseudo functor:
 \begin{enumerate}
 \item[($\psi$)]
 For
@@ -1154,7 +1227,8 @@ To see that $\mathsf{T}(b_{32},b_{21})$ is an isomorphism look at the diagram ob
   E
 \end{tikzcd}
 \]
-and reason as in theorem \ref{thm:uniqueuniarr} as one always does when one has a unique arrow provided by a universal property. Namely that
+and reason as in theorem \ref{thm:uniqueuniarr} as one always does when one has a unique arrow provided by a universal property.
+Namely that
 \begin{align*}
   ((\gamma_{\pi}(b_{21} \circ b_{32},E))_{!})_{!}
   \circ
@@ -1172,7 +1246,8 @@ and reason as in theorem \ref{thm:uniqueuniarr} as one always does when one has 
   \circ
   ((\gamma_{\pi}(b_{21} \circ b_{32},E))_{!})_{!}
 \end{align*}
-are the unique arrows corresponding to the respective universal arrows and must hence be the respective identity. This is illustrated by
+are the unique arrows corresponding to the respective universal arrows and must hence be the respective identity.
+This is illustrated by
 \[
 \begin{tikzcd}[row sep=13ex,column sep=16ex]
   (b_{21} \circ b_{32})^{\ast}(E))
@@ -1213,7 +1288,8 @@ are the unique arrows corresponding to the respective universal arrows and must 
   \arrow{u}{\gamma_{\pi}(b_{21},E)}
 \end{tikzcd}
 \]
-To show naturality of $\mathsf{T}(b_{32},b_{21})$ take a morphism $e$ from $E$ to $E^{\backprime}$. Then
+To show naturality of $\mathsf{T}(b_{32},b_{21})$ take a morphism $e$ from $E$ to $E^{\backprime}$.
+Then
 \begin{align*}
   &\phantom{=}
   \gamma_{\pi}(b_{21} \circ b_{32},E^{\backprime})
@@ -1324,7 +1400,11 @@ and
   \circ
   \gamma_{\pi}(b_{32},b_{21}^{\ast}(E))
 \end{align*}
-Universality then proves the claim (remember the naturality proof in the proof of corollary \ref{cor:yonedauniarr} about the left Kan extension). What now follows are coherenece conditions making the identity laws and associativity sensible. However, the identity law only works for cleavages $\gamma_{\pi}$ which fulfill the splitting property (TS1). But this is not really a problem since if we have a cleavage we can always derive one from it fulfilling this property. So:
+Universality then proves the claim (remember the naturality proof in the proof of corollary \ref{cor:yonedauniarr} about the left Kan extension).
+What now follows are coherenece conditions making the identity laws and associativity sensible.
+However, the identity law only works for cleavages $\gamma_{\pi}$ which fulfill the splitting property (TS1).
+But this is not really a problem since if we have a cleavage we can always derive one from it fulfilling this property.
+So:
 \begin{enumerate}
 \item[($\psi$1)]
 We have
@@ -1617,7 +1697,11 @@ together with a cleavage $\gamma_{\pi}$ fulfilling splitting property (TS1) a ps
     f_{\gamma_{\pi}}
   \right)
 \end{align*}
-which is a functor if $\gamma_{\pi}$ is a splitting for $\pi$ (this latter statement can also be seen from universality as above). Moreover this process is reversible in the sense that a pseudo functor from $\mathbf{B}^{\mathrm{op}}$ to $\mathbf{Cat}$ yields a terminal Grothendieck fibration with base category $\mathbf{B}$ togther with a cleavage fulfilling (TS1). This reversed process is usually referred to as {\glqq}Grothendieck construction{\grqq} and a landmark of category theory. All this can be formalized in a certain weak $2$-categorical setting. We abstracted Grothendieck fibrations from
+which is a functor if $\gamma_{\pi}$ is a splitting for $\pi$ (this latter statement can also be seen from universality as above).
+Moreover this process is reversible in the sense that a pseudo functor from $\mathbf{B}^{\mathrm{op}}$ to $\mathbf{Cat}$ yields a terminal Grothendieck fibration with base category $\mathbf{B}$ togther with a cleavage fulfilling (TS1).
+This reversed process is usually referred to as {\glqq}Grothendieck construction{\grqq} and a landmark of category theory.
+All this can be formalized in a certain weak $2$-categorical setting.
+We abstracted Grothendieck fibrations from
 \begin{align*}
   \pi_{P}
   \colon
@@ -1634,7 +1718,10 @@ which is a functor if $\gamma_{\pi}$ is a splitting for $\pi$ (this latter state
   &\mapsto
   j_{12}
 \end{align*}
-This can be regarded as a primitive version of the Grothendieck construction for the presheaf $P$. Historically, this primitive case was done by Yoneda and Mac Lane\footnote{at least Mac Lane and Moerdijk claim so in \cite{c55c71e8} where it sounds like they would terminologically prefer Yoneda-Mac Lane construction or so} before Grothendieck constructed Grothendieck fibrations from pseudo functors. So in our discussion we actually followed time in the wrong direction. Anyways, we ended up with something like a weak $\mathbf{Cat}$-valued presheaf on $\mathbf{B}$
+This can be regarded as a primitive version of the Grothendieck construction for the presheaf $P$.
+Historically, this primitive case was done by Yoneda and Mac Lane\footnote{at least Mac Lane and Moerdijk claim so in \cite{c55c71e8} where it sounds like they would terminologically prefer Yoneda-Mac Lane construction or so} before Grothendieck constructed Grothendieck fibrations from pseudo functors.
+So in our discussion we actually followed time in the wrong direction.
+Anyways, we ended up with something like a weak $\mathbf{Cat}$-valued presheaf on $\mathbf{B}$
 \begin{align*}
   \left(
     F_{\gamma_{\pi}}
@@ -1649,7 +1736,17 @@ This can be regarded as a primitive version of the Grothendieck construction for
     f_{\gamma_{\pi}}
   \right)
 \end{align*}
-which on morphisms is formally similar to pulling back as was abstracted from example \ref{exa:catofarrpb} with the arrow catgeory of the base category as total category. We have already learned that pulling back is closely related to restricting. Both the pullback part of example \ref{exa:catofarrpb} and the Grothendieck topology part from the generalized spaces II example \ref{exa:gs2} provide some evidence for this point of view. Thus we might wonder if the weak $\mathbf{Cat}$-valued presheaf $F_{\gamma_{\pi}}$ allows a sensible definition of weak $\mathbf{Cat}$-valued sheaf in the sense that the objects of $F_{\gamma_{\pi}}(B_{1})$ are the sections over $B_{1}$ while the morphisms of $F_{\gamma_{\pi}}(B_{1})$ are the allowed ways of transforming one section to another and restricting to $B_{2}$ by $F_{\gamma_{\pi}}(b_{21})$ must be consistent at least in so far that matching restrictions of transformations can be uniquely patched together while sections matching up to isomorphisms can be regarded as uniquely patched together by these isomorphisms in an approriate sense. We already know what this {\glqq}descent{\grqq} is from the bundles 2 example \ref{exa:bundles2}. What we called weak $\mathbf{Cat}$-valued sheaf so far is usually called {\glqq}stack in categories{\grqq} and was pursued by Grothendieck to generalize the notion of scheme in his famous notes {\glqq}Pursuing Stacks{\grqq}. Now to realize a stacks definition we should at least have a notion of covering for $\mathbf{B}$. The most general thing coming to our mind so far is Grothendieck topology but for the sake of simplicity and intuition we restrict ourselves to the case $\mathbf{B} = \mathbf{Open}_{S}$ for some topological space $S$ when we define stacks in a moment. If you want to see the general definition of stacks using Grothendieck topology we refer to \cite{d9dadd6d} which seems to contain everything what mankind knows about stacks. We still recommend to look at our definition first since the more general one differs not so much from ours on an intuitive level but might be harder for beginners to imagine. Let us wrap the stacks discussion up in a final fourth part of our continuant example about generalized spaces from examples \ref{exa:gs1}, \ref{exa:gs2} and \ref{exa:gs3}.
+which on morphisms is formally similar to pulling back as was abstracted from example \ref{exa:catofarrpb} with the arrow catgeory of the base category as total category.
+We have already learned that pulling back is closely related to restricting.
+Both the pullback part of example \ref{exa:catofarrpb} and the Grothendieck topology part from the generalized spaces II example \ref{exa:gs2} provide some evidence for this point of view.
+Thus we might wonder if the weak $\mathbf{Cat}$-valued presheaf $F_{\gamma_{\pi}}$ allows a sensible definition of weak $\mathbf{Cat}$-valued sheaf in the sense that the objects of $F_{\gamma_{\pi}}(B_{1})$ are the sections over $B_{1}$ while the morphisms of $F_{\gamma_{\pi}}(B_{1})$ are the allowed ways of transforming one section to another and restricting to $B_{2}$ by $F_{\gamma_{\pi}}(b_{21})$ must be consistent at least in so far that matching restrictions of transformations can be uniquely patched together while sections matching up to isomorphisms can be regarded as uniquely patched together by these isomorphisms in an approriate sense.
+We already know what this {\glqq}descent{\grqq} is from the bundles 2 example \ref{exa:bundles2}.
+What we called weak $\mathbf{Cat}$-valued sheaf so far is usually called {\glqq}stack in categories{\grqq} and was pursued by Grothendieck to generalize the notion of scheme in his famous notes {\glqq}Pursuing Stacks{\grqq}.
+Now to realize a stacks definition we should at least have a notion of covering for $\mathbf{B}$.
+The most general thing coming to our mind so far is Grothendieck topology but for the sake of simplicity and intuition we restrict ourselves to the case $\mathbf{B} = \mathbf{Open}_{S}$ for some topological space $S$ when we define stacks in a moment.
+If you want to see the general definition of stacks using Grothendieck topology we refer to \cite{d9dadd6d} which seems to contain everything what mankind knows about stacks.
+We still recommend to look at our definition first since the more general one differs not so much from ours on an intuitive level but might be harder for beginners to imagine.
+Let us wrap the stacks discussion up in a final fourth part of our continuant example about generalized spaces from examples \ref{exa:gs1}, \ref{exa:gs2} and \ref{exa:gs3}.
 \\
 \begin{exa}[Generalized Spaces IV]
 \label{exa:gs4}
@@ -1676,9 +1773,12 @@ corresponding to a terminal Grothendieck fibration
   &\rightarrow
   \mathbf{Open}_{S}
 \end{align*}
-together with a cleavage $\gamma_{\pi}$ fulfilling splitting property (TS1). What we do also translates quite literally\footnote{since we carefully distinct $\mathrm{mor}$ and $\mathrm{iso}$ which is actually not necessary for groupoids} to $\mathbf{Cat}$ instead of $\mathbf{Grpd}$ and is actually a somewhat artificial restriction. But it is the case we are interested in (since it is easier to generalize to higher levels) and it seems somehow the more common case in literature.
+together with a cleavage $\gamma_{\pi}$ fulfilling splitting property (TS1).
+What we do also translates quite literally\footnote{since we carefully distinct $\mathrm{mor}$ and $\mathrm{iso}$ which is actually not necessary for groupoids} to $\mathbf{Cat}$ instead of $\mathbf{Grpd}$ and is actually a somewhat artificial restriction.
+But it is the case we are interested in (since it is easier to generalize to higher levels) and it seems somehow the more common case in literature.
 \\
-We first build some terminology in the style of the generalized spaces II example \ref{exa:gs2}. For $U \in \mathrm{ob}_{\mathbf{Open}_{S}}$ an object
+We first build some terminology in the style of the generalized spaces II example \ref{exa:gs2}.
+For $U \in \mathrm{ob}_{\mathbf{Open}_{S}}$ an object
 \begin{align*}
   s
   &\in
@@ -1686,7 +1786,8 @@ We first build some terminology in the style of the generalized spaces II exampl
   =
   \mathrm{ob}_{f_{\pi}(U)}
 \end{align*}
-is called \textbf{section (over $U$ in $F_{\gamma_{\pi}}$)}. Next note our convention on inclusions from example \ref{exa:topology} about topological spaces with the further convenience
+is called \textbf{section (over $U$ in $F_{\gamma_{\pi}}$)}.
+Next note our convention on inclusions from example \ref{exa:topology} about topological spaces with the further convenience
 \begin{align*}
   U_{1},
   U_{2}
@@ -1705,7 +1806,8 @@ Then the functor
   =
   f_{\pi}(U_{1},U_{2})(\mathrm{i}_{12})
 \end{align*}
-is called the \textbf{restriction from $U_{2}$ to $U_{1}$ (in $F_{\gamma_{\pi}}$)}. Further, for sections over some $V \in \mathbf{Open}_{S}$
+is called the \textbf{restriction from $U_{2}$ to $U_{1}$ (in $F_{\gamma_{\pi}}$)}.
+Further, for sections over some $V \in \mathbf{Open}_{S}$
 \begin{align*}
   s,
   s^{\backprime}
@@ -1744,7 +1846,10 @@ We call $\mathcal{T}_{V}(s,s^{\backprime})$ the \textbf{presheaf of ($V$-)transi
 \begin{align*}
   \mathcal{T}_{V}(s,s^{\backprime})(V)
 \end{align*}
-a \textbf{($V$-)transition (from $s$ to $s^{\backprime}$ in $F_{\gamma_{\pi}}$)}. We said that we want to be able patch matching transformations together in a unique way. This is to say that $\mathcal{T}_{V}(s,s^{\backprime})$ is a sheaf. But since this is not all we need we say that $F_{\gamma_{\pi}}$ is a\footnote{note that the terminology is a bit misleading since it is quite a bit more than just a {\glqq}weak $\mathbf{Grpd}$-valued preshaf{\grqq}} \textbf{prestack (on $\mathbf{Open}_{S}$)} if for all
+a \textbf{($V$-)transition (from $s$ to $s^{\backprime}$ in $F_{\gamma_{\pi}}$)}.
+We said that we want to be able patch matching transformations together in a unique way.
+This is to say that $\mathcal{T}_{V}(s,s^{\backprime})$ is a sheaf.
+But since this is not all we need we say that $F_{\gamma_{\pi}}$ is a\footnote{note that the terminology is a bit misleading since it is quite a bit more than just a {\glqq}weak $\mathbf{Grpd}$-valued preshaf{\grqq}} \textbf{prestack (on $\mathbf{Open}_{S}$)} if for all
 \begin{align*}
   V
   &\in
@@ -1755,7 +1860,11 @@ a \textbf{($V$-)transition (from $s$ to $s^{\backprime}$ in $F_{\gamma_{\pi}}$)}
   &\in
   \mathrm{ob}_{F_{\gamma_{\pi}}(V)}
 \end{align*}
-the presheaf of $V$-transitions $\mathcal{T}_{V}(s,s^{\backprime})$ is a sheaf. Next we want to go the step from prestacks to stacks. This means that the category $F_{\gamma_{\pi}}(U)$ should look like a groupoid with objects families of sections over $U_{k}$ for some open cover generator $\mathrm{cov}_{U}$ such that any two sections restricted to some open set from the cover are related by an isomorphism with some further consistency satisfied by the isomorphims. This can be regarded as formally patching the sections together and if all objects are so this is clearly unique. So, formally, for an open cover generator $\mathrm{cov}_{U}$ use the additional notational convention on inclusions that
+the presheaf of $V$-transitions $\mathcal{T}_{V}(s,s^{\backprime})$ is a sheaf.
+Next we want to go the step from prestacks to stacks.
+This means that the category $F_{\gamma_{\pi}}(U)$ should look like a groupoid with objects families of sections over $U_{k}$ for some open cover generator $\mathrm{cov}_{U}$ such that any two sections restricted to some open set from the cover are related by an isomorphism with some further consistency satisfied by the isomorphims.
+This can be regarded as formally patching the sections together and if all objects are so this is clearly unique.
+So, formally, for an open cover generator $\mathrm{cov}_{U}$ use the additional notational convention on inclusions that
 \begin{align*}
   \mathrm{i}_{12,1}
   &\doteq
@@ -2037,7 +2146,9 @@ is true, that is, the diagram
 commutes
 \end{enumerate}
 \end{enumerate}
-Property (CCC) is referred to as \textbf{cocycle condition (in $\mathbf{Des}(\mathrm{cov}_{U},F_{\gamma_{\pi}})$)} while property (CBC) is referred to as \textbf{coboundary condition (in $\mathbf{Des}(\mathrm{cov}_{U},F_{\gamma_{\pi}})$)}. $\mathbf{Des}(\mathrm{cov}_{U},F_{\gamma_{\pi}})$ is called the \textbf{category of descent data (on $\mathrm{cov}_{U}$ for $F_{\gamma_{\pi}}$)}. A categorical prestack $F_{\gamma_{\pi}}$ on $\mathbf{Open}_{S}$ is called \textbf{stack (on $\mathbf{Open}_{S}$)} if
+Property (CCC) is referred to as \textbf{cocycle condition (in $\mathbf{Des}(\mathrm{cov}_{U},F_{\gamma_{\pi}})$)} while property (CBC) is referred to as \textbf{coboundary condition (in $\mathbf{Des}(\mathrm{cov}_{U},F_{\gamma_{\pi}})$)}.
+$\mathbf{Des}(\mathrm{cov}_{U},F_{\gamma_{\pi}})$ is called the \textbf{category of descent data (on $\mathrm{cov}_{U}$ for $F_{\gamma_{\pi}}$)}.
+A categorical prestack $F_{\gamma_{\pi}}$ on $\mathbf{Open}_{S}$ is called \textbf{stack (on $\mathbf{Open}_{S}$)} if
 \begin{enumerate}
 \item[(DC)]
 for all $U \in \mathrm{ob}_{\mathbf{Open}_{S}}$ and all open cover generators covers $\mathrm{cov}_{U}$ the functor
@@ -2071,18 +2182,32 @@ is an equivalence (of groupoids)
 \end{enumerate}
 We refer to the property (DC) as \textbf{descent condition (for stacks on $\mathbf{Open}_{S}$)}.
 \\
-Now observe that instead of a $\mathbf{Grpd}$-valued pseudo functor why should we not allow for $n$-groupoids or even $\infty$-groupoids to define $n$-stack and $\infty$-stack, respectively? Of course, the descent becomes more complicated since we have to take transitions between transitions and so on into account. But this should not intimidate us to go that promising way. In particular, by $\mathbf{Top}^{\textrm{CW}}$, we essentially know a category of $\infty$-groupoids in the light of the homotopy hypothesis \ref{prp:groth}. So an $\infty$-stack is supposed to be something like a functor from $\mathbf{Open}_{S}^{\mathrm{op}}$ to $\mathbf{Top}^{\textrm{CW}}$ with some appropriate consistency conditions regarding the descent. But one also should take care of {\glqq}equivalence{\grqq} due to the higher homotopy structure. Further, instead of $\mathbf{Open}_{S}$, we should allow for any site $(\mathbf{C},\mathrm{J})$. Then there is, in fact, a sensible formal construction of $\infty$-stacks. However, there are some subtle questions on the terminology since we should actually generalize what we said a bit in the following way:
+Now observe that instead of a $\mathbf{Grpd}$-valued pseudo functor why should we not allow for $n$-groupoids or even $\infty$-groupoids to define $n$-stack and $\infty$-stack, respectively? Of course, the descent becomes more complicated since we have to take transitions between transitions and so on into account.
+But this should not intimidate us to go that promising way.
+In particular, by $\mathbf{Top}^{\textrm{CW}}$, we essentially know a category of $\infty$-groupoids in the light of the homotopy hypothesis \ref{prp:groth}.
+So an $\infty$-stack is supposed to be something like a functor from $\mathbf{Open}_{S}^{\mathrm{op}}$ to $\mathbf{Top}^{\textrm{CW}}$ with some appropriate consistency conditions regarding the descent.
+But one also should take care of {\glqq}equivalence{\grqq} due to the higher homotopy structure.
+Further, instead of $\mathbf{Open}_{S}$, we should allow for any site $(\mathbf{C},\mathrm{J})$.
+Then there is, in fact, a sensible formal construction of $\infty$-stacks.
+However, there are some subtle questions on the terminology since we should actually generalize what we said a bit in the following way:
 \begin{enumerate}
 \item[(a)]
-One should interpret $\mathbf{Top}^{\textrm{CW}}$ as what it is is: namely an $(\infty,1)$-category. So we should look at the $(\infty,1)$-category of $\infty$-groupoids.
+One should interpret $\mathbf{Top}^{\textrm{CW}}$ as what it is is: namely an $(\infty,1)$-category.
+So we should look at the $(\infty,1)$-category of $\infty$-groupoids.
 \item[(b)]
 The previous point (a) suggests to consider not only an ordinary site $(\mathbf{C},\mathrm{J})$ but an \textit{$(\infty,1)$-site} where $\mathbf{C}$ would be an $(\infty,1)$-category.
 \item[(c)]
 (a) and (b) together suggest to consider an $(\infty,1)$-functor from an $(\infty,1)$-site to the $(\infty,1)$-category of $\infty$-groupoids.
 \end{enumerate}
-When one does this one is led to a so-called \textit{$(\infty,1)$-sheaf}. Then just like sheaves form a topos $\mathbf{Sh}(S)$ so do $(\infty,1)$-sheaves form an $(\infty,1)$-topos ${}_{\infty}\mathbf{Sh}(S)$. Hence $(\infty,1)$-sheaves can be regarded homotopy-theoretic versions of sheaves since we consider the objects of an $(\infty,1)$-topos homotopy types in the same spirit as we consider the objects of a topos sets. In the end we have arrived at a notion of generalized space which allows to do homotopy theory.
+When one does this one is led to a so-called \textit{$(\infty,1)$-sheaf}.
+Then just like sheaves form a topos $\mathbf{Sh}(S)$ so do $(\infty,1)$-sheaves form an $(\infty,1)$-topos ${}_{\infty}\mathbf{Sh}(S)$.
+Hence $(\infty,1)$-sheaves can be regarded homotopy-theoretic versions of sheaves since we consider the objects of an $(\infty,1)$-topos homotopy types in the same spirit as we consider the objects of a topos sets.
+In the end we have arrived at a notion of generalized space which allows to do homotopy theory.
 \\
-Last, note that the terminological distinction of $(\infty,1)$-sheaf and $\infty$-stack is a bit blurry in literature and many use $(\infty,1)$-sheaf and $\infty$-stack synonymously. This is in contrast to our terminology. Sometimes the terminological issues are just ignored and $\infty$-stack means slightly different things at the same time. The terminological situation is a bit complicated and before writing down a terminology dump let's stop here and refer to \cite{wiki-nlab0000} where you can start with any suited term and then click through if you have become curious.
+Last, note that the terminological distinction of $(\infty,1)$-sheaf and $\infty$-stack is a bit blurry in literature and many use $(\infty,1)$-sheaf and $\infty$-stack synonymously.
+This is in contrast to our terminology.
+Sometimes the terminological issues are just ignored and $\infty$-stack means slightly different things at the same time.
+The terminological situation is a bit complicated and before writing down a terminology dump let's stop here and refer to \cite{wiki-nlab0000} where you can start with any suited term and then click through if you have become curious.
 \end{exa}
 \begin{prf}
 We do not prove anything here but only give interesting references.
@@ -2092,7 +2217,8 @@ The whole series of examples about generalized spaces is abstracted from the \ci
 \item[$\bullet$]
 The stacks definition is based on \cite{c82f5e22}.
 \item[$\bullet$]
-To formally understand $(\infty,1)$-topoi and $\infty$-stacks/$(\infty,1)$-sheaves we recommend \cite{0349e8ea} which seems to be the undisputed standard reference on $(\infty,1)$-topoi as already noted in these notes. This reference in particular seems to formalize homotopy theory as the theory of $(\infty,1)$-topoi as an alternative to model categories.\footnote{but in the end synthetic homotopy theories such as UFP-HoTT seem most reasonable to us simply because they seem to be the easiest theories to learn}
+To formally understand $(\infty,1)$-topoi and $\infty$-stacks/$(\infty,1)$-sheaves we recommend \cite{0349e8ea} which seems to be the undisputed standard reference on $(\infty,1)$-topoi as already noted in these notes.
+This reference in particular seems to formalize homotopy theory as the theory of $(\infty,1)$-topoi as an alternative to model categories.\footnote{but in the end synthetic homotopy theories such as UFP-HoTT seem most reasonable to us simply because they seem to be the easiest theories to learn}
 \end{enumerate}
 \phantom{proven}
 \hfill

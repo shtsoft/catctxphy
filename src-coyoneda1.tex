@@ -1,4 +1,12 @@
-This subsubsection is about a consequence of the so-called Co-Yoneda lemma that owes its name to being some kind of dual to the actual yoneda lemma \ref{lem:yoneda}. The Co-Yoneda lemma is discussed and formulated in subsubsection \ref{sec:coyoneda2} after we have developed some more machinery. The consequence we discuss in this subsubsection with more elementary means is the so-called density theorem.  What it actually says is that any presheaf $P$ on $\mathbf{C}$ is the colimit of contravariant hom-functors indexed by the category of colements of $P$. That is, the representable presheaves on $\mathbf{C}$ as generalized objects are enough to build any generalized object in the presheaf category by gluing the representable generalized objects together. Gluing objects together is the very idea of a colimit as should have become clear from this subsection \ref{sec:limit}. This will become even clearer when the objects have a geometric meaning as in section \ref{sec:sset} where they are considered as triangles. One can also interpret colimit a bit as a kind of limiting process similar to limits in analysis. By that we mean that presheaves are {\glqq}approximated{\grqq} well enough by representable presheaves which is why people consider density theorem a suitable name for the following theorem.
+This subsubsection is about a consequence of the so-called Co-Yoneda lemma that owes its name to being some kind of dual to the actual yoneda lemma \ref{lem:yoneda}.
+The Co-Yoneda lemma is discussed and formulated in subsubsection \ref{sec:coyoneda2} after we have developed some more machinery.
+The consequence we discuss in this subsubsection with more elementary means is the so-called density theorem.
+ What it actually says is that any presheaf $P$ on $\mathbf{C}$ is the colimit of contravariant hom-functors indexed by the category of colements of $P$.
+That is, the representable presheaves on $\mathbf{C}$ as generalized objects are enough to build any generalized object in the presheaf category by gluing the representable generalized objects together.
+Gluing objects together is the very idea of a colimit as should have become clear from this subsection \ref{sec:limit}.
+This will become even clearer when the objects have a geometric meaning as in section \ref{sec:sset} where they are considered as triangles.
+One can also interpret colimit a bit as a kind of limiting process similar to limits in analysis.
+By that we mean that presheaves are {\glqq}approximated{\grqq} well enough by representable presheaves which is why people consider density theorem a suitable name for the following theorem.
 \\
 \begin{thm}[Density]
 \label{thm:density}
@@ -44,7 +52,9 @@ and define a function
   &\mapsto
   \mathsf{Y}(P,X)^{-1}(x)
 \end{align*}
-where $\mathsf{Y}(P,X)$ denotes the Yoneda isomorphism. Then $\mathsf{C}_{P}^{\prime}$ is a colimiting cocone for $\mathrm{y}_{P}$ with apex $P$. Hence
+where $\mathsf{Y}(P,X)$ denotes the Yoneda isomorphism.
+Then $\mathsf{C}_{P}^{\prime}$ is a colimiting cocone for $\mathrm{y}_{P}$ with apex $P$.
+Hence
 \begin{align*}
   P
   &\cong
@@ -52,10 +62,12 @@ where $\mathsf{Y}(P,X)$ denotes the Yoneda isomorphism. Then $\mathsf{C}_{P}^{\p
 \end{align*}
 \end{thm}
 \begin{prf}
-As always in such situations we proceed in two steps. We first show that $\mathsf{C}_{P}^{\prime}$ is a cocone and then that it is colimiting.
+As always in such situations we proceed in two steps.
+We first show that $\mathsf{C}_{P}^{\prime}$ is a cocone and then that it is colimiting.
 \begin{description}
 \item[Step 1]
-We will incorporate the Yoneda lemma \ref{lem:yoneda} to show that $\mathsf{C}_{P}^{\prime}$ is a cocone. Consider
+We will incorporate the Yoneda lemma \ref{lem:yoneda} to show that $\mathsf{C}_{P}^{\prime}$ is a cocone.
+Consider
 \begin{align*}
   (X_{1},x_{1}),
   (X_{2},x_{2})
@@ -124,7 +136,8 @@ Hence by definition of $\mathsf{C}_{P}^{\prime}$ this implies a commutative diag
 finally showing that $\mathsf{C}_{P}^{\prime}$ is a cocone. 
 \\
 \item[Step 2]
-Let $\mathsf{C}^{\prime}$ denote any cocone to $\mathrm{y}_{P}$ with apex $P^{\backprime}$. We can then apply the Yoneda isomorphism $\mathsf{Y}(P^{\backprime},X)$ to $\mathsf{C}^{\prime}(X,x)$ to get the corresponding element in $P^{\backprime}(X)$ for each
+Let $\mathsf{C}^{\prime}$ denote any cocone to $\mathrm{y}_{P}$ with apex $P^{\backprime}$.
+We can then apply the Yoneda isomorphism $\mathsf{Y}(P^{\backprime},X)$ to $\mathsf{C}^{\prime}(X,x)$ to get the corresponding element in $P^{\backprime}(X)$ for each
 \begin{align*}
   (X,x)
   \in
@@ -235,7 +248,8 @@ the equations
   \right)
   (x_{2})
 \end{align*}
-prove naturality of $\mathsf{T}$. Moreover the equation
+prove naturality of $\mathsf{T}$.
+Moreover the equation
 \begin{align*}
   \mathsf{T}
   \circ
@@ -280,7 +294,8 @@ since
 \end{align*}
 is valid again due to the naturality of $\mathsf{Y}$.
 \\
-What is left to prove is that $\mathsf{T}$ constructed so is unique. For this purpose let $\mathsf{O} \colon P \Rightarrow P^{\backprime}$ such that
+What is left to prove is that $\mathsf{T}$ constructed so is unique.
+For this purpose let $\mathsf{O} \colon P \Rightarrow P^{\backprime}$ such that
 \begin{align*}
   \mathsf{C}^{\prime}(X,x)
   &=
@@ -332,4 +347,5 @@ Now we are done.
 \hfill
 $\square$
 \end{prf}
-This was a direct prove of the density theorem. But in subsubsection \ref{sec:coyoneda2} we will infer it in a more general context.
+This was a direct prove of the density theorem.
+But in subsubsection \ref{sec:coyoneda2} we will infer it in a more general context.

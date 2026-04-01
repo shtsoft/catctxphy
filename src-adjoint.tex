@@ -1,6 +1,21 @@
 %\nocite{2148248a}
 %\nocite{00000011}
-In mathematics one often considers a set and equips it with some structure. We already alluded to that here and there but quite explicitly in remark \ref{rem:c3trick}. Such a structured set can be some algebraic structure but also a topological space, for example. Anyways, whatever structure the set is equipped with it can be forgotten to get back the set. We have explicitly given $F_{\mathrm{Mon}}$ and $F_{\mathrm{Top}}$ in this section already. The inverse process is different since, in general, there may be many qualitatively equal (or say homomorphic) structures on a set. That is, given a set, there can exist many different topologies on it, for example. So our problem is that we have forgotten something and if one forgets something one wants to recover it, at least qualitatively, in a most efficient way. It seems to be an accepted meta-principle that this is always possible in the sense that the authors are not aware of a counterexample or any guy assuming there is one. The process of forgetting and recovering qualitatively in a most efficient way can be formalized in category theory by two functors satisfying a condition familiar to almost any mathematician. One of the functors is called right adjoint and represents the problem. The other is called left adjoint and stands for the most efficient solution. Before stating the actual definition let us analyze the above situation in greater detail using the influential example of the Grothendieck group which is the starting point of K-theory and abstracted from the process of constructing the group of integers from the monoid of natural numbers. It is certainly helpful to recall example \ref{exa:freemon} about the free monoid which we could have taken as motivating example here as well. Since this example was also about forgetting. The problem we pose here is that we have forgotten the part of the abelian group structure concerning inverses and are thus left with a commutative monoid.
+In mathematics one often considers a set and equips it with some structure.
+We already alluded to that here and there but quite explicitly in remark \ref{rem:c3trick}.
+Such a structured set can be some algebraic structure but also a topological space, for example.
+Anyways, whatever structure the set is equipped with it can be forgotten to get back the set.
+We have explicitly given $F_{\mathrm{Mon}}$ and $F_{\mathrm{Top}}$ in this section already.
+The inverse process is different since, in general, there may be many qualitatively equal (or say homomorphic) structures on a set.
+That is, given a set, there can exist many different topologies on it, for example.
+So our problem is that we have forgotten something and if one forgets something one wants to recover it, at least qualitatively, in a most efficient way.
+It seems to be an accepted meta-principle that this is always possible in the sense that the authors are not aware of a counterexample or any guy assuming there is one.
+The process of forgetting and recovering qualitatively in a most efficient way can be formalized in category theory by two functors satisfying a condition familiar to almost any mathematician.
+One of the functors is called right adjoint and represents the problem.
+The other is called left adjoint and stands for the most efficient solution.
+Before stating the actual definition let us analyze the above situation in greater detail using the influential example of the Grothendieck group which is the starting point of K-theory and abstracted from the process of constructing the group of integers from the monoid of natural numbers.
+It is certainly helpful to recall example \ref{exa:freemon} about the free monoid which we could have taken as motivating example here as well.
+Since this example was also about forgetting.
+The problem we pose here is that we have forgotten the part of the abelian group structure concerning inverses and are thus left with a commutative monoid.
 \\
 \begin{exa}[Grothendieck Group]
 \label{exa:grothengr}
@@ -12,7 +27,8 @@ Noting that $\mathbf{Ab}$ is a subcategory of $\mathbf{CMon}$ we have the inclus
   \rightarrow
   \mathbf{CMon}
 \end{align*}
-which, roughly speaking, forgets about the inverses of an abelian group. Now let
+which, roughly speaking, forgets about the inverses of an abelian group.
+Now let
 \begin{align*}
   (M,+,e)
   \doteq
@@ -78,7 +94,8 @@ for
   &\in
   K_{\mathrm{ob}}(M)
 \end{align*}
-$+_{K}$ is well-defined. $[(e_{M},e_{M})]$ as identity and
+$+_{K}$ is well-defined.
+$[(e_{M},e_{M})]$ as identity and
 \begin{align*}
   [(m_{1},m_{2})]^{-1}
   :=
@@ -145,7 +162,9 @@ such that the diagram
   \arrow[swap]{ul}{\mathrm{i}_{M}}
 \end{tikzcd}
 \]
-commutes. In other words, for any $M \in \mathrm{ob}_{\mathbf{CMon}}$ the morphism $\mathrm{i}_{M}$ is an $I$-initial morphism for $M$. In particular, for any
+commutes.
+In other words, for any $M \in \mathrm{ob}_{\mathbf{CMon}}$ the morphism $\mathrm{i}_{M}$ is an $I$-initial morphism for $M$.
+In particular, for any
 \begin{align*}
   h
   &\in
@@ -203,10 +222,14 @@ More concretely, it must hold that $h_{!}$ is the morphism defined by
   \mapsto
   [(h(m_{1}),h(m_{2}))]
 \end{align*}
-There is a certain symmetry or better say duality in the process described above. One could have started with the functor $K$ and the function $I_{\mathrm{ob}}$ to show that for all $A \in \mathrm{ob}_{\mathbf{Ab}}$ there exists a $K$-terminal morphism for $A$. Then, dually, one can conclude that $I_{\mathrm{ob}}$ extends to a functor which is $I$.
+There is a certain symmetry or better say duality in the process described above.
+One could have started with the functor $K$ and the function $I_{\mathrm{ob}}$ to show that for all $A \in \mathrm{ob}_{\mathbf{Ab}}$ there exists a $K$-terminal morphism for $A$.
+Then, dually, one can conclude that $I_{\mathrm{ob}}$ extends to a functor which is $I$.
 \end{exa}
 \begin{prf}
-We just show the existence of the coterminal morphisms and leave the other technical details to the reader. The symmetry statement at the end of the example will be an application of the abstracted statement given a few lines further. Define
+We just show the existence of the coterminal morphisms and leave the other technical details to the reader.
+The symmetry statement at the end of the example will be an application of the abstracted statement given a few lines further.
+Define
 \begin{align*}
   g_{!}
   &\in
@@ -321,7 +344,8 @@ It is obvious that $g_{!}$ makes the diagram
   \arrow[swap]{ul}{\mathrm{i}_{M}}
 \end{tikzcd}
 \]
-commute. Let
+commute.
+Let
 \begin{align*}
   g_{!}^{\backprime}
   &\in
@@ -347,7 +371,8 @@ be any morphism such that
   \arrow[swap]{ul}{\mathrm{i}_{M}}
 \end{tikzcd}
 \]
-commutes. Then
+commutes.
+Then
 \begin{align*}
   g(m)
   &=
@@ -372,20 +397,29 @@ and hence
   =
   g_{!}([(m_{1},m_{2})])
 \end{align*}
-since morphisms of abelian groups map inverses to inverses. Thus $g$ is unique.
+since morphisms of abelian groups map inverses to inverses.
+Thus $g$ is unique.
 \\
 \phantom{proven}
 \hfill
 $\square$
 \end{prf}
-The above example \ref{exa:grothengr} provides a detailed instruction of how one is supposed to define left and right adjoint noting that a universal morphism is an optimal {\glqq}solution{\grqq} since any {\glqq}solution{\grqq} factors through it. For the record, $K$ will be a left adjoint to $I$ and $I$ will be a right adjoint to $K$. Now the definitions:
+The above example \ref{exa:grothengr} provides a detailed instruction of how one is supposed to define left and right adjoint noting that a universal morphism is an optimal {\glqq}solution{\grqq} since any {\glqq}solution{\grqq} factors through it.
+For the record, $K$ will be a left adjoint to $I$ and $I$ will be a right adjoint to $K$.
+Now the definitions:
 \begin{enumerate}
 \item[(1T)]
 A functor $F_{\alpha\beta}$ is called \textbf{left adjoint} if there exists an $F_{\alpha\beta}$-terminal morphism for all $X^{\beta}$.
 \item[(1I)]
 A functor $F_{\beta\alpha}$ is called \textbf{right adjoint} if there exists an $F_{\beta\alpha}$-initial morphism for all $X^{\alpha}$.
 \end{enumerate}
-$F \colon \mathbf{C} \rightarrow \mathbf{C}_{\omega}$ being left/right adjoint means that there exists an $F$-terminal/initial morphism for all $X^{\omega}$. This is to say that for all $X^{\omega}$ there is a terminal/initial object in $(F \downarrow \mathrm{c}_{X^{\omega}})$ and $(\mathrm{c}_{X^{\omega}} \downarrow F)$, respectively. Since universal objects are only unique up to unique isomorphism we would like to choose one for each $X^{\omega}$. But since we only demand mere existence here and have not necessarily constructed one we could choose canonically we need someone who makes the choice for us. This is essentially the same issue as we had for limit/colimit functors and remark \ref{rem:ordinaltrick} also applies here. Hence in TG we formally have to invoke the axiom of choice. To this end let $F \colon \mathbf{C} \rightarrow \mathbf{C}_{\omega}$ be a functor and define the sets
+$F \colon \mathbf{C} \rightarrow \mathbf{C}_{\omega}$ being left/right adjoint means that there exists an $F$-terminal/initial morphism for all $X^{\omega}$.
+This is to say that for all $X^{\omega}$ there is a terminal/initial object in $(F \downarrow \mathrm{c}_{X^{\omega}})$ and $(\mathrm{c}_{X^{\omega}} \downarrow F)$, respectively.
+Since universal objects are only unique up to unique isomorphism we would like to choose one for each $X^{\omega}$.
+But since we only demand mere existence here and have not necessarily constructed one we could choose canonically we need someone who makes the choice for us.
+This is essentially the same issue as we had for limit/colimit functors and remark \ref{rem:ordinaltrick} also applies here.
+Hence in TG we formally have to invoke the axiom of choice.
+To this end let $F \colon \mathbf{C} \rightarrow \mathbf{C}_{\omega}$ be a functor and define the sets
 \begin{align*}
   \mathrm{Term}_{F}(X^{\omega})
   &:=
@@ -411,7 +445,8 @@ if $F$ is left adjoint and
       \text{ is initial}
   \right\rbrace
 \end{align*}
-if $F$ is right adjoint. Then the axiom of coice of TG asserts that dependent functions
+if $F$ is right adjoint.
+Then the axiom of coice of TG asserts that dependent functions
 \begin{align*}
   c_{\mathrm{Term}}
   &\in
@@ -423,7 +458,8 @@ if $F$ is right adjoint. Then the axiom of coice of TG asserts that dependent fu
   \prod_{X^{\omega} \in \mathrm{ob}_{\mathbf{C}_{\omega}}}
   \mathrm{Init}_{F}(X^{\omega})
 \end{align*}
-exist if we did not construct the initial and terminal objects anyways as is common in category theory. The following lemma even asserts that given a left/right adjoint the choice is functorial in a unique way.
+exist if we did not construct the initial and terminal objects anyways as is common in category theory.
+The following lemma even asserts that given a left/right adjoint the choice is functorial in a unique way.
 \\
 \begin{lem}
 \label{lem:adjointto}
@@ -501,7 +537,8 @@ is natural.
 \item[(1T)]
 We only show (1I) and use the duality principle \ref{thm:dp} for this.
 \item[(1I)]
-The proof can be abstracted from example \ref{exa:grothengr}. $F_{\beta\alpha}$ being right adjoint means that for all $X^{\alpha}$ there is an initial object of
+The proof can be abstracted from example \ref{exa:grothengr}.
+$F_{\beta\alpha}$ being right adjoint means that for all $X^{\alpha}$ there is an initial object of
 \begin{align*}
   \left(
     \mathrm{c}_{X^{\alpha}}
@@ -561,7 +598,8 @@ making the diagram
   \arrow[swap]{ul}{i}
 \end{tikzcd}
 \]
-commute. In particular if we denote
+commute.
+In particular if we denote
 \begin{align*}
   c_{n}^{\alpha}
   &:=
@@ -598,7 +636,8 @@ making the diagram
   \arrow[swap]{ul}{\eta(X_{1}^{\alpha})}
 \end{tikzcd}
 \]
-commute. So defining
+commute.
+So defining
 \begin{align*}
   F^{c}
   \colon
@@ -617,7 +656,8 @@ commute. So defining
   &\mapsto
   F_{f_{12}^{\alpha}}
 \end{align*}
-yields a functor. Verifying functor property (F1) is apparent while functor property (F2) is easily derived from the {\glqq}pasted{\grqq} commutative diagram
+yields a functor.
+Verifying functor property (F1) is apparent while functor property (F2) is easily derived from the {\glqq}pasted{\grqq} commutative diagram
 \[
 \begin{tikzcd}[sep=normal]
   &
@@ -678,9 +718,18 @@ A functor $F_{\beta\alpha}$ is called \textbf{right adjoint to $F_{\alpha\beta}$
   F^{c}
 \end{align*}
 \end{enumerate}
-In particular any left/right adjoint can be regarded as left/right adjoint to $F^{c_{\mathrm{Term}}}$ and $F^{c_{\mathrm{Init}}}$, respectively. Thus {\glqq}adjoint{\grqq} and {\glqq}adjoint to{\grqq} are in some sense the same.
+In particular any left/right adjoint can be regarded as left/right adjoint to $F^{c_{\mathrm{Term}}}$ and $F^{c_{\mathrm{Init}}}$, respectively.
+Thus {\glqq}adjoint{\grqq} and {\glqq}adjoint to{\grqq} are in some sense the same.
 \\
-Now to settle the rest of the terminological questions we establish some other characterizations of left and right adjoint which in particular explain the symmetry addressed above as well as the motivation for the terminology. Note that adjoints are a special case of universal morphisms. Thus by the yoneda lemma \ref{lem:yoneda} we can change the perspective to representability. On the other hand we already hinted at a counit $\varepsilon$ and a unit $\eta$ in lemma \ref{lem:adjointto} as in abstract algebra\footnote{there, a counit is e.g. the dual pairing for tensor products of vector spaces which also makes clear why some authors use evaluation for counit and coevaluation for unit (see subsubsection \ref{sec:hlm})} and one might guess that also in this case the two possible compositions of these are both identities. All this is wrapped in the next theorem. The proof looks more intimidating than it really is. Actually, all the proofs in this subsection look so. But essentially one only uses expanding/collapsing definitions, naturality, universality and that the hom-functors are pre- and post-composition on morphisms (depending on their variance). Feel free to skip the proofs if you are short of time.
+Now to settle the rest of the terminological questions we establish some other characterizations of left and right adjoint which in particular explain the symmetry addressed above as well as the motivation for the terminology.
+Note that adjoints are a special case of universal morphisms.
+Thus by the yoneda lemma \ref{lem:yoneda} we can change the perspective to representability.
+On the other hand we already hinted at a counit $\varepsilon$ and a unit $\eta$ in lemma \ref{lem:adjointto} as in abstract algebra\footnote{there, a counit is e.g. the dual pairing for tensor products of vector spaces which also makes clear why some authors use evaluation for counit and coevaluation for unit (see subsubsection \ref{sec:hlm})} and one might guess that also in this case the two possible compositions of these are both identities.
+All this is wrapped in the next theorem.
+The proof looks more intimidating than it really is.
+Actually, all the proofs in this subsection look so.
+But essentially one only uses expanding/collapsing definitions, naturality, universality and that the hom-functors are pre- and post-composition on morphisms (depending on their variance).
+Feel free to skip the proofs if you are short of time.
 \\
 \begin{thm}
 \label{thm:adjoints}
@@ -848,7 +897,8 @@ such that
   =
   f
 \end{align*}
-implying injectivity and surjectivity all at once. To prove naturality of $\mathsf{H}$ let
+implying injectivity and surjectivity all at once.
+To prove naturality of $\mathsf{H}$ let
 \begin{align*}
   (f_{21}^{\alpha},f_{12}^{\beta})
   &\in
@@ -968,7 +1018,10 @@ and define
     F_{\beta\alpha}(X^{\beta})
   \right)
 \end{align*}
-Naturality of $\mathsf{H}^{\prime}$ and $\mathsf{H}$ is apparent from the naturality of $\varepsilon$ and $\eta$, respectively. Namely, it is formally the same as the naturality proof in {\glqq}(a) $\Rightarrow$ (c){\grqq} and {\glqq}(b) $\Rightarrow$ (c){\grqq}. So it remains to show here that $\mathsf{H}^{\prime}$ and $\mathsf{H}$ are inverse to each other. This follows immediatly from the equalities
+Naturality of $\mathsf{H}^{\prime}$ and $\mathsf{H}$ is apparent from the naturality of $\varepsilon$ and $\eta$, respectively.
+Namely, it is formally the same as the naturality proof in {\glqq}(a) $\Rightarrow$ (c){\grqq} and {\glqq}(b) $\Rightarrow$ (c){\grqq}.
+So it remains to show here that $\mathsf{H}^{\prime}$ and $\mathsf{H}$ are inverse to each other.
+This follows immediatly from the equalities
 \begin{align*}
   \left(
     \mathsf{H}(X^{\alpha},X^{\beta})
@@ -1096,7 +1149,8 @@ Let
   &\Rightarrow
   \mathrm{hom}_{\mathbf{C}_{\beta}}(F_{\alpha\beta}(\cdot),\cdot)
 \end{align*}
-be a natural isomorphism. Then define for all $X^{\alpha}$ and $X^{\beta}$
+be a natural isomorphism.
+Then define for all $X^{\alpha}$ and $X^{\beta}$
 \begin{align*}
   \varepsilon(X^{\beta})
   &:=
@@ -1304,7 +1358,8 @@ To show {\glqq}(c) $\Rightarrow$ (a){\grqq} we need to show that for all $X^{\be
     X^{\beta}
   \right)
 \end{align*}
-is an $F_{\alpha\beta}$-terminal morphism for $X^{\beta}$. So take an arbitrary 
+is an $F_{\alpha\beta}$-terminal morphism for $X^{\beta}$.
+So take an arbitrary 
 \begin{align*}
   f
   &\in
@@ -1362,9 +1417,12 @@ and since $\mathsf{H}(X^{\alpha},X^{\beta})$ is an isomorphism
   &:=
   \mathsf{H}(X^{\alpha},X^{\beta})^{-1}(f)
 \end{align*}
-is the only possible choice. By the duality principle \ref{thm:dp} we can now deduce {\glqq}(c) $\Rightarrow$ (b){\grqq}, too.
+is the only possible choice.
+By the duality principle \ref{thm:dp} we can now deduce {\glqq}(c) $\Rightarrow$ (b){\grqq}, too.
 \item[Step 2]
-To show {\glqq}(c) $\Rightarrow$ (d){\grqq} we first show that $\varepsilon$ and $\eta$ are both natural. This is an implication of the naturality of $\mathsf{H}$. For all $f_{12}^{\beta}$ we get
+To show {\glqq}(c) $\Rightarrow$ (d){\grqq} we first show that $\varepsilon$ and $\eta$ are both natural.
+This is an implication of the naturality of $\mathsf{H}$.
+For all $f_{12}^{\beta}$ we get
 \begin{align*}
   f_{12}^{\beta}
   \circ
@@ -1620,13 +1678,19 @@ All in all we get {\glqq}(c) $\Rightarrow$ (a) $\land$ (b) $\land$ (d){\grqq}.
 \hfill
 $\square$
 \end{prf}
-Note that a left adjoint stands in the left argument of the hom-functor while the right adjoint stands in the right one. Moreover there is a common notation to express that $F_{\alpha\beta}$ is left adjoint to $F_{\beta\alpha}$ - namely
+Note that a left adjoint stands in the left argument of the hom-functor while the right adjoint stands in the right one.
+Moreover there is a common notation to express that $F_{\alpha\beta}$ is left adjoint to $F_{\beta\alpha}$ - namely
 \begin{align*}
   F_{\alpha\beta}
   &\dashv
   F_{\beta\alpha}
 \end{align*}
-Having these other characterizations of adjoint functors at hand we are able to see a little more behind the idea. The careful reader familiar with Hilbert spaces and linear operators might have recognized that statement (c) in theorem \ref{thm:adjoints} is formally the same statement as the definition of the Hilbert space adjoint if one interprets the categories as Hilbert spaces, the objects as its points, the functors as linear operators and the hom-functors as scalar products. And this is in fact where the terminology {\glqq}adjoint{\grqq} stems from. In \cite{2148248a} this proves helpful in an attempt to construct a category version of a Hilbert space.\footnote{we will encounter the same process in general in section \ref{sec:metaidea} and in particular in subsubsection \ref{sec:hlm} albeit in the simpler case of a monoid} In our notes we introduced adjoints by universality (as one should always do to avoid reference to sets following the philosophy that categories are more basic) motivated by example \ref{exa:grothengr}. But, historically, statement (c) in theorem \ref{thm:adjoints} was presumably prior to our definition. This was because $\mathbf{Set}$ has the eye-catching feature that for a set $Y$ we get a natural isomorphism $\mathsf{H}$ defined by
+Having these other characterizations of adjoint functors at hand we are able to see a little more behind the idea.
+The careful reader familiar with Hilbert spaces and linear operators might have recognized that statement (c) in theorem \ref{thm:adjoints} is formally the same statement as the definition of the Hilbert space adjoint if one interprets the categories as Hilbert spaces, the objects as its points, the functors as linear operators and the hom-functors as scalar products.
+And this is in fact where the terminology {\glqq}adjoint{\grqq} stems from.
+In \cite{2148248a} this proves helpful in an attempt to construct a category version of a Hilbert space.\footnote{we will encounter the same process in general in section \ref{sec:metaidea} and in particular in subsubsection \ref{sec:hlm} albeit in the simpler case of a monoid} In our notes we introduced adjoints by universality (as one should always do to avoid reference to sets following the philosophy that categories are more basic) motivated by example \ref{exa:grothengr}.
+But, historically, statement (c) in theorem \ref{thm:adjoints} was presumably prior to our definition.
+This was because $\mathbf{Set}$ has the eye-catching feature that for a set $Y$ we get a natural isomorphism $\mathsf{H}$ defined by
 \begin{align*}
   \mathsf{H}(Y_{1},Y_{2})
   \colon
@@ -1646,7 +1710,16 @@ Having these other characterizations of adjoint functors at hand we are able to 
     f(\cdot,y_{1})
   \right)
 \end{align*}
-That is, taking the product with $Y$ is a left adjoint functor to the contravariant hom-functor for $Y$ and $\mathbf{Set}$. This process of making a function of two arguments into a function of one argument is known as Currying\footnote{named after the logician Haskell Curry} and we already made use of this in these notes when formulating the sheaf condition, for example. Currying is apparently reversible. As adjunction we can express Currying by universality, that is, without any reference to a set theory and therefore it is common to demand this property as axiom for a theory with functions as basic mathematical object. In particular, ETCS and UFP-HoTT make use of this. Note that this kind of adjunction does not only make sense in $\mathbf{Set}$ but actually in any category with binary products. The property is formalized as cartesian closed and it is in fact interesting for other categories, too. For the purpose of homotopy theory with topological spaces, for instance, it can be convenient to restrict to a subcategory of $\mathbf{Top}$ with this feature to properly handle the theory of fiber and cofiber sequences. One can achieve this by restricting to \textit{compactly generated spaces} which form a convenient\footnote{often defined as: contain all CW complexes, bicomplete, cartesian closed} category of topological spaces. Now to define cartesian closed take a category $\mathbf{C}$ with all binary products and define for each object $X_{0}$ a functor
+That is, taking the product with $Y$ is a left adjoint functor to the contravariant hom-functor for $Y$ and $\mathbf{Set}$.
+This process of making a function of two arguments into a function of one argument is known as Currying\footnote{named after the logician Haskell Curry} and we already made use of this in these notes when formulating the sheaf condition, for example.
+Currying is apparently reversible.
+As adjunction we can express Currying by universality, that is, without any reference to a set theory and therefore it is common to demand this property as axiom for a theory with functions as basic mathematical object.
+In particular, ETCS and UFP-HoTT make use of this.
+Note that this kind of adjunction does not only make sense in $\mathbf{Set}$ but actually in any category with binary products.
+The property is formalized as cartesian closed and it is in fact interesting for other categories, too.
+For the purpose of homotopy theory with topological spaces, for instance, it can be convenient to restrict to a subcategory of $\mathbf{Top}$ with this feature to properly handle the theory of fiber and cofiber sequences.
+One can achieve this by restricting to \textit{compactly generated spaces} which form a convenient\footnote{often defined as: contain all CW complexes, bicomplete, cartesian closed} category of topological spaces.
+Now to define cartesian closed take a category $\mathbf{C}$ with all binary products and define for each object $X_{0}$ a functor
 \begin{align*}
   \times_{\mathbf{C}}^{X_{0}}
   \colon
@@ -1708,7 +1781,8 @@ Of course, we also have a functor
   \times_{\mathbf{C}}
   f_{12}
 \end{align*}
-defined in a similar vein. Now a category $\mathbf{C}$ with binary products and terminal object is called \textbf{cartesian closed} if
+defined in a similar vein.
+Now a category $\mathbf{C}$ with binary products and terminal object is called \textbf{cartesian closed} if
 \begin{enumerate}
 \item[(CC)]
 the functor $\times_{\mathbf{C}}^{X_{0}}$ is left adjoint for all $X_{0}$.
@@ -1717,7 +1791,8 @@ While we are on topology anyways let us slide in an important example from homot
 \\
 \begin{exa}
 \label{exa:loopradjoint}
-The loop space $\Omega_{Y}$ of some space $Y$ is the space of $1$-loops topologized by the \textit{compact-open topology}. $\Omega$ is actually a functor
+The loop space $\Omega_{Y}$ of some space $Y$ is the space of $1$-loops topologized by the \textit{compact-open topology}.
+$\Omega$ is actually a functor
 \begin{align*}
   \Omega
   \colon
@@ -1739,7 +1814,11 @@ The loop space $\Omega_{Y}$ of some space $Y$ is the space of $1$-loops topologi
     l
   \right]
 \end{align*}
-We call $\Omega$ \textbf{loop space functor}. One can show that $\Omega$ is right adjoint. The according left adjoint is the so called reduced suspension. This is important in the course of showing that \textit{axiomatic cohomology}\footnote{for more on this see e.g. \cite{00000011}} is a special case of homotopy theory. To this end note that a sequence
+We call $\Omega$ \textbf{loop space functor}.
+One can show that $\Omega$ is right adjoint.
+The according left adjoint is the so called reduced suspension.
+This is important in the course of showing that \textit{axiomatic cohomology}\footnote{for more on this see e.g. \cite{00000011}} is a special case of homotopy theory.
+To this end note that a sequence
 \begin{align*}
   A
   &\in
@@ -1757,7 +1836,8 @@ is called \textbf{$\Omega$-spectrum} if there are weak homotopy equivalences
   \rightarrow
   \Omega(A(n+1))
 \end{align*}
-for all $n \in \mathbb{Z}$. One can then show that \textit{reduced cohomology theories}\footnote{and reduced ones suffice according to \cite{8b5861fc}}
+for all $n \in \mathbb{Z}$.
+One can then show that \textit{reduced cohomology theories}\footnote{and reduced ones suffice according to \cite{8b5861fc}}
 \begin{align*}
   h
   &\in
@@ -1777,10 +1857,14 @@ are exactly of the form
   &=
   \mathrm{hom}_{\mathbf{HTop}_{\ast}^{\textrm{CW}}}(\cdot,A(n))
 \end{align*}
-for $n \in \mathbb{Z}$. That any reduced cohomology theory is obtained so is a consequence of the \textit{Brown representability theorem}. The Brown representability theorem is about the representability of a functor as the name suggests but we do not want to say more about this important theorem here. Last note that with a more general definition for spectrum we could do the same with unreduced cohomology theories.
+for $n \in \mathbb{Z}$.
+That any reduced cohomology theory is obtained so is a consequence of the \textit{Brown representability theorem}.
+The Brown representability theorem is about the representability of a functor as the name suggests but we do not want to say more about this important theorem here.
+Last note that with a more general definition for spectrum we could do the same with unreduced cohomology theories.
 \end{exa}
 \begin{prf}
-See e.g. \cite{8b5861fc} chapter 4 for more details. Particularly for a version of the Brown representability theorem.
+See e.g. \cite{8b5861fc} chapter 4 for more details.
+Particularly for a version of the Brown representability theorem.
 \\
 \phantom{proven}
 \hfill
@@ -1790,7 +1874,8 @@ Now there is a handy corollary.
 \\
 \begin{cor}
 \label{cor:adjointequiv}
-Let $F_{\alpha\beta}$ be left adjoint to $F_{\beta\alpha}$. Then there are full subcategories $\mathbf{S}_{\alpha}$ of $\mathbf{C}_{\alpha}$ and $\mathbf{S}_{\beta}$ of $\mathbf{C}_{\beta}$ such that
+Let $F_{\alpha\beta}$ be left adjoint to $F_{\beta\alpha}$.
+Then there are full subcategories $\mathbf{S}_{\alpha}$ of $\mathbf{C}_{\alpha}$ and $\mathbf{S}_{\beta}$ of $\mathbf{C}_{\beta}$ such that
 \begin{align*}
   \mathbf{S}_{\alpha}
   &\simeq
@@ -1798,7 +1883,8 @@ Let $F_{\alpha\beta}$ be left adjoint to $F_{\beta\alpha}$. Then there are full 
 \end{align*}
 \end{cor}
 \begin{prf}
-Consider statement (d) in theorem \ref{thm:adjoints}. Define
+Consider statement (d) in theorem \ref{thm:adjoints}.
+Define
 \begin{align*}
   \mathrm{ob}_{\mathbf{S}_{\alpha}}
   &:=
@@ -1843,17 +1929,22 @@ Consider statement (d) in theorem \ref{thm:adjoints}. Define
     \right.
   \right\rbrace
 \end{align*}
-Hence $F_{\alpha\beta} \vert \mathbf{S}_{\alpha}$ can be redefined as {\glqq}the same{\grqq} functor with codomain $\mathbf{S}_{\beta}$ while $F_{\beta\alpha} \vert \mathbf{S}_{\beta}$ can be redefined as {\glqq}the same{\grqq} functor with codomain $\mathbf{S}_{\alpha}$. And the functors defined so are weakly inverse to each other by $\eta \vert \mathrm{ob}_{\mathbf{S}_{\alpha}}$ and $\varepsilon \vert \mathrm{ob}_{\mathbf{S}_{\beta}}$, respectively.
+Hence $F_{\alpha\beta} \vert \mathbf{S}_{\alpha}$ can be redefined as {\glqq}the same{\grqq} functor with codomain $\mathbf{S}_{\beta}$ while $F_{\beta\alpha} \vert \mathbf{S}_{\beta}$ can be redefined as {\glqq}the same{\grqq} functor with codomain $\mathbf{S}_{\alpha}$.
+And the functors defined so are weakly inverse to each other by $\eta \vert \mathrm{ob}_{\mathbf{S}_{\alpha}}$ and $\varepsilon \vert \mathrm{ob}_{\mathbf{S}_{\beta}}$, respectively.
 \\
 \phantom{proven}
 \hfill
 $\square$
 \end{prf}
-As usual in mathematics at some point in developing a new conception existence and uniqeness questions arise. Since not all functors are left or right adjoint to some other functor one wonders under what conditions they are. We defer the existence question for the moment because we will presently see that there are neccessary conditions on the categories. So let's turn to the uniqueness question.
+As usual in mathematics at some point in developing a new conception existence and uniqeness questions arise.
+Since not all functors are left or right adjoint to some other functor one wonders under what conditions they are.
+We defer the existence question for the moment because we will presently see that there are neccessary conditions on the categories.
+So let's turn to the uniqueness question.
 \\
 \begin{thm}
 \label{thm:adjointuniq}
-Let $F_{\alpha\beta}$ be left adjoint to $F_{\beta\alpha}$. Then
+Let $F_{\alpha\beta}$ be left adjoint to $F_{\beta\alpha}$.
+Then
 \begin{enumerate}
 \item[(a)]
 if a functor $F_{\beta\alpha}^{\backprime} \colon \mathbf{C}_{\beta} \rightarrow \mathbf{C}_{\alpha}$ is right adjoint to $F_{\alpha\beta}$ the functor $F_{\beta\alpha}$ is naturally isomorphic to $F_{\beta\alpha}^{\backprime}$.
@@ -1884,7 +1975,8 @@ Let
     X^{\beta}
   \right)
 \end{align*}
-be $F_{\alpha\beta}$-terminal morphisms for all $X^{\beta}$. Then terminality implies unique isomorphisms
+be $F_{\alpha\beta}$-terminal morphisms for all $X^{\beta}$.
+Then terminality implies unique isomorphisms
 \begin{align*}
   \mathsf{T}(X^{\beta})
   &\in
@@ -1951,7 +2043,8 @@ for all $X^{\beta}$ such that the diagram
   &
 \end{tikzcd}
 \]
-commutes for all $f_{12}^{\beta}$. Once again terminality of $\varepsilon(X^{\beta})$ and $\varepsilon^{\backprime}(X^{\beta})$ implies for all $X^{\beta}$
+commutes for all $f_{12}^{\beta}$.
+Once again terminality of $\varepsilon(X^{\beta})$ and $\varepsilon^{\backprime}(X^{\beta})$ implies for all $X^{\beta}$
 \begin{align*}
   \mathsf{T}(X^{\beta})
   \circ
@@ -1983,7 +2076,8 @@ Let
   &\Rightarrow
   F_{\beta\alpha}^{\backprime}
 \end{align*}
-be natural isomorphisms. By premise and theorem \ref{thm:adjoints} there are natural transformations
+be natural isomorphisms.
+By premise and theorem \ref{thm:adjoints} there are natural transformations
 \begin{align*}
   \varepsilon
   \colon
@@ -2400,14 +2494,17 @@ $\square$
 \end{prf}
 This kind of uniqueness is the best one can expect from a structural perspective and absolutely sufficient.
 \\
-As always in category theory one is interested if a property is preserved under composition since then one can usually build a category. Indeed, the next theorem is about the composition of adjoints being an adjoint.
+As always in category theory one is interested if a property is preserved under composition since then one can usually build a category.
+Indeed, the next theorem is about the composition of adjoints being an adjoint.
 \\
 \begin{thm}
 \label{thm:adjointcomp}
-Let $F_{\alpha\beta}$ be left adjoint to $F_{\beta\alpha}$ and let $F_{\beta\gamma}$ be left adjoint to $F_{\gamma\beta}$. Then $F_{\beta\gamma} \circ F_{\alpha\beta}$ is left adjoint to $F_{\beta\alpha} \circ F_{\gamma\beta}$.
+Let $F_{\alpha\beta}$ be left adjoint to $F_{\beta\alpha}$ and let $F_{\beta\gamma}$ be left adjoint to $F_{\gamma\beta}$.
+Then $F_{\beta\gamma} \circ F_{\alpha\beta}$ is left adjoint to $F_{\beta\alpha} \circ F_{\gamma\beta}$.
 \end{thm}
 \begin{prf}
-We prove the theorem by the adjoints characterization (d) of theorem \ref{thm:adjoints}. So assume there are natural transformations
+We prove the theorem by the adjoints characterization (d) of theorem \ref{thm:adjoints}.
+So assume there are natural transformations
 \begin{align*}
   \varepsilon_{1}
   &\colon
@@ -2441,7 +2538,8 @@ We prove the theorem by the adjoints characterization (d) of theorem \ref{thm:ad
   \circ
   F_{\beta\gamma}
 \end{align*}
-such that the respective whiskered compositions are identities as demanded in theorem \ref{thm:adjoints} (d). Then define natural transformations
+such that the respective whiskered compositions are identities as demanded in theorem \ref{thm:adjoints} (d).
+Then define natural transformations
 \begin{align*}
   \varepsilon^{\circ}
   \colon
@@ -2759,14 +2857,19 @@ $\square$
 \end{prf}
 It is now not hard to see that we can build a category with objects small categories and morphisms pairs of functors adjoint to each other.
 \\
-Now note that if $F_{\beta\alpha}$ is right adjoint then the functor $\mathrm{hom}_{\mathbf{C}_{\alpha}}(X^{\alpha},F_{\beta\alpha}(\cdot))$ is representable (for all $X^{\alpha}$) by theorem \ref{thm:adjoints}. But by theorem \ref{thm:cohomiscont} covariant hom-functors preserve limits and we might guess that by duality left adjoints preserve colimits while right adjoints preserve limits. And, in fact, this is a striking property of adjoints.
+Now note that if $F_{\beta\alpha}$ is right adjoint then the functor $\mathrm{hom}_{\mathbf{C}_{\alpha}}(X^{\alpha},F_{\beta\alpha}(\cdot))$ is representable (for all $X^{\alpha}$) by theorem \ref{thm:adjoints}.
+But by theorem \ref{thm:cohomiscont} covariant hom-functors preserve limits and we might guess that by duality left adjoints preserve colimits while right adjoints preserve limits.
+And, in fact, this is a striking property of adjoints.
 \\
 \begin{thm}
 \label{thm:adjointlimit}
-Let $\mathbf{C}_{\alpha},\mathbf{C}_{\beta}$ be locally small. Moreover let $F_{\alpha\beta}$ be left adjoint to $F_{\beta\alpha}$. Then $F_{\alpha\beta}$ is cocontinuous while $F_{\beta\alpha}$ is continuous.
+Let $\mathbf{C}_{\alpha},\mathbf{C}_{\beta}$ be locally small.
+Moreover let $F_{\alpha\beta}$ be left adjoint to $F_{\beta\alpha}$.
+Then $F_{\alpha\beta}$ is cocontinuous while $F_{\beta\alpha}$ is continuous.
 \end{thm}
 \begin{prf}
-Let $\mathbf{J}$ be small and $F \colon \mathbf{J} \rightarrow \mathbf{C}_{\alpha}$ be a functor. Furthermore let
+Let $\mathbf{J}$ be small and $F \colon \mathbf{J} \rightarrow \mathbf{C}_{\alpha}$ be a functor.
+Furthermore let
 \begin{align*}
   \left(
     F,
@@ -2774,7 +2877,8 @@ Let $\mathbf{J}$ be small and $F \colon \mathbf{J} \rightarrow \mathbf{C}_{\alph
     \mathsf{C}_{I}^{\prime}
   \right)
 \end{align*}
-be a colimit of $F$. We have to show that then\footnote{in the notation of subsection \ref{sec:limit} where we defined cocontinuous}
+be a colimit of $F$.
+We have to show that then\footnote{in the notation of subsection \ref{sec:limit} where we defined cocontinuous}
 \begin{align*}
   \left(
     F_{\alpha\beta} \circ F,
@@ -2782,7 +2886,8 @@ be a colimit of $F$. We have to show that then\footnote{in the notation of subse
     F_{\alpha\beta}[\mathsf{C}_{I}^{\prime}]
   \right)
 \end{align*}
-is a colimit $F_{\alpha\beta} \circ F$. That is, we have to show that for any cocone $\mathsf{C}^{\prime}$ to $F_{\alpha\beta} \circ F$ with apex $X^{\beta}$ there is a unique
+is a colimit $F_{\alpha\beta} \circ F$.
+That is, we have to show that for any cocone $\mathsf{C}^{\prime}$ to $F_{\alpha\beta} \circ F$ with apex $X^{\beta}$ there is a unique
 \begin{align*}
   f^{\beta}
   \in
@@ -2823,7 +2928,8 @@ such that the diagram
   &
 \end{tikzcd}
 \]
-commutes for all $J_{1},J_{2},j_{12}$. Our requirements guarantee the existence of a natural isomorphism
+commutes for all $J_{1},J_{2},j_{12}$.
+Our requirements guarantee the existence of a natural isomorphism
 \begin{align*}
   \mathsf{H}^{\prime}
   \colon
@@ -2839,7 +2945,8 @@ commutes for all $J_{1},J_{2},j_{12}$. Our requirements guarantee the existence 
     F_{\beta\alpha}(\cdot)
   \right)
 \end{align*}
-with inverse $\mathsf{H} := (\mathsf{H}^{\prime})^{-1}$. Applying $\mathsf{H}^{\prime}$ to the cocone $\mathsf{C}^{\prime}$ yields the cocone mapping $J$ to
+with inverse $\mathsf{H} := (\mathsf{H}^{\prime})^{-1}$.
+Applying $\mathsf{H}^{\prime}$ to the cocone $\mathsf{C}^{\prime}$ yields the cocone mapping $J$ to
 \begin{align*}
   \mathsf{C}_{\mathsf{H}^{\prime}}^{\prime}(J)
   &:=
@@ -2848,7 +2955,8 @@ with inverse $\mathsf{H} := (\mathsf{H}^{\prime})^{-1}$. Applying $\mathsf{H}^{\
     \mathsf{C}^{\prime}(J)
   \right)
 \end{align*}
-to $F$ with apex $F_{\beta\alpha}(X^{\beta})$. Namely with the temporary agreement for this proof that for all $J$
+to $F$ with apex $F_{\beta\alpha}(X^{\beta})$.
+Namely with the temporary agreement for this proof that for all $J$
 \begin{align*}
   \mathsf{H}_{J}^{\prime}
   &\doteq
@@ -2970,7 +3078,8 @@ such that
   &
 \end{tikzcd}
 \]
-commutes for all $J_{1},J_{2},j_{12}$. Then applying $\mathsf{H}$ to this diagram yields the commutativity of
+commutes for all $J_{1},J_{2},j_{12}$.
+Then applying $\mathsf{H}$ to this diagram yields the commutativity of
 \[
 \begin{tikzcd}[sep=huge]
   F_{\alpha\beta}
@@ -3012,7 +3121,8 @@ for all $J_{1},J_{2},j_{12}$ where
   \right)
   (f)
 \end{align*}
-in very much the same way as above. Namely under the premise
+in very much the same way as above.
+Namely under the premise
 \begin{align*}
   f
   \circ
@@ -3191,17 +3301,26 @@ But this implies
   =
   f^{\beta}
 \end{align*}
-proving the uniqueness of $f_{!}$ since $\mathsf{H}^{\prime}$ is an isomorphism. The rest of the proof is recognizing that $F_{\beta\alpha}$ is continuous. This is just the dual statement of $F_{\alpha\beta}$ is cocontinuous which we have just proven. So the duality principle \ref{thm:dp} implies the rest.
+proving the uniqueness of $f_{!}$ since $\mathsf{H}^{\prime}$ is an isomorphism.
+The rest of the proof is recognizing that $F_{\beta\alpha}$ is continuous.
+This is just the dual statement of $F_{\alpha\beta}$ is cocontinuous which we have just proven.
+So the duality principle \ref{thm:dp} implies the rest.
 \\
 \phantom{proven}
 \hfill
 $\square$
 \end{prf}
-At this point, since $F_{\mathrm{Top}}$ forgets structure we can be pretty sure that it is a right adjoint and hence continuous. But we already know that from subsection \ref{sec:limit}. What we don't know yet is if $F_{\mathrm{Top}}$ is cocontinuous. And we promised to prove that here. By theorem \ref{thm:adjointlimit} it would suffice to prove that $F_{\mathrm{Top}}$ is also left adjoint. We provide a left and a right adjoint in the following example.
+At this point, since $F_{\mathrm{Top}}$ forgets structure we can be pretty sure that it is a right adjoint and hence continuous.
+But we already know that from subsection \ref{sec:limit}.
+What we don't know yet is if $F_{\mathrm{Top}}$ is cocontinuous.
+And we promised to prove that here.
+By theorem \ref{thm:adjointlimit} it would suffice to prove that $F_{\mathrm{Top}}$ is also left adjoint.
+We provide a left and a right adjoint in the following example.
 \\
 \begin{exa}
 \label{exa:ftopadjoints}
-If $F_{\mathrm{Top}}$ is right adjoint there must be a functor $L_{\mathrm{Top}} \colon \mathbf{Set} \rightarrow \mathbf{Top}$ to which it is right adjoint. This means that we must have
+If $F_{\mathrm{Top}}$ is right adjoint there must be a functor $L_{\mathrm{Top}} \colon \mathbf{Set} \rightarrow \mathbf{Top}$ to which it is right adjoint.
+This means that we must have
 \begin{align*}
   \mathrm{hom}_{\mathbf{Top}}(L_{\mathrm{Top}}(\cdot),\cdot)
   \cong
@@ -3231,7 +3350,8 @@ we could always make it continuous by topologizing $X$ as discrete space with th
 \end{align*}
 is left adjoint to $F_{\mathrm{Top}}$.
 \\
-If $F_{\mathrm{Top}}$ is left adjoint there must be a functor $R_{\mathrm{Top}} \colon \mathbf{Set} \rightarrow \mathbf{Top}$ to which it is right adjoint. This means that we must have
+If $F_{\mathrm{Top}}$ is left adjoint there must be a functor $R_{\mathrm{Top}} \colon \mathbf{Set} \rightarrow \mathbf{Top}$ to which it is right adjoint.
+This means that we must have
 \begin{align*}
   \mathrm{hom}_{\mathbf{Set}}(F_{\mathrm{Top}}(\cdot),\cdot)
   \cong
@@ -3268,14 +3388,18 @@ Just note as already mentioned that a function $f$ is continous if $\mathrm{dom}
 \hfill
 $\square$
 \end{prf}
-Particularly, theorem \ref{thm:adjointlimit} yields necessary conditions for functors to be left or right adjoint. Therefore if we ask for the existence of adjoint functors we already have to demand continuity and cocontinuity, respectively. Theorems proving the existence under these premises (among others) are often called adjoint functor theorems. A particular famous and important one is the following due to Freyd.
+Particularly, theorem \ref{thm:adjointlimit} yields necessary conditions for functors to be left or right adjoint.
+Therefore if we ask for the existence of adjoint functors we already have to demand continuity and cocontinuity, respectively.
+Theorems proving the existence under these premises (among others) are often called adjoint functor theorems.
+A particular famous and important one is the following due to Freyd.
 \\
 \begin{thm}[Freyd]
 \label{thm:aftfreyd}
 Let $\mathbf{C}_{\alpha},\mathbf{C}_{\beta}$ be locally small and
 \begin{enumerate}
 \item[(1T)]
-$F_{\beta\alpha}$ be a contiuous functor. If $\mathbf{C}_{\beta}$ is complete and if
+$F_{\beta\alpha}$ be a contiuous functor.
+If $\mathbf{C}_{\beta}$ is complete and if
 \begin{enumerate}
 \item[(SSC)]
 for all $X^{\alpha}$ there is a set $Y_{X^{\alpha}}$ and morphisms
@@ -3319,7 +3443,8 @@ holds for some $y_{0} \in Y_{X^{\alpha}}$ and
 \end{enumerate}
 then there is a functor $F_{\alpha\beta}$ which is left adjoint to $F_{\beta\alpha}$.
 \item[(1I)]
-$F_{\alpha\beta}$ be a cocontiuous functor. If $\mathbf{C}_{\alpha}$ is cocomplete and if
+$F_{\alpha\beta}$ be a cocontiuous functor.
+If $\mathbf{C}_{\alpha}$ is cocomplete and if
 \begin{enumerate}
 \item[(SSC$^\prime$)]
 for all $X^{\beta}$ there is a set $Y_{X^{\beta}}$ and morphisms
@@ -3371,4 +3496,7 @@ The duality principle \ref{thm:dp} and presumebly any book about category theory
 \hfill
 $\square$
 \end{prf}
-Here is a good point to stop the development of the general theory about adjoints since we do not need more for the moment. That is also why we didn't prove Freyd's adjoint functor theorem. We do not actually need it in these notes. What we want to do is to look at an alternative proof of the density theorem \ref{thm:density} which provides some more insight on the yoneda functor.
+Here is a good point to stop the development of the general theory about adjoints since we do not need more for the moment.
+That is also why we didn't prove Freyd's adjoint functor theorem.
+We do not actually need it in these notes.
+What we want to do is to look at an alternative proof of the density theorem \ref{thm:density} which provides some more insight on the yoneda functor.

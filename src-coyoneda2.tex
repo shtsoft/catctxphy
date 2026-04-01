@@ -53,7 +53,9 @@ define functors
   &\mapsto
   f_{21}^{\textrm{op}}
 \end{align*}
-$\Pi_{F}(X_{0}^{\omega})$ is called \textbf{canonical projection (of $F$ w.r.t. $X_{0}^{\omega}$)} while $\Pi_{F}^{\prime}(X_{0}^{\omega})$ is called \textbf{canonical coprojection (of $F$ w.r.t. $X_{0}^{\omega}$)}. Furthermore, for this subsubsection, let us make the agreement that $\mathbf{J}$ denotes a small category and $P \colon \mathbf{J}^{\textrm{op}} \rightarrow \mathbf{Set}$ a presheaf on $\mathbf{J}$. If $\Phi_{1}$ and $\Phi_{2}$ denote the isomorphisms
+$\Pi_{F}(X_{0}^{\omega})$ is called \textbf{canonical projection (of $F$ w.r.t. $X_{0}^{\omega}$)} while $\Pi_{F}^{\prime}(X_{0}^{\omega})$ is called \textbf{canonical coprojection (of $F$ w.r.t. $X_{0}^{\omega}$)}.
+Furthermore, for this subsubsection, let us make the agreement that $\mathbf{J}$ denotes a small category and $P \colon \mathbf{J}^{\textrm{op}} \rightarrow \mathbf{Set}$ a presheaf on $\mathbf{J}$.
+If $\Phi_{1}$ and $\Phi_{2}$ denote the isomorphisms
 \begin{align*}
   \mathbf{J}
   \slash
@@ -123,7 +125,8 @@ the equalities
   \circ
   \Phi_{2}
 \end{align*}
-Now presheaves $P$ have the property that they can be expressed by a hom-functor even if they are not representable. This is because an element $y$ of a set $Y$ is structurally the same as the function
+Now presheaves $P$ have the property that they can be expressed by a hom-functor even if they are not representable.
+This is because an element $y$ of a set $Y$ is structurally the same as the function
 \begin{align*}
   f_{y}
   \colon
@@ -135,13 +138,16 @@ Now presheaves $P$ have the property that they can be expressed by a hom-functor
   &\mapsto
   y
 \end{align*}
-This is one of the main features of ETCS as we will see in subsection \ref{sec:internaliz}. Anyways, this suggests that
+This is one of the main features of ETCS as we will see in subsection \ref{sec:internaliz}.
+Anyways, this suggests that
 \begin{align*}
   P
   \cong
   \mathrm{hom}_{\mathbf{Set}}(1_{\mathbf{Set}},P(\cdot))
 \end{align*}
-and it might be interesting to take this new perspective into account. When it comes to presheaves the yoneda lemma \ref{lem:yoneda} is clearly worth to look at. So let's see what we can do with the applied yoneda probing
+and it might be interesting to take this new perspective into account.
+When it comes to presheaves the yoneda lemma \ref{lem:yoneda} is clearly worth to look at.
+So let's see what we can do with the applied yoneda probing
 \begin{align*}
   \mathrm{prob}_{\mathrm{y}}
   \left(
@@ -173,13 +179,15 @@ This is to say that for all $J_{1},J_{2},j_{21}^{\textrm{op}}$ the diagram
   \mathrm{hom}_{\mathbf{Set}}(1_{\mathbf{Set}},P(J_{1}))
 \end{tikzcd}
 \]
-commutes. Since for each $j \in \mathrm{hom}_{\mathbf{J}}(J,J_{0})$ we get a morphism
+commutes.
+Since for each $j \in \mathrm{hom}_{\mathbf{J}}(J,J_{0})$ we get a morphism
 \begin{align*}
   (\mathsf{T}(J))(j)
   &\in
   \mathrm{hom}_{\mathbf{Set}}(1_{\mathbf{Set}},P(J))
 \end{align*}
-we can consider $\mathsf{T}$ a familiy of morphisms indexed by the slice category $\mathbf{J} \slash J_{0}$ such that the naturality diagram commutes. To this end, first define
+we can consider $\mathsf{T}$ a familiy of morphisms indexed by the slice category $\mathbf{J} \slash J_{0}$ such that the naturality diagram commutes.
+To this end, first define
 \begin{align*}
   P_{J_{0}}
   &=
@@ -242,7 +250,8 @@ commutes for all
   &\in
   \mathrm{mor}_{\mathbf{J} \slash J_{0}}(j_{1},j_{2})
 \end{align*}
-is equivalent to $\mathsf{T}$ natural. This is since if $\mathsf{T}$ is natural then for all
+is equivalent to $\mathsf{T}$ natural.
+This is since if $\mathsf{T}$ is natural then for all
 \begin{align*}
   j_{1}
   &\in
@@ -383,7 +392,8 @@ which is true by definition of the slice catgeory
   \right)
   (j_{2})
 \end{align*}
-What we have shown is that $\mathsf{T}$ is natural if and only if $\mathsf{C}$ is a cone to $P_{J_{0}}$ with apex $1_{\mathbf{Set}}$. As a formula
+What we have shown is that $\mathsf{T}$ is natural if and only if $\mathsf{C}$ is a cone to $P_{J_{0}}$ with apex $1_{\mathbf{Set}}$.
+As a formula
 \begin{align*}
   \mathrm{prob}_{\mathrm{y}}
   \left(
@@ -492,13 +502,20 @@ for all $J$ if the colimits exist.
 \end{enumerate}
 \end{prp}
 \begin{prf}
-We consider propositions just as statements which one has to prove or disprove. So no proof here.
+We consider propositions just as statements which one has to prove or disprove.
+So no proof here.
 \\
 \phantom{proven}
 \hfill
 $\square$
 \end{prf}
-If proposition \ref{prp:genyoneda} is provable then it makes sense to refer to part (Y) as generalized yoneda lemma and to part (Y$_{\mathbf{C}}^{\prime}$) as generalized co-Yoneda lemma due to theorem \ref{thm:yonedalimit}. The case of $\mathbf{C} = \mathbf{Set}$ in part (Y$_{\mathbf{C}}^{\prime}$) would then consequently be referred to as co-Yoneda lemma. To spoil the answer: proposition \ref{prp:genyoneda} is provable. However, it is more convenient to use Kan extensions in the discussion as in \cite{52fbba46} in the chapter about Kan extensions. And the discussion should take place in a further subsection called {\glqq}Kan extension{\grqq} we don't have. The technical backbone is essentially the next lemma about a more general version of a Yoneda probing characterization by cones. For this purpose note that
+If proposition \ref{prp:genyoneda} is provable then it makes sense to refer to part (Y) as generalized yoneda lemma and to part (Y$_{\mathbf{C}}^{\prime}$) as generalized co-Yoneda lemma due to theorem \ref{thm:yonedalimit}.
+The case of $\mathbf{C} = \mathbf{Set}$ in part (Y$_{\mathbf{C}}^{\prime}$) would then consequently be referred to as co-Yoneda lemma.
+To spoil the answer: proposition \ref{prp:genyoneda} is provable.
+However, it is more convenient to use Kan extensions in the discussion as in \cite{52fbba46} in the chapter about Kan extensions.
+And the discussion should take place in a further subsection called {\glqq}Kan extension{\grqq} we don't have.
+The technical backbone is essentially the next lemma about a more general version of a Yoneda probing characterization by cones.
+For this purpose note that
 \begin{align*}
   P
   &\cong
@@ -508,7 +525,8 @@ and for any functor $A \colon \mathbf{J}^{\textrm{op}} \to \mathbf{C}$
 \begin{align*}
   \mathrm{hom}_{\mathbf{C}}(X,A(\cdot))
 \end{align*}
-is still a presheaf for all $X$. But the interpretation of corollaries \ref{cor:yoneda1} to \ref{cor:yoneda3} suggest that the set
+is still a presheaf for all $X$.
+But the interpretation of corollaries \ref{cor:yoneda1} to \ref{cor:yoneda3} suggest that the set
 \begin{align*}
   \bigcup_{X}
   \mathrm{hom}_{\mathbf{C}}(X,A(J))
@@ -521,15 +539,19 @@ fully determines $A(J)$ for all $J$ and that
     A(j_{21}^{\textrm{op}})
   \right)
 \end{align*}
-determines $A(j_{21}^{\textrm{op}})$. Hence the family of presheaves
+determines $A(j_{21}^{\textrm{op}})$.
+Hence the family of presheaves
 \begin{align*}
   \mathrm{hom}_{\mathbf{C}}(X,A(\cdot))
 \end{align*}
-indexed by $X$ contains essentially all the information about the functor $A$. This suggests that we can treat arbitrary functors with methods known from presheaves. That this works will become clearer in the following.
+indexed by $X$ contains essentially all the information about the functor $A$.
+This suggests that we can treat arbitrary functors with methods known from presheaves.
+That this works will become clearer in the following.
 \\
 \begin{lem}
 \label{lem:genyonedaprobing}
-Let $\mathbf{C}_{\alpha}$ and $\mathbf{C}_{\beta}$ be locally small. Moreover
+Let $\mathbf{C}_{\alpha}$ and $\mathbf{C}_{\beta}$ be locally small.
+Moreover
 \begin{enumerate}
 \item[(YP)]
 let
@@ -546,7 +568,8 @@ let
   &\rightarrow
   \mathbf{C}_{\beta}
 \end{align*}
-be functors. If we define
+be functors.
+If we define
 \begin{align*}
   A^{\prime}
   &:=
@@ -587,7 +610,8 @@ let
   &\rightarrow
   \mathbf{C}_{\beta}
 \end{align*}
-be functors. If we define
+be functors.
+If we define
 \begin{align*}
   A
   &:=
@@ -616,7 +640,8 @@ then there is an isomorphism
 \end{enumerate}
 \end{lem}
 \begin{prf}
-We put this as reader's exercise since you just have to emulate the proof of one of the two special cases we proved before and after this lemma. This is just a little more cumbersome in our setting regarding the comma categories serving as index categories.
+We put this as reader's exercise since you just have to emulate the proof of one of the two special cases we proved before and after this lemma.
+This is just a little more cumbersome in our setting regarding the comma categories serving as index categories.
 \\
 \phantom{proven}
 \hfill
@@ -632,7 +657,8 @@ We only prove the special case
   &=
   1_{\mathbf{Set}}
 \end{align*}
-in case of (YP) of lemma \ref{lem:genyonedaprobing} and its dual w.r.t. $\mathbf{C}_{\beta}$.
+in case of (YP) of lemma \ref{lem:genyonedaprobing} and its dual w.r.t.
+$\mathbf{C}_{\beta}$.
 \\
 \begin{lem}
 \label{lem:elemyonedaprobing}
@@ -647,7 +673,8 @@ Let
   &\rightarrow
   \mathbf{C}
 \end{align*}
-be a functor. If we define
+be a functor.
+If we define
 \begin{align*}
   A_{P}
   &:=
@@ -678,7 +705,8 @@ Let
   &\rightarrow
   \mathbf{C}
 \end{align*}
-be a functor. If we define
+be a functor.
+If we define
 \begin{align*}
   A_{P}
   &:=
@@ -737,13 +765,15 @@ means that for all $J_{1},J_{2},j_{12}^{\textrm{op}}$ the diagram
   \mathrm{hom}_{\mathbf{C}}(A^{\textrm{op}}(J_{1}),X_{0})
 \end{tikzcd}
 \]
-commutes. Since for each $z \in P(J)$ we get a morphism
+commutes.
+Since for each $z \in P(J)$ we get a morphism
 \begin{align*}
   (\mathsf{T}(J))(z)
   &\in
   \mathrm{hom}_{\mathbf{C}}(A^{\textrm{op}}(J),X_{0})
 \end{align*}
-we can consider $\mathsf{T}$ a family of morphisms indexed by the category of coelements of $P$ such that the naturality diagram commutes. To this end note that
+we can consider $\mathsf{T}$ a family of morphisms indexed by the category of coelements of $P$ such that the naturality diagram commutes.
+To this end note that
 \begin{align*}
   A_{P}(j_{21}^{\textrm{op}})
   =
@@ -799,7 +829,8 @@ commutes for all
     (J_{1},z_{2})
   \right)
 \end{align*}
-is equivalent to $\mathsf{T}$ natural. This is since if $\mathsf{T}$ is natural then for all
+is equivalent to $\mathsf{T}$ natural.
+This is since if $\mathsf{T}$ is natural then for all
 \begin{align*}
   j_{21}^{\textrm{op}}
   &\in
@@ -917,11 +948,14 @@ which is true by definition of the catgeory of colements
 \hfill
 $\square$
 \end{prf}
-With this characterization by cones the next interesting question which comes to our mind is if limiting cones and colimiting cocones correspond to $F$-terminal arrows and $F$-initial arrows, respectively, for some functor $F$. But due to our asymmetric special case we considered in lemma \ref{lem:elemyonedaprobing} where we used $P$ just as indexing the initial case seems more interseting. Hence let's see what happens if there are always colimiting cocones.
+With this characterization by cones the next interesting question which comes to our mind is if limiting cones and colimiting cocones correspond to $F$-terminal arrows and $F$-initial arrows, respectively, for some functor $F$.
+But due to our asymmetric special case we considered in lemma \ref{lem:elemyonedaprobing} where we used $P$ just as indexing the initial case seems more interseting.
+Hence let's see what happens if there are always colimiting cocones.
 \\
 \begin{thm}
 \label{thm:initprobisinitcone}
-Let $\mathbf{C}$ be a cocomplete category and let $A \colon \mathbf{J} \rightarrow \mathbf{C}$ be a functor. Then the functor
+Let $\mathbf{C}$ be a cocomplete category and let $A \colon \mathbf{J} \rightarrow \mathbf{C}$ be a functor.
+Then the functor
 \begin{align*}
   R_{A}
   \colon
@@ -948,7 +982,9 @@ Let $\mathbf{C}$ be a cocomplete category and let $A \colon \mathbf{J} \rightarr
 is right adjoint.
 \end{thm}
 \begin{prf}
-We are looking for an $R_{A}$-initial morphism for all $P$. So take $P$ arbitrary but fixed. $R_{A}$-initiality is to say that for some $X_{P}$ we have a morphism
+We are looking for an $R_{A}$-initial morphism for all $P$.
+So take $P$ arbitrary but fixed.
+$R_{A}$-initiality is to say that for some $X_{P}$ we have a morphism
 \begin{align*}
   \mathsf{i}
   &\in
@@ -982,7 +1018,8 @@ making the diagram
   \arrow[swap]{lu}{\mathsf{i}}
 \end{tikzcd}
 \]
-commute. But what we have shown in lemma \ref{lem:genyonedaprobing} is that the statement {\glqq}$\mathsf{T}$ is natural{\grqq} corresponds to a cocone $\mathsf{C}^{\prime}$ to
+commute.
+But what we have shown in lemma \ref{lem:genyonedaprobing} is that the statement {\glqq}$\mathsf{T}$ is natural{\grqq} corresponds to a cocone $\mathsf{C}^{\prime}$ to
 \begin{align*}
   A_{P}
   &:=
@@ -990,7 +1027,9 @@ commute. But what we have shown in lemma \ref{lem:genyonedaprobing} is that the 
   \circ
   \pi_{P}
 \end{align*}
-with apex $X$ and our premise is that $\mathbf{C}$ is cocomplete. Hence there must be a colimiting cocone $\mathsf{C}_{I}^{\prime} \doteq \mathsf{C}_{I}^{\prime}[P]$ to $A_{P}$ with apex $X_{P}$. This means that for each cocone $\mathsf{C}^{\prime}$ there is a unique
+with apex $X$ and our premise is that $\mathbf{C}$ is cocomplete.
+Hence there must be a colimiting cocone $\mathsf{C}_{I}^{\prime} \doteq \mathsf{C}_{I}^{\prime}[P]$ to $A_{P}$ with apex $X_{P}$.
+This means that for each cocone $\mathsf{C}^{\prime}$ there is a unique
 \begin{align*}
   \mathsf{T}_{!}
   \in
@@ -1027,7 +1066,8 @@ for all
   \in
   \mathrm{ob}_{\int_{\mathbf{J}}^{\prime}P}
 \end{align*}
-since $\mathrm{C}_{I}^{\prime}$ is colimiting. Hence define
+since $\mathrm{C}_{I}^{\prime}$ is colimiting.
+Hence define
 \begin{align*}
   \mathsf{i}
   \doteq
@@ -1062,7 +1102,8 @@ is the unique morphism such that
   &=
   (\mathsf{T}(J))(z)
 \end{align*}
-for all $J$ and $z \in P(J)$. But these last equations are certainly equivalent to
+for all $J$ and $z \in P(J)$.
+But these last equations are certainly equivalent to
 \begin{align*}
   R_{A}(\mathsf{T}_{!})
   \circ
@@ -1080,7 +1121,8 @@ We now look at the construction of the functor to which $R_{A}$ is right adjoint
 \\
 \begin{cst}
 \label{cst:la}
-Staying in the notation of this theorem \ref{thm:initprobisinitcone} let us now inspect the proof of theorem \ref{thm:initprobisinitcone} and lemma \ref{lem:adjointto} to construct a functor to which $R_{A}$ is right adjoint. By assumption we have a colimiting cocone $\mathsf{C}_{I}^{\prime}[P]$ to $A_{P}$ with apex $X_{P}$ for each $P$ and hence a choice function $c_{\mathrm{Colim}}$ choosing a colimit of $A_{P}$ for each $P$ with
+Staying in the notation of this theorem \ref{thm:initprobisinitcone} let us now inspect the proof of theorem \ref{thm:initprobisinitcone} and lemma \ref{lem:adjointto} to construct a functor to which $R_{A}$ is right adjoint.
+By assumption we have a colimiting cocone $\mathsf{C}_{I}^{\prime}[P]$ to $A_{P}$ with apex $X_{P}$ for each $P$ and hence a choice function $c_{\mathrm{Colim}}$ choosing a colimit of $A_{P}$ for each $P$ with
 \begin{align*}
   c_{\mathrm{Colim}}(A_{P})
   &=
@@ -1099,7 +1141,9 @@ Note that we write
   &=
   X_{P}
 \end{align*}
-in accordance with our convention concerning colimit functors with a choice function clear from context. This choice function allows us to choose $R_{A}$-initial morphisms for all $P$. Namely
+in accordance with our convention concerning colimit functors with a choice function clear from context.
+This choice function allows us to choose $R_{A}$-initial morphisms for all $P$.
+Namely
 \begin{align*}
   c_{\mathrm{Init}}
   \colon
@@ -1146,7 +1190,8 @@ Hence from lemma \ref{lem:adjointto} we get a unique functor
   &\rightarrow
   \mathbf{C}
 \end{align*}
-to which $R_{A}$ is right adjoint. This functor satisfies
+to which $R_{A}$ is right adjoint.
+This functor satisfies
 \begin{align*}
   L_{A}^{c_{\mathrm{Init}}}(P)
   &=
@@ -1200,7 +1245,10 @@ where $L_{\mathsf{P}_{12}}$ is the unique morphism such that
   \arrow[swap]{ul}{\mathsf{i}[P_{1}]}
 \end{tikzcd}
 \]
-commutes. So if we can explicitly construct the colimits which prove cocompleteness of $\mathbf{C}$ in theorem \ref{thm:initprobisinitcone} then we can explicitly construct the functor $L_{A}$, too. For illustrative purposes (among other things) we construct $L_{A}$ on representable presheaves. First note that for all $J$ the object $(J,\mathrm{id}_{J})$ is a terminal object of
+commutes.
+So if we can explicitly construct the colimits which prove cocompleteness of $\mathbf{C}$ in theorem \ref{thm:initprobisinitcone} then we can explicitly construct the functor $L_{A}$, too.
+For illustrative purposes (among other things) we construct $L_{A}$ on representable presheaves.
+First note that for all $J$ the object $(J,\mathrm{id}_{J})$ is a terminal object of
 \begin{align*}
   \int_{\mathbf{J}}^{\prime}
   \mathrm{y}_{\mathbf{J}}(J)
@@ -1229,7 +1277,8 @@ In particular, those of
   \circ
   \pi_{\mathrm{y}_{\mathbf{J}}(J)}
 \end{align*}
-for all $J$. Hence let $c_{\mathrm{Colim}}$ be so that for all $J$
+for all $J$.
+Hence let $c_{\mathrm{Colim}}$ be so that for all $J$
 \begin{align*}
   c_{\mathrm{Colim}}
   \left(
@@ -1257,7 +1306,9 @@ with
   &=
   A_{\mathrm{y}_{\mathbf{J}}(J)}(j_{1})
 \end{align*}
-Just as theorem \ref{thm:limonuniob} dictates. Now let $c_{\mathrm{Init}}$ according to $c_{\mathrm{Colim}}$ as earlier in the construction. Then we get
+Just as theorem \ref{thm:limonuniob} dictates.
+Now let $c_{\mathrm{Init}}$ according to $c_{\mathrm{Colim}}$ as earlier in the construction.
+Then we get
 \begin{align*}
   L_{A}^{c_{\mathrm{Init}}}
   \left(
@@ -1280,7 +1331,8 @@ Just as theorem \ref{thm:limonuniob} dictates. Now let $c_{\mathrm{Init}}$ accor
   =
   A(J)
 \end{align*}
-for all $J$. For $J_{1},J_{2},j_{12}$ take
+for all $J$.
+For $J_{1},J_{2},j_{12}$ take
 \begin{align*}
   P_{1}
   &:=
@@ -1412,7 +1464,8 @@ Essentially nothing left to prove.
 \hfill
 $\square$
 \end{prf}
-The careful reader might have recognized that the density theorem \ref{thm:density} is somehow contained in the preceding theorem \ref{thm:initprobisinitcone}. Namely if $A$ is taken to be the yoneda functor $\mathrm{y}_{\mathbf{C}}$.
+The careful reader might have recognized that the density theorem \ref{thm:density} is somehow contained in the preceding theorem \ref{thm:initprobisinitcone}.
+Namely if $A$ is taken to be the yoneda functor $\mathrm{y}_{\mathbf{C}}$.
 \\
 \begin{cor}[density]
 \label{cor:density}
@@ -1436,7 +1489,8 @@ By theorem \ref{thm:setcocomplete} and theorem \ref{thm:funccatbicomplete} we kn
 \begin{align*}
   \mathbf{Set}^{\mathbf{J}^{\textrm{op}}}
 \end{align*}
-is cocomplete. So applying theorem \ref{thm:initprobisinitcone} to the Yoneda functor $\mathrm{y}_{\mathbf{J}}$ we get
+is cocomplete.
+So applying theorem \ref{thm:initprobisinitcone} to the Yoneda functor $\mathrm{y}_{\mathbf{J}}$ we get
 \begin{align*}
   \left(
     R_{\mathrm{y}_{\mathbf{J}}}(P)
@@ -1451,13 +1505,16 @@ is cocomplete. So applying theorem \ref{thm:initprobisinitcone} to the Yoneda fu
   \cong
   P(J)
 \end{align*}
-by the Yoneda lemma \ref{lem:yoneda}. Hence
+by the Yoneda lemma \ref{lem:yoneda}.
+Hence
 \begin{align*}
   R_{\mathrm{y}_{\mathbf{J}}}
   \cong
   \mathrm{id}_{\mathbf{Set}^{\mathbf{J}^{\textrm{op}}}}
 \end{align*}
-naturally. But up to isomorphism the left adjoint to the identity functor is clearly the identity functor itself. By theorem \ref{thm:adjointuniq} about the uniqueness of adjoints we must then have
+naturally.
+But up to isomorphism the left adjoint to the identity functor is clearly the identity functor itself.
+By theorem \ref{thm:adjointuniq} about the uniqueness of adjoints we must then have
 \begin{align*}
   L_{\mathrm{y}_{\mathbf{J}}}
   &\cong
@@ -1476,7 +1533,10 @@ and thus
 \hfill
 $\square$
 \end{prf}
-By the way, from what we have seen here it is not surprising that the density theorem \ref{thm:density} has something to do with the co-Yoneda lemma from proposition \ref{prp:genyoneda}. More precisely it is a consequence of it as is shown in \cite{52fbba46}, for example. Another major implication from theorem \ref{thm:initprobisinitcone} concerning the yoneda functor is that the yoneda functor is sort of weakly universal. This will be the subject of the next corollary.
+By the way, from what we have seen here it is not surprising that the density theorem \ref{thm:density} has something to do with the co-Yoneda lemma from proposition \ref{prp:genyoneda}.
+More precisely it is a consequence of it as is shown in \cite{52fbba46}, for example.
+Another major implication from theorem \ref{thm:initprobisinitcone} concerning the yoneda functor is that the yoneda functor is sort of weakly universal.
+This will be the subject of the next corollary.
 \\
 \begin{cor}
 \label{cor:yonedauniarr}
@@ -1555,7 +1615,8 @@ we get
 \end{align*}
 \end{cor}
 \begin{prf}
-We first show the unique up to isomorphism part directly. Taking $L$ to be $L_{A}$ from construction \ref{cst:la} will clearly do since in construction \ref{cst:la} we have shown that
+We first show the unique up to isomorphism part directly.
+Taking $L$ to be $L_{A}$ from construction \ref{cst:la} will clearly do since in construction \ref{cst:la} we have shown that
 \begin{align*}
   L
   \circ
@@ -1563,7 +1624,8 @@ We first show the unique up to isomorphism part directly. Taking $L$ to be $L_{A
   &=
   A
 \end{align*}
- and as left adjoint this $L$ is cocontinuous as theorem \ref{thm:adjointlimit} implies. Moreover by the density corollary \ref{cor:density} and the cocontinuity of $L$ and $L^{\backprime}$ we get
+ and as left adjoint this $L$ is cocontinuous as theorem \ref{thm:adjointlimit} implies.
+Moreover by the density corollary \ref{cor:density} and the cocontinuity of $L$ and $L^{\backprime}$ we get
 \begin{align*}
   L(P)
   &\cong
@@ -1610,7 +1672,8 @@ We first show the unique up to isomorphism part directly. Taking $L$ to be $L_{A
   L^{\backprime}(P)
 \end{align*}
 \\
-So assume $L$ as above for the rest. A natural transformation
+So assume $L$ as above for the rest.
+A natural transformation
 \begin{align*}
   \mathsf{T}
   \colon
@@ -1657,7 +1720,8 @@ such that the diagram
   L^{\backprime}(P)
 \end{tikzcd}
 \]
-commutes for all $J$ and $z \in P(J)$. Therefore define a natural transformation
+commutes for all $J$ and $z \in P(J)$.
+Therefore define a natural transformation
 \begin{align*}
   \mathsf{T}_{!}
   \colon
@@ -1928,7 +1992,8 @@ $\square$
 There are two points which prevent the Yoneda functor from being an $F$-universal arrow for some (forgetful) functor $F$ and hence $F$ to be a right adjoint to the functor describing the most efficient way to make a category cocomplete.
 \begin{enumerate}
 \item[$\bullet$]
-The factoring through the Yoneda functor is only unique up to isomorphism. So we would need a structural theory with univalence.
+The factoring through the Yoneda functor is only unique up to isomorphism.
+So we would need a structural theory with univalence.
 \item[$\bullet$]
 The Yoneda functor raises universe levels, that is, $\mathbf{J}$ is small but $\mathbf{Set}^{\mathbf{J}^{\textrm{op}}}$ is only locally small since $\mathbf{Set}$ is only locally small.
 \end{enumerate}
@@ -1941,7 +2006,11 @@ Yet there is a way to see all this as an outgrowth of universality since corolla
     \mathsf{id}_{L \circ \mathrm{y}_{\mathbf{J}}}
   \right)
 \end{align*}
-is a left Kan extension of $A$ along $\mathrm{y}_{\mathbf{J}}$. And Kan extensions can be shown to be universal constructions as indicated in the introduction to this section \ref{sec:uni}. For the sake of completeness we define Kan extensions here. But as already mentioned: for a proper treatment we refer to the according chapter of \cite{52fbba46} which in particular provides a generalization of the whole discussion in this subsubsection until this point. Now given functors
+is a left Kan extension of $A$ along $\mathrm{y}_{\mathbf{J}}$.
+And Kan extensions can be shown to be universal constructions as indicated in the introduction to this section \ref{sec:uni}.
+For the sake of completeness we define Kan extensions here.
+But as already mentioned: for a proper treatment we refer to the according chapter of \cite{52fbba46} which in particular provides a generalization of the whole discussion in this subsubsection until this point.
+Now given functors
 \begin{align*}
   F
   \colon
@@ -2163,13 +2232,24 @@ One often abbreviates for Kan extensions according to
     \varepsilon
   \right)
 \end{align*}
-These Kan extensions play a major role in homotopy theory for which so called {\glqq}model categories{\grqq} are a general formal setting. Loosely speaking, an arrow in a model category can be a weak equivalence or a fibration or a cofibration (in an inclusive way as usual in mathematics). People sometimes say in computer science language that if UFP-HoTT is native abstract homotopy theory then model categories are a homotopy theory emulator, or so. Unfortunately, for further information on model categories we have to refer to the literature. Possible sources are \cite{791993d6}, \cite{70961a11} and \cite{7a40623d}.
+These Kan extensions play a major role in homotopy theory for which so called {\glqq}model categories{\grqq} are a general formal setting.
+Loosely speaking, an arrow in a model category can be a weak equivalence or a fibration or a cofibration (in an inclusive way as usual in mathematics).
+People sometimes say in computer science language that if UFP-HoTT is native abstract homotopy theory then model categories are a homotopy theory emulator, or so.
+Unfortunately, for further information on model categories we have to refer to the literature.
+Possible sources are \cite{791993d6}, \cite{70961a11} and \cite{7a40623d}.
 \\
-There are pretty useful and deep applications of left Kan extension along the Yoneda functor. We will encounter two cases of significant importance - \textit{geometric realization} and \textit{first truncation} - in section \ref{sec:sset}. But another one regarding sheaves is treated here. If you already knew sheaves before reading these notes you might know the correspondence to so-called {\'e}tale bundles.
+There are pretty useful and deep applications of left Kan extension along the Yoneda functor.
+We will encounter two cases of significant importance - \textit{geometric realization} and \textit{first truncation} - in section \ref{sec:sset}.
+But another one regarding sheaves is treated here.
+If you already knew sheaves before reading these notes you might know the correspondence to so-called {\'e}tale bundles.
 \\
 \begin{exa}
 \label{exa:sheafetale}
-{\'E}tale bundles are a certain kind of bundle of $\mathbf{Top}$, that is, certain objects of the category of bundles over some object of $\mathbf{Top}$ - or equivalently certain objects of the slice category over some object of $\mathbf{Top}$. Indeed, {\'e}tale bundles predate sheaves as we defined them and were originally called sheaves then. One can see this correspondence quite explicitly in \cite{c55c71e8}, for example. But we present another way (which is by the way also mentioned in \cite{c55c71e8}) utilizing a left Kan extension of a certain functor $A \colon \mathbf{Open}_{S} \rightarrow \mathbf{Top} \slash S$ along $\mathrm{y}_{\mathbf{Open}_{S}}$ for some topological space $S$ and its right adjoint. So in the notation of example \ref{exa:gs2} (Generalized Spaces 2) consider the functor
+{\'E}tale bundles are a certain kind of bundle of $\mathbf{Top}$, that is, certain objects of the category of bundles over some object of $\mathbf{Top}$ - or equivalently certain objects of the slice category over some object of $\mathbf{Top}$.
+Indeed, {\'e}tale bundles predate sheaves as we defined them and were originally called sheaves then.
+One can see this correspondence quite explicitly in \cite{c55c71e8}, for example.
+But we present another way (which is by the way also mentioned in \cite{c55c71e8}) utilizing a left Kan extension of a certain functor $A \colon \mathbf{Open}_{S} \rightarrow \mathbf{Top} \slash S$ along $\mathrm{y}_{\mathbf{Open}_{S}}$ for some topological space $S$ and its right adjoint.
+So in the notation of example \ref{exa:gs2} (Generalized Spaces 2) consider the functor
 \begin{align*}
   A
   \colon
@@ -2187,7 +2267,8 @@ There are pretty useful and deep applications of left Kan extension along the Yo
   &\mapsto
   \mathrm{i}_{12}
 \end{align*}
-Now $\mathbf{Top} \slash S$ is cocomplete and we can apply theorem \ref{thm:initprobisinitcone} to $A$ in order to get the right adjoint functor $R_{A}$. To understand what $R_{A}$ does let us apply it to a bundle $\pi \in \mathrm{ob}_{\mathbf{Top} \slash S}$:
+Now $\mathbf{Top} \slash S$ is cocomplete and we can apply theorem \ref{thm:initprobisinitcone} to $A$ in order to get the right adjoint functor $R_{A}$.
+To understand what $R_{A}$ does let us apply it to a bundle $\pi \in \mathrm{ob}_{\mathbf{Top} \slash S}$:
 \begin{align*}
   R_{A}(\pi)(U)
   &=
@@ -2219,16 +2300,29 @@ Now $\mathbf{Top} \slash S$ is cocomplete and we can apply theorem \ref{thm:init
     U_{1}
   \right)
 \end{align*}
-But this is precisely our archetypical sheaf $\Gamma_{\pi}$ from example \ref{exa:gs2} from which we abstracted sheaves. So this is knowledge we already had: every bundle can be made into a sheaf by taking local sections. What is new is that this process is right adjoint and we hence must have a functor making a presheaf into a bundle over $S$. Construction \ref{cst:la} then provides the according left adjoint $L_{A}$ to $R_{A}$. It is clear that
+But this is precisely our archetypical sheaf $\Gamma_{\pi}$ from example \ref{exa:gs2} from which we abstracted sheaves.
+So this is knowledge we already had: every bundle can be made into a sheaf by taking local sections.
+What is new is that this process is right adjoint and we hence must have a functor making a presheaf into a bundle over $S$.
+Construction \ref{cst:la} then provides the according left adjoint $L_{A}$ to $R_{A}$.
+It is clear that
 \begin{align*}
   R_{A}
   \circ
   L_{A}
 \end{align*}
-turns a presheaf into a sheaf. $R_{A} \circ L_{A}$ is thus called \textbf{sheafification}. More important, one can show that if the presheaf is already a sheaf then sheafifying it does not structurally change it, that is, it is isomorphic to the original one. This has consequences. On the one hand any sheaf can in the end be considered as an archetypical sheaf. On the other hand corollary \ref{cor:adjointequiv} says that there are equivalent subcategories $\mathbf{Sh}(S)$ of $\mathbf{Set}^{\mathbf{Open}_{S}^{\textrm{op}}}$ and $\mathbf{Et}(S)$ of $\mathbf{Top} \slash S$ where $\mathbf{Sh}(S)$ is the category of sheaves on $S$ we defined in example \ref{exa:gs2}. Likewise we call $\mathbf{Et}(S)$ the \textbf{category of {\'e}tale bundles (over $S$)}. An object of $\mathbf{Et}(S)$ is called \textbf{{\'e}tale bundle (over $S$)}.\footnote{and not {\'e}tal{\'e} bundle (but: {\'e}space {\'e}tal{\'e})}
+turns a presheaf into a sheaf.
+$R_{A} \circ L_{A}$ is thus called \textbf{sheafification}.
+More important, one can show that if the presheaf is already a sheaf then sheafifying it does not structurally change it, that is, it is isomorphic to the original one.
+This has consequences.
+On the one hand any sheaf can in the end be considered as an archetypical sheaf.
+On the other hand corollary \ref{cor:adjointequiv} says that there are equivalent subcategories $\mathbf{Sh}(S)$ of $\mathbf{Set}^{\mathbf{Open}_{S}^{\textrm{op}}}$ and $\mathbf{Et}(S)$ of $\mathbf{Top} \slash S$ where $\mathbf{Sh}(S)$ is the category of sheaves on $S$ we defined in example \ref{exa:gs2}.
+Likewise we call $\mathbf{Et}(S)$ the \textbf{category of {\'e}tale bundles (over $S$)}.
+An object of $\mathbf{Et}(S)$ is called \textbf{{\'e}tale bundle (over $S$)}.\footnote{and not {\'e}tal{\'e} bundle (but: {\'e}space {\'e}tal{\'e})}
 \end{exa}
 \begin{prf}
-That the slice category $\mathbf{C} \slash X$ over $X$ of $\mathbf{C}$ is cocomplete if $\mathbf{C}$ is can be found in \cite{52fbba46}, for example. Then $\mathbf{Top} \slash X$ is cocomplete since $\mathbf{Top}$ is according to theorem \ref{thm:topcocomplete}. The rest should be clear or can be looked up in \cite{c55c71e8} to some extent.
+That the slice category $\mathbf{C} \slash X$ over $X$ of $\mathbf{C}$ is cocomplete if $\mathbf{C}$ is can be found in \cite{52fbba46}, for example.
+Then $\mathbf{Top} \slash X$ is cocomplete since $\mathbf{Top}$ is according to theorem \ref{thm:topcocomplete}.
+The rest should be clear or can be looked up in \cite{c55c71e8} to some extent.
 \\
 \phantom{proven}
 \hfill

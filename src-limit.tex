@@ -1,6 +1,9 @@
 %\nocite{273ba834}
 %\nocite{53fd7d7e}
-One of the most basic ideas in mathematics is that of an ordered pair of two sets say $a_{1}$ and $a_{2}$. We want to think of these two sets as a whole while rememebering which is the first and which is the second. So we cannot just take $\lbrace a_{1},a_{2} \rbrace$. It must be rather a mathematical object $(a_{1},a_{2})$ with the property that given another object of this form $(b_{1},b_{2})$ then we should have
+One of the most basic ideas in mathematics is that of an ordered pair of two sets say $a_{1}$ and $a_{2}$.
+We want to think of these two sets as a whole while rememebering which is the first and which is the second.
+So we cannot just take $\lbrace a_{1},a_{2} \rbrace$.
+It must be rather a mathematical object $(a_{1},a_{2})$ with the property that given another object of this form $(b_{1},b_{2})$ then we should have
 \begin{align*}
   (a_{1},a_{2})
   =
@@ -20,7 +23,9 @@ One of the most basic ideas in mathematics is that of an ordered pair of two set
     b_{2}
   \right)
 \end{align*}
-This property can be viewed as a litmus test for being a good notion of ordered pair. In set theory ordered pairs must be sets. In TG the choice
+This property can be viewed as a litmus test for being a good notion of ordered pair.
+In set theory ordered pairs must be sets.
+In TG the choice
 \begin{align*}
   (a_{1},a_{2})
   :=
@@ -35,7 +40,9 @@ This property can be viewed as a litmus test for being a good notion of ordered 
     \rbrace
   \rbrace
 \end{align*}
-is popular. But this choice is definitly not unique. For example we could also take
+is popular.
+But this choice is definitly not unique.
+For example we could also take
 \begin{align*}
   (a,b)_{\textrm{w}}
   &:=
@@ -53,9 +60,13 @@ is popular. But this choice is definitly not unique. For example we could also t
     \rbrace
   \rbrace
 \end{align*}
-This will play a role in a moment. But we bind ourselves to the former here, as is usual in mathematics and has been the silently assumed convention in these notes.
+This will play a role in a moment.
+But we bind ourselves to the former here, as is usual in mathematics and has been the silently assumed convention in these notes.
 \\
-Restricting to a universe $\mathcal{U}$ let $\mathcal{U}_{\textrm{pair}}$ denote the set (of some larger universe) of all ordered pairs of sets in $\mathcal{U}$. Then we can define cartesian products. In what follows assume $Y_{1}$ and $Y_{2}$ as elements of $\mathcal{U}$. The cartesian product of $Y_{1}$ and $Y_{2}$ is defined by
+Restricting to a universe $\mathcal{U}$ let $\mathcal{U}_{\textrm{pair}}$ denote the set (of some larger universe) of all ordered pairs of sets in $\mathcal{U}$.
+Then we can define cartesian products.
+In what follows assume $Y_{1}$ and $Y_{2}$ as elements of $\mathcal{U}$.
+The cartesian product of $Y_{1}$ and $Y_{2}$ is defined by
 \begin{align*}
   Y_{1}
   \times
@@ -105,7 +116,8 @@ Further we have the two projection functions
   &\mapsto
   y_{2}
 \end{align*}
-to the first and second coordinate, respectively. Note that a function
+to the first and second coordinate, respectively.
+Note that a function
 \begin{align*}
   f_{\times}
   \colon
@@ -175,7 +187,8 @@ such that the diagram
   Y_{2}
 \end{tikzcd}
 \]
-commutes. Hence
+commutes.
+Hence
 \begin{align*}
   \left(
     Y_{1}
@@ -205,7 +218,9 @@ is a terminal object in the category $\pmb{\prod}(Y_{1},Y_{2})$ with objects $3$
   Y_{2}
 \end{tikzcd}
 \]
-commutes. The terminal object of $\pmb{\prod}(Y_{1},Y_{2})$ is then called the \textbf{(binary) product (of $Y_{1}$ and $Y_{2}$)} while keeping the generalized {\glqq}the{\grqq} in mind. Namely defining the cartesian product $Y_{1} \times^{\textrm{w}} Y_{2}$ and projection functions $\mathrm{pr}_{1}^{\textrm{w}}$ and $\mathrm{pr}_{2}^{\textrm{w}}$ for $(a,b)_{\textrm{w}}$ in the same way as for $(a,b)_{\textrm{k}}$ we would find that also 
+commutes.
+The terminal object of $\pmb{\prod}(Y_{1},Y_{2})$ is then called the \textbf{(binary) product (of $Y_{1}$ and $Y_{2}$)} while keeping the generalized {\glqq}the{\grqq} in mind.
+Namely defining the cartesian product $Y_{1} \times^{\textrm{w}} Y_{2}$ and projection functions $\mathrm{pr}_{1}^{\textrm{w}}$ and $\mathrm{pr}_{2}^{\textrm{w}}$ for $(a,b)_{\textrm{w}}$ in the same way as for $(a,b)_{\textrm{k}}$ we would find that also 
 \begin{align*}
   \left(
     Y_{1}
@@ -215,9 +230,16 @@ commutes. The terminal object of $\pmb{\prod}(Y_{1},Y_{2})$ is then called the \
     \mathrm{pr}_{2}^{\textrm{w}}
   \right)
 \end{align*}
-is a terminal object in $\pmb{\prod}(Y_{1},Y_{2})$. So in a structural set theory one would rather try to define cartesian product by a universal property. Essentially one does so in ETCS and UFP-HoTT. In TG this knowledge also helps us since it does make sense to ask for binary products in this way w.r.t. to an arbitrary category and not just $\mathbf{Set}$. Though certainly not any category has all binary products.
+is a terminal object in $\pmb{\prod}(Y_{1},Y_{2})$.
+So in a structural set theory one would rather try to define cartesian product by a universal property.
+Essentially one does so in ETCS and UFP-HoTT.
+In TG this knowledge also helps us since it does make sense to ask for binary products in this way w.r.t.
+to an arbitrary category and not just $\mathbf{Set}$.
+Though certainly not any category has all binary products.
 \\
-Now there is a certain way to specify subsets of the cartesian product. Namely by functions. A function $f \colon Y_{1} \rightarrow Y_{2}$ has a graph $\Gamma_{f}$ which is a subset of $Y_{1} \times Y_{2}$ and it is clear that for all $(y_{1},y_{2}) \in \Gamma_{f}$
+Now there is a certain way to specify subsets of the cartesian product.
+Namely by functions.
+A function $f \colon Y_{1} \rightarrow Y_{2}$ has a graph $\Gamma_{f}$ which is a subset of $Y_{1} \times Y_{2}$ and it is clear that for all $(y_{1},y_{2}) \in \Gamma_{f}$
 \begin{align*}
   \left(
     f
@@ -279,9 +301,13 @@ we have
   Y_{2}
 \end{tikzcd}
 \]
-for $g \in \lbrace f,f^{\backprime} \rbrace$. The projection of $\mathrm{Eq}$ to the first coordinate is traditionally known as \textit{equalizer (of $f$ and $f^{\backprime}$)}. The equalizer of two functions is the part of the domain of the functions where they coincide. So $\mathrm{Eq}$ can be viewed as some kind of locus of $f$ and $f^{\backprime}$.
+for $g \in \lbrace f,f^{\backprime} \rbrace$.
+The projection of $\mathrm{Eq}$ to the first coordinate is traditionally known as \textit{equalizer (of $f$ and $f^{\backprime}$)}.
+The equalizer of two functions is the part of the domain of the functions where they coincide.
+So $\mathrm{Eq}$ can be viewed as some kind of locus of $f$ and $f^{\backprime}$.
 \\
-Now actually we should take the universality of the product into account in order to make up for fixing a choice of ordered pair. This can be done by patching the respective diagrams together to get:
+Now actually we should take the universality of the product into account in order to make up for fixing a choice of ordered pair.
+This can be done by patching the respective diagrams together to get:
 \begin{enumerate}
 \item[(Eq)]
 for each $3$-tuple $(Y,f_{1},f_{2})$ yielding a diagram as $(\mathrm{Eq},\mathrm{pr}_{1},\mathrm{pr}_{2})$ as above there is a unique function
@@ -321,9 +347,11 @@ such that the diagram
 \]
 commutes for all $g \in \lbrace f,f^{\backprime} \rbrace$
 \end{enumerate}
-Then we could potentially define a structural version of the equalizer in any category. But let us defer this for a while.
+Then we could potentially define a structural version of the equalizer in any category.
+But let us defer this for a while.
 \\\\
-We now look what we can abstract from these ideas. A very general form of
+We now look what we can abstract from these ideas.
+A very general form of
 \[
 \begin{tikzcd}[sep=large]
   &
@@ -339,7 +367,9 @@ We now look what we can abstract from these ideas. A very general form of
   Y_{2}
 \end{tikzcd}
 \]
-are cones. Assume a category $\mathbf{J}$ and a functor $F \colon \mathbf{J} \rightarrow \mathbf{C}$. Then define a function
+are cones.
+Assume a category $\mathbf{J}$ and a functor $F \colon \mathbf{J} \rightarrow \mathbf{C}$.
+Then define a function
 \begin{align*}
   \mathsf{C}
   \colon
@@ -517,7 +547,8 @@ For a functor $F \colon \mathbf{J} \rightarrow \mathbf{C}$ let us define functor
     \right)
   \right)
 \end{align*}
-Call $\mathrm{Cone}_{F}(X)$ the \textbf{(set of) cones (to $F$ with apex $X$)} and dually $\mathrm{Cocone}_{F}(X)$ the \textbf{(set of) cocones (to $F$ with apex $X$)}. Given a cone $\mathsf{C} \in \mathrm{Cone}_{F}(X)$ we call $\mathsf{C}(J)$ the \textbf{$J$-th leg (of $\mathsf{C}$)} while given a cocone $\mathsf{C}^{\prime} \in \mathrm{Cocone}_{F}(X)$ we call $\mathsf{C}^{\prime}(J)$ the \textbf{$J$-th coleg (of $\mathsf{C}^{\prime}$)}.
+Call $\mathrm{Cone}_{F}(X)$ the \textbf{(set of) cones (to $F$ with apex $X$)} and dually $\mathrm{Cocone}_{F}(X)$ the \textbf{(set of) cocones (to $F$ with apex $X$)}.
+Given a cone $\mathsf{C} \in \mathrm{Cone}_{F}(X)$ we call $\mathsf{C}(J)$ the \textbf{$J$-th leg (of $\mathsf{C}$)} while given a cocone $\mathsf{C}^{\prime} \in \mathrm{Cocone}_{F}(X)$ we call $\mathsf{C}^{\prime}(J)$ the \textbf{$J$-th coleg (of $\mathsf{C}^{\prime}$)}.
 \\
 With this terminology as backbone we can easily generalize the property (Eq) from above by the following definitions.
 \begin{enumerate}
@@ -551,7 +582,8 @@ holds, that is, the diagram
   F(J)
 \end{tikzcd}
 \]
-commutes. $(X_{T},F,\mathsf{C}_{T})$ is called \textbf{limit of $F$} if $\mathsf{C}_{T}$ is a limiting cone to $F$ with apex $X_{T}$.
+commutes.
+$(X_{T},F,\mathsf{C}_{T})$ is called \textbf{limit of $F$} if $\mathsf{C}_{T}$ is a limiting cone to $F$ with apex $X_{T}$.
 \item[(U${}_{\blacktriangle^{\prime}}$)]
 A cocone $\mathsf{C}_{I}^{\prime}$ for $F$ is called \textbf{colimiting cocone (to $F$ with apex $X_{I}$)} if for any cocone $\mathsf{C}^{\prime}$ to $F$ with apex $X$ there is precisely one morphism
 \begin{align*}
@@ -583,7 +615,8 @@ holds, that is, the diagram
   X
 \end{tikzcd}
 \]
-commutes. $(F,X_{I},\mathsf{C}_{I}^{\prime})$ is called \textbf{colimit of $F$} if $\mathsf{C}_{I}^{\prime}$ is a colimiting cocone to $F$ with apex $X_{I}$.
+commutes.
+$(F,X_{I},\mathsf{C}_{I}^{\prime})$ is called \textbf{colimit of $F$} if $\mathsf{C}_{I}^{\prime}$ is a colimiting cocone to $F$ with apex $X_{I}$.
 \end{enumerate}
 For $(X_{T},F,\mathsf{C}_{T})$ to be a limit of $F$ means that for all cones $\mathsf{C}$ to $F$ with apex $X$ and all $J_{1},J_{2},j_{12}$ there is exactly one morphism
 \begin{align*}
@@ -618,7 +651,8 @@ such that the diagram
   F(J_{2})
 \end{tikzcd}
 \]
-commutes. With some identities the diagram can be expanded to
+commutes.
+With some identities the diagram can be expanded to
 \[
 \begin{tikzcd}[sep=huge]
   X
@@ -658,7 +692,8 @@ commutes. With some identities the diagram can be expanded to
   \arrow[swap]{ul}{F(j_{12})}
 \end{tikzcd}
 \]
-and one might wonder if there is a functor such that $\mathsf{C}_{T}$ and $\mathsf{C}$ become natural transformations from this functor to $F$ since cones seem very close to such a thing? But this is accomplished by the constant functor $\mathrm{C}_{X_{T}} \colon \mathbf{J} \rightarrow \mathbf{C}$ with target $X$ and the constant functor $\mathrm{C}_{X} \colon \mathbf{J} \rightarrow \mathbf{C}$ with target $X$, respectively. So we get
+and one might wonder if there is a functor such that $\mathsf{C}_{T}$ and $\mathsf{C}$ become natural transformations from this functor to $F$ since cones seem very close to such a thing? But this is accomplished by the constant functor $\mathrm{C}_{X_{T}} \colon \mathbf{J} \rightarrow \mathbf{C}$ with target $X$ and the constant functor $\mathrm{C}_{X} \colon \mathbf{J} \rightarrow \mathbf{C}$ with target $X$, respectively.
+So we get
 \[
 \begin{tikzcd}[sep=huge]
   \mathrm{C}_{X}(J_{1})
@@ -698,7 +733,9 @@ and one might wonder if there is a functor such that $\mathsf{C}_{T}$ and $\math
   \arrow[swap]{ul}{F(j_{12})}
 \end{tikzcd}
 \]
-Now observe that the bottom square of the box is a natural transformation from $F$ to $F$. But what about the top square? Well, yes. Just define natural transformations
+Now observe that the bottom square of the box is a natural transformation from $F$ to $F$.
+But what about the top square? Well, yes.
+Just define natural transformations
 \begin{align*}
   \Delta_{\mathbf{C}}(f_{12})
   \colon
@@ -710,7 +747,8 @@ Now observe that the bottom square of the box is a natural transformation from $
   &\mapsto
   f_{12}
 \end{align*}
-and use $\Delta_{\mathbf{C}}(f)$. Thus the commutativity of one of the last three equivalent diagrams for all $J_{1},J_{2},j_{12}$ is equivalent to the commutativity of the diagram
+and use $\Delta_{\mathbf{C}}(f)$.
+Thus the commutativity of one of the last three equivalent diagrams for all $J_{1},J_{2},j_{12}$ is equivalent to the commutativity of the diagram
 \[
 \begin{tikzcd}[sep=large]
   \mathrm{C}_{X}
@@ -726,7 +764,9 @@ and use $\Delta_{\mathbf{C}}(f)$. Thus the commutativity of one of the last thre
   F
 \end{tikzcd}
 \]
-in $\mathbf{C}^{\mathbf{J}}$. But this looks like a morphism diagram of some comma category. This comma category has a nice depiction using the functor
+in $\mathbf{C}^{\mathbf{J}}$.
+But this looks like a morphism diagram of some comma category.
+This comma category has a nice depiction using the functor
 \begin{align*}
   \Delta_{\mathbf{C}}
   \colon
@@ -742,7 +782,9 @@ in $\mathbf{C}^{\mathbf{J}}$. But this looks like a morphism diagram of some com
   &\mapsto
   \Delta_{\mathbf{C}}(f_{12})
 \end{align*}
-$\Delta_{\mathbf{C}}$ is called the \textbf{diagonal functor (w.r.t. $\mathbf{J}$)}. With this depiction a limit of $F$ is then nothing but a terminal object in $(\Delta_{\mathbf{C}} \downarrow \mathrm{c}_{F})$ and hence by theorem \ref{thm:unimorequivuni} this is to say that
+$\Delta_{\mathbf{C}}$ is called the \textbf{diagonal functor (w.r.t.
+$\mathbf{J}$)}.
+With this depiction a limit of $F$ is then nothing but a terminal object in $(\Delta_{\mathbf{C}} \downarrow \mathrm{c}_{F})$ and hence by theorem \ref{thm:unimorequivuni} this is to say that
 \begin{align*}
   \mathsf{C}_{T}
   \in
@@ -809,16 +851,21 @@ For the sake of completeness let us write down the commutative diagram for colim
   &
 \end{tikzcd}
 \]
-Now theorem \ref{thm:limitequiv} shows that limits and colimits are special cases of universality. But note that terminal and initial objects of $\mathbf{C}$ are limits and colimits, respectively, of a functor $F \colon \varnothing \rightarrow \mathbf{C}$. By the way, for a functor $F \colon \mathbf{J} \rightarrow \mathbf{C}$ universal objects of the index category $\mathbf{J}$ can be used to compute apices of a colimiting cone and limiting cone, respectively. This is the next theorem.
+Now theorem \ref{thm:limitequiv} shows that limits and colimits are special cases of universality.
+But note that terminal and initial objects of $\mathbf{C}$ are limits and colimits, respectively, of a functor $F \colon \varnothing \rightarrow \mathbf{C}$.
+By the way, for a functor $F \colon \mathbf{J} \rightarrow \mathbf{C}$ universal objects of the index category $\mathbf{J}$ can be used to compute apices of a colimiting cone and limiting cone, respectively.
+This is the next theorem.
 \\
 \begin{thm}
 \label{thm:limonuniob}
 Given a functor $F \colon \mathbf{J} \rightarrow \mathbf{C}$ such that
 \begin{enumerate}
 \item[(1T)]
-$\mathbf{J}$ has a terminal object. If $j$ denotes the unique arrow from $J$ to $1_{\mathbf{J}}$ then mapping $J$ to $F(j)$ denoted $\mathsf{C}_{I}^{\prime}$ is a colimit cocone to $F$ with apex $F(1_{\mathbf{J}})$.
+$\mathbf{J}$ has a terminal object.
+If $j$ denotes the unique arrow from $J$ to $1_{\mathbf{J}}$ then mapping $J$ to $F(j)$ denoted $\mathsf{C}_{I}^{\prime}$ is a colimit cocone to $F$ with apex $F(1_{\mathbf{J}})$.
 \item[(1I)]
-$\mathbf{J}$ has an initial object. If $j$ denotes the unique arrow from $0_{\mathbf{J}}$ to $J$ then mapping $J$ to $F(j)$ denoted $\mathsf{C}_{T}$ is a limit cone to $F$ with apex $F(0_{\mathbf{J}})$.
+$\mathbf{J}$ has an initial object.
+If $j$ denotes the unique arrow from $0_{\mathbf{J}}$ to $J$ then mapping $J$ to $F(j)$ denoted $\mathsf{C}_{T}$ is a limit cone to $F$ with apex $F(0_{\mathbf{J}})$.
 \end{enumerate}
 \end{thm}
 \begin{prf}
@@ -862,7 +909,8 @@ such that
   &=
   \mathsf{C}^{\prime}(J)
 \end{align*}
-for all $J$ it must be $\mathsf{C}^{\prime}(1_{\mathbf{J}})$ as can be seen from the case $J = 1_{\mathbf{J}}$. But then we have
+for all $J$ it must be $\mathsf{C}^{\prime}(1_{\mathbf{J}})$ as can be seen from the case $J = 1_{\mathbf{J}}$.
+But then we have
 \begin{align*}
   f
   \circ
@@ -887,18 +935,29 @@ The duality principle \ref{thm:dp}.
 \hfill
 $\square$
 \end{prf}
-The statement is even better than just computing apices since it proves the existence of limits and colimits in some (unfortunately not so relevant) cases. It is, in fact, an important question which limits and colimits of functors with fixed codomain categories exist and it will accompany us during this subsection.
+The statement is even better than just computing apices since it proves the existence of limits and colimits in some (unfortunately not so relevant) cases.
+It is, in fact, an important question which limits and colimits of functors with fixed codomain categories exist and it will accompany us during this subsection.
 \\\\
-Having established the different characterizations of limits and colimits we turn to the special cases of them which are well-known in mathematics. Though not necessarily as categorical concepts. Hence the following example.
+Having established the different characterizations of limits and colimits we turn to the special cases of them which are well-known in mathematics.
+Though not necessarily as categorical concepts.
+Hence the following example.
 \\
 \begin{exa}
 \label{exa:oflimits}
-This example is built up as follows. We go through a list of interesting possibilities what $\mathbf{J}$ can stand for and define names for the according colimits and limits of functors $F \colon \mathbf{J} \rightarrow \mathbf{C}$ and $P \colon \mathbf{J}^{\mathrm{op}} \rightarrow \mathbf{C}$, respectively. In some cases we will go in greater detail for $\mathbf{C} = \mathbf{Set}$ or whatever seems interesting. Moreover we sometimes visualize $\mathbf{J}$ by a diagram consisting of all arrows.\footnote{note that objects are the identity arrows} So let $F \colon \mathbf{J} \rightarrow \mathbf{C}$ and $P \colon \mathbf{J}^{\mathrm{op}} \rightarrow \mathbf{C}$ denote functors.
+This example is built up as follows.
+We go through a list of interesting possibilities what $\mathbf{J}$ can stand for and define names for the according colimits and limits of functors $F \colon \mathbf{J} \rightarrow \mathbf{C}$ and $P \colon \mathbf{J}^{\mathrm{op}} \rightarrow \mathbf{C}$, respectively.
+In some cases we will go in greater detail for $\mathbf{C} = \mathbf{Set}$ or whatever seems interesting.
+Moreover we sometimes visualize $\mathbf{J}$ by a diagram consisting of all arrows.\footnote{note that objects are the identity arrows} So let $F \colon \mathbf{J} \rightarrow \mathbf{C}$ and $P \colon \mathbf{J}^{\mathrm{op}} \rightarrow \mathbf{C}$ denote functors.
 \begin{enumerate}
 \item[(1)]
-Let $\mathbf{J}$ be category with finite object set. Then limits of $P$ and colimits of $F$ are called \textbf{finite}.
+Let $\mathbf{J}$ be category with finite object set.
+Then limits of $P$ and colimits of $F$ are called \textbf{finite}.
 \item[(2)]
-Let $\mathbf{J}$ be discrete. A limit of $P$ is a \textbf{product (in $\mathbf{C}$)}. Dually, a colimit of $F$ is a \textbf{coproduct (in $\mathbf{C}$)}. If addtionally $\mathbf{J}$ has exactly two objects $Z_{1}$ and $Z_{2}$ then a limit of $P$ is a \textbf{binary product (in $\mathbf{C}$)} while a colimit of $F$ is a \textbf{binary coproduct (in $\mathbf{C}$)}. If $(\mathrm{Pr},P,\mathsf{Pr})$ is a product it is common to write
+Let $\mathbf{J}$ be discrete.
+A limit of $P$ is a \textbf{product (in $\mathbf{C}$)}.
+Dually, a colimit of $F$ is a \textbf{coproduct (in $\mathbf{C}$)}.
+If addtionally $\mathbf{J}$ has exactly two objects $Z_{1}$ and $Z_{2}$ then a limit of $P$ is a \textbf{binary product (in $\mathbf{C}$)} while a colimit of $F$ is a \textbf{binary coproduct (in $\mathbf{C}$)}.
+If $(\mathrm{Pr},P,\mathsf{Pr})$ is a product it is common to write
 \begin{align*}
   \prod_{J \in \mathrm{ob}_{\mathbf{J}}}
   P(J)
@@ -958,19 +1017,28 @@ while in the case of binary coproducts one also writes
   &:=
   \mathrm{Pr}^{\prime}
 \end{align*}
-For $\mathbf{C} = \mathbf{Set}$ the binary products are precisely the cartesian products as described at the beginning of the subsection. Reversing all arrows there would quite directly show that binary coproducts are precisely the disjoint union of two sets. More generally, one can show that products and coproducts precisely are cartesians products and disjoint unions, respectively, of arbitrary families of sets. Hence in $\mathbf{Set}$ all products and coproducts exist. There is an interesting point here regarding the dependent products and sums we mentioned in the introduction to this section \ref{sec:uni}. Namely, the dependent product in $\mathbf{Set}$ is the product in $\mathbf{Set}$ while the dependent sum in $\mathbf{Set}$ is the coproduct in $\mathbf{Set}$. But in general the dependent cases are something else. They are still something like products and coproducts: they are not indexed by a set but an object of the category of discourse.\footnote{see the according \cite{wiki-nlab0000} articles for more on this} Anyways, the product
+For $\mathbf{C} = \mathbf{Set}$ the binary products are precisely the cartesian products as described at the beginning of the subsection.
+Reversing all arrows there would quite directly show that binary coproducts are precisely the disjoint union of two sets.
+More generally, one can show that products and coproducts precisely are cartesians products and disjoint unions, respectively, of arbitrary families of sets.
+Hence in $\mathbf{Set}$ all products and coproducts exist.
+There is an interesting point here regarding the dependent products and sums we mentioned in the introduction to this section \ref{sec:uni}.
+Namely, the dependent product in $\mathbf{Set}$ is the product in $\mathbf{Set}$ while the dependent sum in $\mathbf{Set}$ is the coproduct in $\mathbf{Set}$.
+But in general the dependent cases are something else.
+They are still something like products and coproducts: they are not indexed by a set but an object of the category of discourse.\footnote{see the according \cite{wiki-nlab0000} articles for more on this} Anyways, the product
 \begin{align*}
   \prod_{J \in \mathrm{ob}_{\mathbf{J}}}^{\mathbf{Set}}
   P(J)
 \end{align*}
-is usually taken as the set of functions $f \colon \mathrm{ob}_{\mathbf{J}} \rightarrow \bigcup_{\mathrm{ob}_{\mathbf{J}}}P(J)$ such that $f(J) \in P(J)$ for all $J$. We confine ourselves to this convention and hence
+is usually taken as the set of functions $f \colon \mathrm{ob}_{\mathbf{J}} \rightarrow \bigcup_{\mathrm{ob}_{\mathbf{J}}}P(J)$ such that $f(J) \in P(J)$ for all $J$.
+We confine ourselves to this convention and hence
 \begin{align*}
   f
   &\in
   \prod_{J \in \mathrm{ob}_{\mathbf{J}}}^{\mathbf{Set}}
   P(J)
 \end{align*}
-is called \textbf{dependent function (through $P$)}. To define a dependent function we write
+is called \textbf{dependent function (through $P$)}.
+To define a dependent function we write
 \begin{align*}
   f
   :=
@@ -985,7 +1053,8 @@ is called \textbf{dependent function (through $P$)}. To define a dependent funct
 \end{align*}
 (as in UFP-HoTT).
 \item[(3)]
-Let $\mathbf{J}$ be a category such that its set of objects contains exactly two elements - one named $Z_{1}$ the other $Z_{2}$ - and such that the only non-identity morphisms are the exactly two elements $z,z^{\backprime}$ of $\mathrm{mor}_{\mathbf{J}}(Z_{2},Z_{1})$. As a diagram this category can be visualized as
+Let $\mathbf{J}$ be a category such that its set of objects contains exactly two elements - one named $Z_{1}$ the other $Z_{2}$ - and such that the only non-identity morphisms are the exactly two elements $z,z^{\backprime}$ of $\mathrm{mor}_{\mathbf{J}}(Z_{2},Z_{1})$.
+As a diagram this category can be visualized as
 \[
 \begin{tikzcd}[sep=huge]
   Z_{2}
@@ -995,7 +1064,8 @@ Let $\mathbf{J}$ be a category such that its set of objects contains exactly two
   Z_{1}
 \end{tikzcd}
 \]
-A limit of $P$ is an \textbf{equalizer (in $\mathbf{C}$)} while dually a colimit of $F$ is a \textbf{coequalizer (in $\mathbf{C}$)}. $(\mathrm{Eq},P,\mathsf{Eq})$ being an equalizer of $P$ means that for all
+A limit of $P$ is an \textbf{equalizer (in $\mathbf{C}$)} while dually a colimit of $F$ is a \textbf{coequalizer (in $\mathbf{C}$)}.
+$(\mathrm{Eq},P,\mathsf{Eq})$ being an equalizer of $P$ means that for all
 \begin{align*}
   z_{12}^{\mathrm{op}}
   \in
@@ -1034,7 +1104,8 @@ such that the diagram
   P(Z_{2})
 \end{tikzcd}
 \]
-commutes. But this is to say that given $\mathrm{Eq} \in \mathrm{ob}_{\mathbf{C}}$ and
+commutes.
+But this is to say that given $\mathrm{Eq} \in \mathrm{ob}_{\mathbf{C}}$ and
 \begin{align*}
   \mathsf{Eq}(Z_{1})
   \in
@@ -1099,13 +1170,15 @@ that is, the diagram
   &
 \end{tikzcd}
 \]
-commutes. This is why people often say a bit sloppy that
+commutes.
+This is why people often say a bit sloppy that
 \begin{align*}
   \mathrm{Eq}
   &\doteq
   (\mathrm{Eq},\mathsf{Eq}(Z_{1}))
 \end{align*}
-is the equalizer of $P(z)$ and $P(z^{\backprime})$. And the same works dually for the coequalizer with the commutative diagram
+is the equalizer of $P(z)$ and $P(z^{\backprime})$.
+And the same works dually for the coequalizer with the commutative diagram
 \[
 \begin{tikzcd}[sep=huge]
   F(Z_{2})
@@ -1124,15 +1197,22 @@ is the equalizer of $P(z)$ and $P(z^{\backprime})$. And the same works dually fo
   X
 \end{tikzcd}
 \]
-and the same sloppy convention. For the case $\mathbf{C} = \mathbf{Set}$ we already treated the equalizer above as essentially being the subset of the domain (namely $\mathrm{Eq}$) on which functions $f,f^{\backprime} \colon Y_{1} \rightarrow Y_{2}$ agree. The case of the coequalizer is no less worthwhile. The coequalizer of $f,f^{\backprime} \colon Y_{1} \rightarrow Y_{2}$ would be $\mathrm{Eq}^{\prime} = Y_{2} \slash \sim$ where $\sim$ is the smallest equivalence relation for which
+and the same sloppy convention.
+For the case $\mathbf{C} = \mathbf{Set}$ we already treated the equalizer above as essentially being the subset of the domain (namely $\mathrm{Eq}$) on which functions $f,f^{\backprime} \colon Y_{1} \rightarrow Y_{2}$ agree.
+The case of the coequalizer is no less worthwhile.
+The coequalizer of $f,f^{\backprime} \colon Y_{1} \rightarrow Y_{2}$ would be $\mathrm{Eq}^{\prime} = Y_{2} \slash \sim$ where $\sim$ is the smallest equivalence relation for which
 \begin{align*}
   f(y_{1})
   &\sim
   f^{\backprime}(y_{1})
 \end{align*}
-is true for all $y_{1} \in Y_{1}$. $\mathsf{Eq}^{\prime}(Z_{1})$ is then clearly the the projection which maps $y_{2}$ to its equivalence class under $\sim$. Note that in $\mathbf{Set}$ all equalizers and coequalizers exist.
+is true for all $y_{1} \in Y_{1}$.
+$\mathsf{Eq}^{\prime}(Z_{1})$ is then clearly the the projection which maps $y_{2}$ to its equivalence class under $\sim$.
+Note that in $\mathbf{Set}$ all equalizers and coequalizers exist.
 \item[(4)]
-Let $\mathbf{J}$ be a category such that its set of objects contains exactly three elements - one named $Z_{1}$, one $Z_{2}$ and the third $Z$. Further we require that the only non-identity morphisms are the exactly one element $z_{1}$ of $\mathrm{mor}_{\mathbf{J}}(Z,Z_{1})$ and the exactly one element $z_{2}$ of $\mathrm{mor}_{\mathbf{J}}(Z,Z_{2})$. This is visualized by the roof or span
+Let $\mathbf{J}$ be a category such that its set of objects contains exactly three elements - one named $Z_{1}$, one $Z_{2}$ and the third $Z$.
+Further we require that the only non-identity morphisms are the exactly one element $z_{1}$ of $\mathrm{mor}_{\mathbf{J}}(Z,Z_{1})$ and the exactly one element $z_{2}$ of $\mathrm{mor}_{\mathbf{J}}(Z,Z_{2})$.
+This is visualized by the roof or span
 \[
 \begin{tikzcd}[sep=huge]
   &
@@ -1147,7 +1227,9 @@ Let $\mathbf{J}$ be a category such that its set of objects contains exactly thr
   Z_{2}
 \end{tikzcd}
 \]
-as some authors say. A limit of $P$ is a \textbf{pullback (in $\mathbf{C}$)} or equivalently \textbf{fibered product (in $\mathbf{C}$)} while dually a colimit of $F$ is a \textbf{pushout (in $\mathbf{C}$)} or equivalently \textbf{fibered/amalgamated coproduct (in $\mathbf{C}$)}. $(\mathrm{Pb},P,\mathsf{Pr})$ being a pullback means that for any cone $\mathsf{C}$ to $P$ with apex $X$ there are unique morphisms
+as some authors say.
+A limit of $P$ is a \textbf{pullback (in $\mathbf{C}$)} or equivalently \textbf{fibered product (in $\mathbf{C}$)} while dually a colimit of $F$ is a \textbf{pushout (in $\mathbf{C}$)} or equivalently \textbf{fibered/amalgamated coproduct (in $\mathbf{C}$)}.
+$(\mathrm{Pb},P,\mathsf{Pr})$ being a pullback means that for any cone $\mathsf{C}$ to $P$ with apex $X$ there are unique morphisms
 \begin{align*}
   f_{1}
   &\in
@@ -1194,7 +1276,9 @@ such that the diagram
   P(Z)
 \end{tikzcd}
 \]
-commutes. This can be seen by patching the respective limit diagrams for $z_{1}$ and $z_{2}$ together. Since $f_{1}$ is unique we have $f_{1} = f_{2}$.\footnote{symmetrically we can derive that by the uniquenes of $f_{2}$} Hence $(\mathrm{Pb},P,\mathsf{Pr})$ is a pullback if and only if for any cone $\mathsf{C}$ to $P$ with apex $X$ there is a unique morphism
+commutes.
+This can be seen by patching the respective limit diagrams for $z_{1}$ and $z_{2}$ together.
+Since $f_{1}$ is unique we have $f_{1} = f_{2}$.\footnote{symmetrically we can derive that by the uniquenes of $f_{2}$} Hence $(\mathrm{Pb},P,\mathsf{Pr})$ is a pullback if and only if for any cone $\mathsf{C}$ to $P$ with apex $X$ there is a unique morphism
 \begin{align*}
   f
   &\in
@@ -1226,7 +1310,8 @@ such that the diagram
   P(Z)
 \end{tikzcd}
 \]
-commutes. It is common to write
+commutes.
+It is common to write
 \begin{align*}
   P(Z_{1})
   \times_{P(Z)}
@@ -1256,7 +1341,8 @@ and say a bit sloppy that
     \mathrm{Pr}_{2}
   \right)
 \end{align*}
-is the pullback of $P(z_{1})$ and $P(z_{2})$. For some cases of $\mathbf{C}$, especially when any kind of bundles play a role, one also says that
+is the pullback of $P(z_{1})$ and $P(z_{2})$.
+For some cases of $\mathbf{C}$, especially when any kind of bundles play a role, one also says that
 \begin{align*}
   P(z_{1})^{\ast}(P(z_{2}))
   &\doteq
@@ -1268,7 +1354,8 @@ is the pullback of $P(z_{2})$ along $P(z_{1})$ or symmetrically that
   &\doteq
   \mathrm{Pr}_{2}
 \end{align*}
-is the pullback of $P(z_{1})$ along $P(z_{2})$. Dually, $(F,\mathrm{Po},\mathsf{I})$ is a pushout if and only if for any cocone $\mathsf{C}$ to $F$ with apex $X$ there is a unique morphism
+is the pullback of $P(z_{1})$ along $P(z_{2})$.
+Dually, $(F,\mathrm{Po},\mathsf{I})$ is a pushout if and only if for any cocone $\mathsf{C}$ to $F$ with apex $X$ there is a unique morphism
 \begin{align*}
   f
   &\in
@@ -1300,7 +1387,8 @@ such that the diagram
   \arrow[swap]{l}{F(z_{1})}
 \end{tikzcd}
 \]
-commutes. It is common to write
+commutes.
+It is common to write
 \begin{align*}
   F(Z_{1})
   \sqcup_{F(Z)}
@@ -1330,7 +1418,8 @@ and say a bit sloppy that
     \mathrm{I}_{2}
   \right)
 \end{align*}
-is the pushout of $F(z_{1})$ and $F(z_{2})$. There are special cases of pullbacks and pushouts which are of interest:
+is the pushout of $F(z_{1})$ and $F(z_{2})$.
+There are special cases of pullbacks and pushouts which are of interest:
 \begin{enumerate}
 \item[(a)]
 The case of a pullback when
@@ -1392,7 +1481,8 @@ from the pullback
     \mathrm{Pr}_{2}
   \right)
 \end{align*}
-the \textbf{kernel pair (of $P(z_{1})$)}. Dually, the case when
+the \textbf{kernel pair (of $P(z_{1})$)}.
+Dually, the case when
 \begin{align*}
   F(z_{1})
   &=
@@ -1435,10 +1525,12 @@ If we take $\mathbf{C} = \mathbf{Set}$ and sets $Y_{1},Y_{2},Y$ then for functio
       f_{2}(y_{2})
   \rbrace
 \end{align*}
-together with (accroding restrictions of) the coordinate projections $\mathrm{pr}_{1}$ and $\mathrm{pr}_{2}$. There are at least three particular interesting cases.
+together with (accroding restrictions of) the coordinate projections $\mathrm{pr}_{1}$ and $\mathrm{pr}_{2}$.
+There are at least three particular interesting cases.
 \begin{enumerate}
 \item[(a)]
-The first is when we demand that $f_{2} \colon Y_{2} \rightarrow Y$ is the inclusion. Then
+The first is when we demand that $f_{2} \colon Y_{2} \rightarrow Y$ is the inclusion.
+Then
 \begin{align*}
   Y_{1}
   \times_{Y}
@@ -1450,7 +1542,8 @@ The first is when we demand that $f_{2} \colon Y_{2} \rightarrow Y$ is the inclu
 \end{align*}
 So the fibered product is just the inverse image of $Y_{2}$ under $f_{1}$.
 \item[(b)]
-The second is when we take $f_{1} \colon Y_{1} \rightarrow Y$ and $f_{2} \colon Y_{2} \rightarrow Y$ to be inclusions. Then
+The second is when we take $f_{1} \colon Y_{1} \rightarrow Y$ and $f_{2} \colon Y_{2} \rightarrow Y$ to be inclusions.
+Then
 \begin{align*}
   Y_{1}
   \times_{Y}
@@ -1470,19 +1563,27 @@ The third is when we take only $f \colon Y_{1} \rightarrow Y_{0}$ and consider t
   \times_{Y_{0}}
   Y_{1}
 \end{align*}
-consists of pairs $(y,y^{\backprime})$ such that $f(y) = f(y^{\backprime})$. In particular
+consists of pairs $(y,y^{\backprime})$ such that $f(y) = f(y^{\backprime})$.
+In particular
 \begin{align*}
   Y_{1}
   \times_{Y_{0}}
   Y_{1}
 \end{align*}
-is quite obviuosly an equivalence relation on $Y_{1}$. By the way, the coequalizer $\mathrm{Eq}^{\prime}$ of the kernel pair is the set of equivalence classes. But there is more we can obtain from the fact that the pullback here is an equivalence relation. Namely it implies that
+is quite obviuosly an equivalence relation on $Y_{1}$.
+By the way, the coequalizer $\mathrm{Eq}^{\prime}$ of the kernel pair is the set of equivalence classes.
+But there is more we can obtain from the fact that the pullback here is an equivalence relation.
+Namely it implies that
 \begin{align*}
   Y_{1}
   \times_{Y_{0}}
   Y_{1}
 \end{align*}
-can be regarded as the morphism set of a groupoid with object set $Y_{1}$. The first projection is then the domain function $\mathrm{dom}$ and the second the codomain function $\mathrm{cod}$. Composition comes from the transitivity of the equivalence relation while associativity comes from that of transitivity. The unit law is obtained from reflexitivity and invertibility from symmetry. We denote this groupoid $\mathbf{G}_{f}$ and call it the \textbf{kernel pair groupoid (of $f$)}.
+can be regarded as the morphism set of a groupoid with object set $Y_{1}$.
+The first projection is then the domain function $\mathrm{dom}$ and the second the codomain function $\mathrm{cod}$.
+Composition comes from the transitivity of the equivalence relation while associativity comes from that of transitivity.
+The unit law is obtained from reflexitivity and invertibility from symmetry.
+We denote this groupoid $\mathbf{G}_{f}$ and call it the \textbf{kernel pair groupoid (of $f$)}.
 \end{enumerate}
 On the other hand for functions $f_{1} \colon Y \rightarrow Y_{1}$ and $f_{2} \colon Y \rightarrow Y_{2}$ the pushout of $f_{1}$ and $f_{2}$ is
 \begin{align*}
@@ -1502,9 +1603,19 @@ with $\sim$ the smallest equivalence relation such that
   \sim
   f_{2}(y)
 \end{align*}
-together with the inclusions of $Y_{1}$ and $Y_{2}$ in $\mathrm{Po}$ by mapping the points to their equivalence class. If we, however, take $\mathbf{C} = \mathbf{Top}$ the homotopy theorists among us might recognize these concepts as an abstraction of the pullback of a fibration\footnote{but also bundles in general as we will see later in example \ref{exa:bundles1}} and the pushout of a cofibration.
+together with the inclusions of $Y_{1}$ and $Y_{2}$ in $\mathrm{Po}$ by mapping the points to their equivalence class.
+If we, however, take $\mathbf{C} = \mathbf{Top}$ the homotopy theorists among us might recognize these concepts as an abstraction of the pullback of a fibration\footnote{but also bundles in general as we will see later in example \ref{exa:bundles1}} and the pushout of a cofibration.
 \item[(5)]
-This last case is not needed much in these notes. Only when it comes to cohomology later on. At this point it just might help the algebraic topologists among us to grasp the notion of limit and colimit better since there one has often to do with inverse and direct limits, respectively. The inverse limits appearing in obstruction theory for example and the direct limits in the course of a possible proof of Poincar{\'e} duality. What we need are directed sets. So take $\mathbf{J} \in \mathrm{ob}_{\mathbf{DO}}$. A limit of $P$ is called \textbf{inverse limit}. Dually, a colimit of $F$ is called \textbf{direct limit}. If we make the correct choice for $\mathbf{C}$ we regain the special instances known from algebraic topology. The relevant cases are $\mathbf{C} = \mathbf{Top}$ and $\mathbf{C} = \mathbf{Grp}$ for inverse limits and $\mathbf{C} = \mathbf{Grp}$ for direct limits.
+This last case is not needed much in these notes.
+Only when it comes to cohomology later on.
+At this point it just might help the algebraic topologists among us to grasp the notion of limit and colimit better since there one has often to do with inverse and direct limits, respectively.
+The inverse limits appearing in obstruction theory for example and the direct limits in the course of a possible proof of Poincar{\'e} duality.
+What we need are directed sets.
+So take $\mathbf{J} \in \mathrm{ob}_{\mathbf{DO}}$.
+A limit of $P$ is called \textbf{inverse limit}.
+Dually, a colimit of $F$ is called \textbf{direct limit}.
+If we make the correct choice for $\mathbf{C}$ we regain the special instances known from algebraic topology.
+The relevant cases are $\mathbf{C} = \mathbf{Top}$ and $\mathbf{C} = \mathbf{Grp}$ for inverse limits and $\mathbf{C} = \mathbf{Grp}$ for direct limits.
 \end{enumerate}
 \end{exa}
 \begin{prf}
@@ -1514,11 +1625,17 @@ Reader's exercise.
 \hfill
 $\square$
 \end{prf}
-Eventually, it turns out that in quite a few relevant cases limits and colimits exist for all functors and its worth to introduce a seperate terminology. To this end fix a locally $\mathcal{U}$-small category $\mathbf{C}$. Then we say that $\mathbf{C}$ is \textbf{complete (w.r.t. $\mathcal{U}$)} if for all $\mathcal{U}$-small categories $\mathbf{J}$ and all functors $F$ from $\mathbf{J}$ to $\mathbf{C}$ there is a limit of $F$ and \textbf{cocomplete (w.r.t. $\mathcal{U}$)} if there is a colimit of $F$, respectively. If $\mathbf{C}$ is complete and cocomplete w.r.t. $\mathcal{U}$ then $\mathbf{C}$ is called \textbf{bicomplete (w.r.t. $\mathcal{U}$)}. For example, $\mathbf{Set}$ is complete. This is shown by the following theorem.
+Eventually, it turns out that in quite a few relevant cases limits and colimits exist for all functors and its worth to introduce a seperate terminology.
+To this end fix a locally $\mathcal{U}$-small category $\mathbf{C}$.
+Then we say that $\mathbf{C}$ is \textbf{complete (w.r.t. $\mathcal{U}$)} if for all $\mathcal{U}$-small categories $\mathbf{J}$ and all functors $F$ from $\mathbf{J}$ to $\mathbf{C}$ there is a limit of $F$ and \textbf{cocomplete (w.r.t. $\mathcal{U}$)} if there is a colimit of $F$, respectively.
+If $\mathbf{C}$ is complete and cocomplete w.r.t. $\mathcal{U}$ then $\mathbf{C}$ is called \textbf{bicomplete (w.r.t. $\mathcal{U}$)}.
+For example, $\mathbf{Set}$ is complete.
+This is shown by the following theorem.
 \\
 \begin{thm}
 \label{thm:setcomplete}
-Let $\mathbf{J}$ be $\mathcal{U}$-small and $F \colon \mathbf{J} \rightarrow \mathbf{Set}_{\mathcal{U}}$ a functor. Then mapping $J$ to
+Let $\mathbf{J}$ be $\mathcal{U}$-small and $F \colon \mathbf{J} \rightarrow \mathbf{Set}_{\mathcal{U}}$ a functor.
+Then mapping $J$ to
 \begin{align*}
   \mathsf{C}_{T}(J)
   \colon
@@ -1533,7 +1650,9 @@ Let $\mathbf{J}$ be $\mathcal{U}$-small and $F \colon \mathbf{J} \rightarrow \ma
 defines a limiting cone to $F$ with apex $\mathrm{Cone}_{F}(1_{\mathbf{Set}})$.
 \end{thm}
 \begin{prf}
-We have to show two things. First that $\mathsf{C}_{T}$ is a cone and second that it is limiting. Therefore
+We have to show two things.
+First that $\mathsf{C}_{T}$ is a cone and second that it is limiting.
+Therefore
 \begin{description}
 \item[Step 1]
 For all $J_{1},J_{2},j_{12}$ and all
@@ -1598,13 +1717,15 @@ such that for all $J$ and $y$
   \right)
   (y)
 \end{align*}
-And to make this equation true we must define $f$ as we did. Hence $f$ is unique and $\mathsf{C}_{T}$ is a limiting cone.
+And to make this equation true we must define $f$ as we did.
+Hence $f$ is unique and $\mathsf{C}_{T}$ is a limiting cone.
 \end{description}
 \phantom{proven}
 \hfill
 $\square$
 \end{prf}
-For didactical reasons let us look at what happens for $\mathbf{J}$ discrete in theorem \ref{thm:setcomplete}. Well, a cone
+For didactical reasons let us look at what happens for $\mathbf{J}$ discrete in theorem \ref{thm:setcomplete}.
+Well, a cone
 \begin{align*}
   \mathsf{C}_{1_{\mathbf{Set}}}
   &\in
@@ -1618,12 +1739,14 @@ in this case is nothing but choosing an element\footnote{we come to this isomorp
   \cong
   \mathrm{mor}_{\mathbf{Set}}(1_{\mathbf{Set}},F(J))
 \end{align*}
-for all $J$. So $\mathsf{C}_{1_{\mathbf{Set}}}$ is corresponds precisely to a dependent function $s$ and hence an element of the cartesian product of the $\mathrm{ob}_{\mathbf{J}}$ indexed family of sets $F(J)$
+for all $J$.
+So $\mathsf{C}_{1_{\mathbf{Set}}}$ is corresponds precisely to a dependent function $s$ and hence an element of the cartesian product of the $\mathrm{ob}_{\mathbf{J}}$ indexed family of sets $F(J)$
 \begin{align*}
   \prod_{J \in \mathrm{ob}_{\mathbf{J}}}
   F(J)
 \end{align*}
-and vice versa. Thus
+and vice versa.
+Thus
 \begin{align*}
   \mathrm{Cone}_{F}(1_{\mathbf{Set}})
   &\cong
@@ -1636,12 +1759,14 @@ for $\mathbf{J}$ discrete with $J$-th projection function
   &:=
   \mathsf{C}_{T}(J)
 \end{align*}
-Next let us consider an arbitrary (small) $\mathbf{J}$. We must now take the cone property ($\blacktriangle$) into account and we can then only reason that $\mathrm{Cone}_{F}(1_{\mathbf{Set}})$ is isomorphic to a subset of
+Next let us consider an arbitrary (small) $\mathbf{J}$.
+We must now take the cone property ($\blacktriangle$) into account and we can then only reason that $\mathrm{Cone}_{F}(1_{\mathbf{Set}})$ is isomorphic to a subset of
 \begin{align*}
   \prod_{J \in \mathrm{ob}_{\mathbf{J}}}
   F(J)
 \end{align*}
-The question is which subset these cones form. Well,
+The question is which subset these cones form.
+Well,
 \begin{align*}
   s
   &\in
@@ -1656,7 +1781,9 @@ corresponds to a cone in $\mathrm{Cone}_{F}(1_{\mathbf{Set}})$ precisely if for 
   \circ
   s(J_{1})
 \end{align*}
-And this in turn holds if and only if $s$ equalizes $F(j_{12}) \circ \mathrm{pr_{J_{1}}}$ and $\mathrm{pr}_{J_{2}}$ for all $J_{1},J_{2},j_{12}$. This shows that we can construct all limits in $\mathbf{Set}$ from all products and equalizers for arbitrary pairs of functions. This works in general for any category and we can abstract a limit existence theorem and by the duality principle a colimit existence theorem.
+And this in turn holds if and only if $s$ equalizes $F(j_{12}) \circ \mathrm{pr_{J_{1}}}$ and $\mathrm{pr}_{J_{2}}$ for all $J_{1},J_{2},j_{12}$.
+This shows that we can construct all limits in $\mathbf{Set}$ from all products and equalizers for arbitrary pairs of functions.
+This works in general for any category and we can abstract a limit existence theorem and by the duality principle a colimit existence theorem.
 \\
 \begin{thm}
 \label{thm:limitexistence}
@@ -1785,7 +1912,8 @@ and
     \mathsf{Pr}^{M}
   \right)
 \end{align*}
-respectively. $M$ having a limit here implies that there is a unique
+respectively.
+$M$ having a limit here implies that there is a unique
 \begin{align*}
   f
   &\in
@@ -1844,7 +1972,8 @@ such that the diagram
   F(J_{2})
 \end{tikzcd}
 \]
-commutes for all $J_{1},J_{2},j_{12}$. Now note that there is an equalizer $(\mathrm{Lim}_{F},\mathsf{Eq}_{F})$ of $f$ and $f^{\backprime}$ by premise and we can define a cone $\mathsf{C}_{T}$ to $F$ with apex $\mathrm{Lim}_{F}$ by mapping $J$ to
+commutes for all $J_{1},J_{2},j_{12}$.
+Now note that there is an equalizer $(\mathrm{Lim}_{F},\mathsf{Eq}_{F})$ of $f$ and $f^{\backprime}$ by premise and we can define a cone $\mathsf{C}_{T}$ to $F$ with apex $\mathrm{Lim}_{F}$ by mapping $J$ to
 \begin{align*}
   \mathsf{Pr}^{O}(J)
   \circ
@@ -1891,7 +2020,10 @@ Then we can patch the results together to a (non-commutative) diagram
   F(J_{2})
 \end{tikzcd}
 \]
-with the triangles and the horizontal part (the equalizer diagram) commuting. Now we have to show two things. First $\mathsf{C}_{T}$ is a cone and second that it is limiting. Therefore
+with the triangles and the horizontal part (the equalizer diagram) commuting.
+Now we have to show two things.
+First $\mathsf{C}_{T}$ is a cone and second that it is limiting.
+Therefore
 \begin{description}
 \item[Step 1]
 $\mathsf{C}_{T}$ is a cone to $F$ with apex $\mathrm{Lim}_{F}$ since for all $j_{12}$
@@ -1930,7 +2062,8 @@ $\mathsf{C}_{T}$ is a cone to $F$ with apex $\mathrm{Lim}_{F}$ since for all $j_
 \end{align*}
 as can be seen from the big diagram above.
 \item[Step 2]
-Let $\mathsf{C}$ be any cone to $F$ with apex $X$. Since $\mathsf{C}$ is also a cone to $O$ with apex $X$ and
+Let $\mathsf{C}$ be any cone to $F$ with apex $X$.
+Since $\mathsf{C}$ is also a cone to $O$ with apex $X$ and
 \begin{align*}
   \left(
     \prod_{J}F(J),
@@ -2036,7 +2169,8 @@ implies
   \circ
   f_{T}
 \end{align*}
-due to the uniqueness of $f_{M}$. Now since $(\mathrm{Lim}_{F},\mathsf{Eq}_{F})$ of $f$ and $f^{\backprime}$ is an equalizer we have a unique
+due to the uniqueness of $f_{M}$.
+Now since $(\mathrm{Lim}_{F},\mathsf{Eq}_{F})$ of $f$ and $f^{\backprime}$ is an equalizer we have a unique
 \begin{align*}
   f_{T}^{!}
   &\in
@@ -2086,7 +2220,9 @@ The duality principle \ref{thm:dp}.
 \hfill
 $\square$
 \end{prf}
-Note that theorem \ref{thm:limitexistence} explicitly says what the limit and colimit looks like. Moreover it gives a condition for when categories are complete and cocomplete. This is phrased in the next corollary.
+Note that theorem \ref{thm:limitexistence} explicitly says what the limit and colimit looks like.
+Moreover it gives a condition for when categories are complete and cocomplete.
+This is phrased in the next corollary.
 \\
 \begin{cor}
 \label{cor:completeness}
@@ -2095,7 +2231,8 @@ Let $\mathbf{J}$ be a discrete small category and $\mathbf{C}$ a locally small c
 \item[(1T)]
 $\mathbf{C}$ is complete if for all $X_{1},X_{2}$ and all $f,f^{\backprime} \in \mathrm{mor}_{\mathbf{C}}(X_{1},X_{2})$ there is an equalizer and if all limits of $F \colon \mathbf{J} \rightarrow \mathbf{C}$ exist.
 \item[(1I)]
-$\mathbf{C}$ is cocomplete if for all $X_{1},X_{2}$ and all $f,f^{\backprime} \in \mathrm{mor}_{\mathbf{C}}(X_{1},X_{2})$ there is a coequalizer and if all colimits of $F \colon \mathbf{J} \rightarrow \mathbf{C}$ exist. 
+$\mathbf{C}$ is cocomplete if for all $X_{1},X_{2}$ and all $f,f^{\backprime} \in \mathrm{mor}_{\mathbf{C}}(X_{1},X_{2})$ there is a coequalizer and if all colimits of $F \colon \mathbf{J} \rightarrow \mathbf{C}$ exist.
+
 \end{enumerate}
 \end{cor}
 \begin{prf}
@@ -2113,16 +2250,23 @@ Now we can infer that $\mathbf{Set}$ is also cocomplete.
 \\
 \begin{thm}
 \label{thm:setcocomplete}
-$\mathbf{Set}_{\mathcal{U}}$ is cocomplete w.r.t. $\mathcal{U}$.
+$\mathbf{Set}_{\mathcal{U}}$ is cocomplete w.r.t.
+$\mathcal{U}$.
 \end{thm}
 \begin{prf}
-We have said in example \ref{exa:oflimits} what coproducts and coequalizers in $\mathbf{Set}_{\mathcal{U}}$ are. The proof was a reader's execise. Anyways, corollary \ref{cor:completeness} yields what we want.
+We have said in example \ref{exa:oflimits} what coproducts and coequalizers in $\mathbf{Set}_{\mathcal{U}}$ are.
+The proof was a reader's execise.
+Anyways, corollary \ref{cor:completeness} yields what we want.
 \\
 \phantom{proven}
 \hfill
 $\square$
 \end{prf}
-After deriving the bicompleteness of $\mathbf{Set}$ from the general idea we would like to examine the (co)completeness of other categories. Particularly $\mathbf{Top}$ is important to us. For this purpose remember the functor $F_{\mathrm{Mon}} \colon \mathbf{Mon} \rightarrow \mathbf{Set}$ from earlier in this section which forgets the monoid structure of a monoid mapping it to the mere underlying set. This works in general for {\glqq}structures{\grqq} as discussed in remark \ref{rem:c3trick}. In particular for topological spaces we can define the (faithful) functor
+After deriving the bicompleteness of $\mathbf{Set}$ from the general idea we would like to examine the (co)completeness of other categories.
+Particularly $\mathbf{Top}$ is important to us.
+For this purpose remember the functor $F_{\mathrm{Mon}} \colon \mathbf{Mon} \rightarrow \mathbf{Set}$ from earlier in this section which forgets the monoid structure of a monoid mapping it to the mere underlying set.
+This works in general for {\glqq}structures{\grqq} as discussed in remark \ref{rem:c3trick}.
+In particular for topological spaces we can define the (faithful) functor
 \begin{align*}
   F_{\mathrm{Top}}
   \colon
@@ -2138,7 +2282,11 @@ After deriving the bicompleteness of $\mathbf{Set}$ from the general idea we wou
   &\mapsto
   f
 \end{align*}
-And a topologist knows that the binary product of two spaces $Y_{1}$ and $Y_{2}$ is mapped by $F_{\mathrm{Top}}$ to the binary product of $F_{\mathrm{Top}}(Y_{1})$ and $F_{\mathrm{Top}}(Y_{2})$. This is an early clue that limits and colimits in $\mathbf{Top}$ can be constructed from those in $\mathbf{Set}$. But then $F_{\mathrm{Top}}$ must preserve them somehow. So let us define what that means. Given a functor $F \colon \mathbf{J} \rightarrow \mathbf{C}_{\alpha}$ and a functor $F_{\alpha\beta}$ then note that a cone $\mathsf{C}$ to $F$ with apex $X^{\alpha}$ yields a cone $F_{\alpha\beta}[\mathsf{C}]$ to $F_{\alpha\beta} \circ F$ with apex $F_{\alpha\beta}(X^{\alpha})$ by mapping $J$ to $F_{\alpha\beta}(\mathsf{C}(J))$ since for all $J_{1},J_{2},j_{12}$
+And a topologist knows that the binary product of two spaces $Y_{1}$ and $Y_{2}$ is mapped by $F_{\mathrm{Top}}$ to the binary product of $F_{\mathrm{Top}}(Y_{1})$ and $F_{\mathrm{Top}}(Y_{2})$.
+This is an early clue that limits and colimits in $\mathbf{Top}$ can be constructed from those in $\mathbf{Set}$.
+But then $F_{\mathrm{Top}}$ must preserve them somehow.
+So let us define what that means.
+Given a functor $F \colon \mathbf{J} \rightarrow \mathbf{C}_{\alpha}$ and a functor $F_{\alpha\beta}$ then note that a cone $\mathsf{C}$ to $F$ with apex $X^{\alpha}$ yields a cone $F_{\alpha\beta}[\mathsf{C}]$ to $F_{\alpha\beta} \circ F$ with apex $F_{\alpha\beta}(X^{\alpha})$ by mapping $J$ to $F_{\alpha\beta}(\mathsf{C}(J))$ since for all $J_{1},J_{2},j_{12}$
 \begin{align*}
   F_{\alpha\beta}(F(j_{12}))
   \circ
@@ -2153,7 +2301,8 @@ And a topologist knows that the binary product of two spaces $Y_{1}$ and $Y_{2}$
   =
   F_{\alpha\beta}(\mathsf{C}(J_{2}))
 \end{align*}
-The same works for cocones to $F$ with apex $X^{\alpha}$. Now
+The same works for cocones to $F$ with apex $X^{\alpha}$.
+Now
 \begin{enumerate}
 \item[(1T)]
 $F_{\alpha\beta}$ is said to \textbf{preserve the limits of $F$} if for a limit $(X^{\alpha},F,\mathsf{C}_{T})$ of $F$ the $3$-tuple
@@ -2164,7 +2313,8 @@ $F_{\alpha\beta}$ is said to \textbf{preserve the limits of $F$} if for a limit 
     F_{\alpha\beta}[\mathsf{C}_{T}]
   \right)
 \end{align*}
-is a limit of $F_{\alpha\beta} \circ F$. For $\mathbf{C}_{\alpha},\mathbf{C}_{\beta}$ locally small a functor $F_{\alpha\beta}$ is called\footnote{this terminology is rather motivated from analysis than from an intuitive continuity} \textbf{continuous} if it preserves the limits of any $F \colon \mathbf{J} \rightarrow \mathbf{C}_{\alpha}$ with $\mathbf{J}$ small.
+is a limit of $F_{\alpha\beta} \circ F$.
+For $\mathbf{C}_{\alpha},\mathbf{C}_{\beta}$ locally small a functor $F_{\alpha\beta}$ is called\footnote{this terminology is rather motivated from analysis than from an intuitive continuity} \textbf{continuous} if it preserves the limits of any $F \colon \mathbf{J} \rightarrow \mathbf{C}_{\alpha}$ with $\mathbf{J}$ small.
 \item[(1I)]
 $F_{\alpha\beta}$ is said to \textbf{preserve the colimits of $F$} if for a colimit $(F,X^{\alpha},\mathsf{C}_{I}^{\prime})$ of $F$ the $3$-tuple
 \begin{align*}
@@ -2174,13 +2324,15 @@ $F_{\alpha\beta}$ is said to \textbf{preserve the colimits of $F$} if for a coli
     F_{\alpha\beta}[\mathsf{C}_{I}^{\prime}]
   \right)
 \end{align*}
-is a colimit of $F_{\alpha\beta} \circ F$. For $\mathbf{C}_{\alpha},\mathbf{C}_{\beta}$ locally small a functor $F_{\alpha\beta}$ is called \textbf{cocontinuous} if it preserves the colimits of any $F \colon \mathbf{J} \rightarrow \mathbf{C}_{\alpha}$ with $\mathbf{J}$ small.
+is a colimit of $F_{\alpha\beta} \circ F$.
+For $\mathbf{C}_{\alpha},\mathbf{C}_{\beta}$ locally small a functor $F_{\alpha\beta}$ is called \textbf{cocontinuous} if it preserves the colimits of any $F \colon \mathbf{J} \rightarrow \mathbf{C}_{\alpha}$ with $\mathbf{J}$ small.
 \end{enumerate}
 The covariant hom functor is continuous.
 \\
 \begin{thm}
 \label{thm:cohomiscont}
-Let $\mathbf{C}$ locally small. Then
+Let $\mathbf{C}$ locally small.
+Then
 \begin{align*}
   \mathrm{hom}_{\mathbf{C}}(X,\cdot)
   \colon
@@ -2191,7 +2343,9 @@ Let $\mathbf{C}$ locally small. Then
 is continuous.
 \end{thm}
 \begin{prf}
-Let $\mathbf{J}$ be small and $F \colon \mathbf{J} \rightarrow \mathbf{C}$ a functor. Let further $\mathsf{C}_{T}$ be a limiting cone to $F$ with apex $X_{T}$ and let $\mathsf{C}$ be a cone to $\mathrm{hom}_{\mathbf{C}}(X,F(\cdot))$ with apex $Y$. We are looking for a unique
+Let $\mathbf{J}$ be small and $F \colon \mathbf{J} \rightarrow \mathbf{C}$ a functor.
+Let further $\mathsf{C}_{T}$ be a limiting cone to $F$ with apex $X_{T}$ and let $\mathsf{C}$ be a cone to $\mathrm{hom}_{\mathbf{C}}(X,F(\cdot))$ with apex $Y$.
+We are looking for a unique
 \begin{align*}
   f
   \colon
@@ -2214,7 +2368,8 @@ such that
   \mathrm{hom}_{\mathbf{C}}(X,F(J))
 \end{tikzcd}
 \]
-commutes. That is, for each $y \in Y$ we must have
+commutes.
+That is, for each $y \in Y$ we must have
 \begin{align*}
   \mathsf{C}(J)(y)
   &=
@@ -2292,7 +2447,15 @@ if $1_{\mathbf{Top}}$ denotes the terminal object of $\mathbf{Top}$ since $1_{\m
   &\mapsto
   y
 \end{align*}
-corresponds precisely to the point $y$ in $Y$. Hence $F_{\mathrm{Top}}$ is representable and by theorem \ref{thm:cohomiscont} continuous. This means that any limiting cone in $\mathbf{Top}$ is mapped to a limiting cone by $F_{\mathrm{Top}}$. This is to say that we can take the limits of $\mathbf{Set}$ and topologize these in any limit preserving way to get those in $\mathbf{Top}$. So from the knowledge that $\mathbf{Set}$ is complete we can try to show that also $\mathbf{Top}$ is. Note that if we could show that $F_{\mathrm{Top}}$ is cocontinuous the same reasoning would apply to show cocompleteness. That $F_{\mathrm{Top}}$ is cocontinuous is shown in the next subsection \ref{sec:adjoint}. But now let us look if the proposed strategy is successful at all by examining the limit case first. This is the subject of the next theorem.
+corresponds precisely to the point $y$ in $Y$.
+Hence $F_{\mathrm{Top}}$ is representable and by theorem \ref{thm:cohomiscont} continuous.
+This means that any limiting cone in $\mathbf{Top}$ is mapped to a limiting cone by $F_{\mathrm{Top}}$.
+This is to say that we can take the limits of $\mathbf{Set}$ and topologize these in any limit preserving way to get those in $\mathbf{Top}$.
+So from the knowledge that $\mathbf{Set}$ is complete we can try to show that also $\mathbf{Top}$ is.
+Note that if we could show that $F_{\mathrm{Top}}$ is cocontinuous the same reasoning would apply to show cocompleteness.
+That $F_{\mathrm{Top}}$ is cocontinuous is shown in the next subsection \ref{sec:adjoint}.
+But now let us look if the proposed strategy is successful at all by examining the limit case first.
+This is the subject of the next theorem.
 \\
 \begin{thm}
 \label{thm:topcomplete}
@@ -2302,7 +2465,8 @@ $\mathbf{Top}_{\mathcal{U}}$ is complete w.r.t. $\mathcal{U}$.
 Due to the text above and theorem \ref{thm:limitexistence} it suffices to show that the products and equalizers are the topologized ones from $\mathbf{Set}_{\mathcal{U}}$.
 \begin{enumerate}
 \item[(a)]
-Let $\mathbf{J}$ denote a small discrete category here and $P \colon \mathbf{J}^{\mathrm{op}} \rightarrow \mathbf{Top}$ a fucntor. Let further $\mathsf{Pr}$ be a limiting cone to
+Let $\mathbf{J}$ denote a small discrete category here and $P \colon \mathbf{J}^{\mathrm{op}} \rightarrow \mathbf{Top}$ a fucntor.
+Let further $\mathsf{Pr}$ be a limiting cone to
 \begin{align*}
   P^{\backprime}
   &=
@@ -2310,7 +2474,8 @@ Let $\mathbf{J}$ denote a small discrete category here and $P \colon \mathbf{J}^
   \circ
   P
 \end{align*}
-with apex $\mathrm{Pr}$. Then for all cones $\mathsf{C}$ to $P^{\backprime}$ with apex $Y$ there is a unique
+with apex $\mathrm{Pr}$.
+Then for all cones $\mathsf{C}$ to $P^{\backprime}$ with apex $Y$ there is a unique
 \begin{align*}
   f
   &\in
@@ -2335,7 +2500,9 @@ such that for all $J$ the diagram
   P^{\backprime}(J)
 \end{tikzcd}
 \]
-commutes. We have to topologize $\mathrm{Pr}$ with a topology $\mathfrak{T}_{\mathrm{Pr}}$ such that $\mathsf{Pr}(J)$ is continuous and for all spaces $(Y,\mathfrak{T}_{Y})$ the function $\mathsf{C}(J)$ is continuous for all $J$ if and only if $f$ is continuous. In particular, for any topology $\mathfrak{T}$ on $\mathrm{Pr}$ such that $\mathsf{Pr}(J)$ is continuous the identity
+commutes.
+We have to topologize $\mathrm{Pr}$ with a topology $\mathfrak{T}_{\mathrm{Pr}}$ such that $\mathsf{Pr}(J)$ is continuous and for all spaces $(Y,\mathfrak{T}_{Y})$ the function $\mathsf{C}(J)$ is continuous for all $J$ if and only if $f$ is continuous.
+In particular, for any topology $\mathfrak{T}$ on $\mathrm{Pr}$ such that $\mathsf{Pr}(J)$ is continuous the identity
 \begin{align*}
   \mathrm{id}_{\mathrm{Pr}}
   &\in
@@ -2345,7 +2512,10 @@ commutes. We have to topologize $\mathrm{Pr}$ with a topology $\mathfrak{T}_{\ma
     \mathrm{Pr}
   \right)
 \end{align*}
-must be continuous. But $\mathrm{id}_{\mathrm{Pr}}$ is continuous if and only if $\mathfrak{T}_{\mathrm{Pr}} \subset \mathfrak{T}$ as we saw in example \ref{exa:topology}. Hence $\mathfrak{T}_{\mathrm{Pr}}$ must be the coarsest topology on $\mathrm{Pr}$ such that $\mathsf{Pr}(J)$ is continuous. This is to say that $\mathfrak{T}_{\mathrm{Pr}}$ is\footnote{what follows is the well-known product topology} the topology with subbasis
+must be continuous.
+But $\mathrm{id}_{\mathrm{Pr}}$ is continuous if and only if $\mathfrak{T}_{\mathrm{Pr}} \subset \mathfrak{T}$ as we saw in example \ref{exa:topology}.
+Hence $\mathfrak{T}_{\mathrm{Pr}}$ must be the coarsest topology on $\mathrm{Pr}$ such that $\mathsf{Pr}(J)$ is continuous.
+This is to say that $\mathfrak{T}_{\mathrm{Pr}}$ is\footnote{what follows is the well-known product topology} the topology with subbasis
 \begin{align*}
   S
   &=
@@ -2361,7 +2531,8 @@ must be continuous. But $\mathrm{id}_{\mathrm{Pr}}$ is continuous if and only if
       \text{ open}
   \rbrace
 \end{align*}
-Now that all $\mathsf{C}(J)$ are continuous if $f$ is continuous is clear from the fact that composing continuous functions yields a continuous function. On the other hand if $\mathsf{C}(J)$ is continuous then by definition of $S$ for $V \in S$ there is some $U \subset P(J)$ for some $J$ such that
+Now that all $\mathsf{C}(J)$ are continuous if $f$ is continuous is clear from the fact that composing continuous functions yields a continuous function.
+On the other hand if $\mathsf{C}(J)$ is continuous then by definition of $S$ for $V \in S$ there is some $U \subset P(J)$ for some $J$ such that
 \begin{align*}
   f^{-1}(V)
   &=
@@ -2376,7 +2547,8 @@ Now that all $\mathsf{C}(J)$ are continuous if $f$ is continuous is clear from t
   =
   \mathsf{C}(J)^{-1}(U)
 \end{align*}
-which shows that $f^{-1}(V)$ is open since $\mathsf{C}(J)$ is continuous. This suffices to show that $f$ is continuous.
+which shows that $f^{-1}(V)$ is open since $\mathsf{C}(J)$ is continuous.
+This suffices to show that $f$ is continuous.
 \item[(b)]
 Let $\mathbf{J}$ denote a small category visualized by
 \[
@@ -2388,7 +2560,8 @@ Let $\mathbf{J}$ denote a small category visualized by
   Z_{1}
 \end{tikzcd}
 \]
-and $P \colon \mathbf{J}^{\mathrm{op}} \rightarrow \mathbf{Top}$ a functor. Let further $\mathsf{Eq}$ be a limiting cone to
+and $P \colon \mathbf{J}^{\mathrm{op}} \rightarrow \mathbf{Top}$ a functor.
+Let further $\mathsf{Eq}$ be a limiting cone to
 \begin{align*}
   P^{\backprime}
   &=
@@ -2396,7 +2569,8 @@ and $P \colon \mathbf{J}^{\mathrm{op}} \rightarrow \mathbf{Top}$ a functor. Let 
   \circ
   P
 \end{align*}
-with apex $\mathrm{Eq}$. Then for all cones $\mathsf{C}$ to $P^{\backprime}$ with apex $Y$ there is a unique
+with apex $\mathrm{Eq}$.
+Then for all cones $\mathsf{C}$ to $P^{\backprime}$ with apex $Y$ there is a unique
 \begin{align*}
   f
   &\in
@@ -2421,7 +2595,9 @@ such that for all $J$ the diagram
   P^{\backprime}(J)
 \end{tikzcd}
 \]
-commutes which is equivalent to the statement that it commutes for $J = Z_{1}$. With the same reasoning as in (a) we conclude that $\mathrm{Eq}$ has to be endowed with the coarsest topology $\mathfrak{T}_{\mathrm{Eq}}$ such that $\mathsf{Eq}(Z_{1})$ is continuous and for all spaces $(Y,\mathfrak{T})$ the function $\mathsf{C}(Z_{1})$ is continuous if and only if $f$ is continuous. The coarsest topology is to say that $\mathfrak{T}_{\mathrm{Eq}}$ is\footnote{what follows is the well-known subspace topology} the topology with subbasis
+commutes which is equivalent to the statement that it commutes for $J = Z_{1}$.
+With the same reasoning as in (a) we conclude that $\mathrm{Eq}$ has to be endowed with the coarsest topology $\mathfrak{T}_{\mathrm{Eq}}$ such that $\mathsf{Eq}(Z_{1})$ is continuous and for all spaces $(Y,\mathfrak{T})$ the function $\mathsf{C}(Z_{1})$ is continuous if and only if $f$ is continuous.
+The coarsest topology is to say that $\mathfrak{T}_{\mathrm{Eq}}$ is\footnote{what follows is the well-known subspace topology} the topology with subbasis
 \begin{align*}
   S
   &=
@@ -2436,7 +2612,8 @@ commutes which is equivalent to the statement that it commutes for $J = Z_{1}$. 
       \text{ open}
   \rbrace
 \end{align*}
-That $\mathsf{C}(Z_{1})$ is continuous if $f$ is, is as clear as in (a). On the other hand for $V \in S$ there is some $U_{1} \subset P(Z_{1})$ such that
+That $\mathsf{C}(Z_{1})$ is continuous if $f$ is, is as clear as in (a).
+On the other hand for $V \in S$ there is some $U_{1} \subset P(Z_{1})$ such that
 \begin{align*}
   f^{-1}(V)
   &=
@@ -2450,7 +2627,8 @@ open if $\mathsf{C}(Z_{1})$ is continuous and hence $f$ is continuous if $\maths
 \hfill
 $\square$
 \end{prf}
-Now let us pretend that $F_{\mathrm{Top}}$ is cocontinuous (until we have theorem \ref{thm:adjointlimit} at hand). Then we can show in analogy (it is almost the same and only here for the sake of completeness) to theorem \ref{thm:topcomplete} that
+Now let us pretend that $F_{\mathrm{Top}}$ is cocontinuous (until we have theorem \ref{thm:adjointlimit} at hand).
+Then we can show in analogy (it is almost the same and only here for the sake of completeness) to theorem \ref{thm:topcomplete} that
 \\
 \begin{thm}
 \label{thm:topcocomplete}
@@ -2460,7 +2638,8 @@ $\mathbf{Top}_{\mathcal{U}}$ is cocomplete w.r.t. $\mathcal{U}$.
 As reasoned above it suffices to show that the coproducts and coequalizers are the topologized ones from $\mathbf{Set}_{\mathcal{U}}$.
 \begin{enumerate}
 \item[(a)]
-Let $\mathbf{J}$ denote a small discrete category here and $F \colon \mathbf{J} \rightarrow \mathbf{Top}$ a functor. Let further $\mathsf{Pr}^{\prime}$ be a colimiting cocone to
+Let $\mathbf{J}$ denote a small discrete category here and $F \colon \mathbf{J} \rightarrow \mathbf{Top}$ a functor.
+Let further $\mathsf{Pr}^{\prime}$ be a colimiting cocone to
 \begin{align*}
   F^{\backprime}
   &=
@@ -2468,7 +2647,8 @@ Let $\mathbf{J}$ denote a small discrete category here and $F \colon \mathbf{J} 
   \circ
   F
 \end{align*}
-with apex $\mathrm{Pr}^{\prime}$. Then for all cocones $\mathsf{C}^{\prime}$ to $F^{\backprime}$ with apex $Y$ there is a unique
+with apex $\mathrm{Pr}^{\prime}$.
+Then for all cocones $\mathsf{C}^{\prime}$ to $F^{\backprime}$ with apex $Y$ there is a unique
 \begin{align*}
   f
   &\in
@@ -2493,7 +2673,9 @@ such that for all $J$ the diagram
   \arrow[swap]{ur}{\mathsf{Pr}^{\prime}(J)}
 \end{tikzcd}
 \]
-commutes. We have to topologize $\mathrm{Pr}^{\prime}$ with a topology $\mathfrak{T}_{\mathrm{Pr}^{\prime}}$ such that $\mathsf{Pr}^{\prime}(J)$ is continuous and for all spaces $(Y,\mathfrak{T}_{Y})$ the function $\mathsf{C}^{\prime}(J)$ is continuous for all $J$ if and only if $f$ is continuous. In particular, for any topology $\mathfrak{T}$ on $\mathrm{Pr}^{\prime}$ such that $\mathsf{Pr}^{\prime}(J)$ is continuous the identity
+commutes.
+We have to topologize $\mathrm{Pr}^{\prime}$ with a topology $\mathfrak{T}_{\mathrm{Pr}^{\prime}}$ such that $\mathsf{Pr}^{\prime}(J)$ is continuous and for all spaces $(Y,\mathfrak{T}_{Y})$ the function $\mathsf{C}^{\prime}(J)$ is continuous for all $J$ if and only if $f$ is continuous.
+In particular, for any topology $\mathfrak{T}$ on $\mathrm{Pr}^{\prime}$ such that $\mathsf{Pr}^{\prime}(J)$ is continuous the identity
 \begin{align*}
   \mathrm{id}_{\mathrm{Pr}}
   &\in
@@ -2503,7 +2685,10 @@ commutes. We have to topologize $\mathrm{Pr}^{\prime}$ with a topology $\mathfra
     \mathrm{Pr}^{\prime}
   \right)
 \end{align*}
-must be continuous. But $\mathrm{id}_{\mathrm{Pr}}$ is continuous if and only if $\mathfrak{T} \subset \mathfrak{T}_{\mathrm{Pr}^{\prime}}$ as we saw in example \ref{exa:topology}. Hence $\mathfrak{T}_{\mathrm{Pr}^{\prime}}$ must be the finest topology on $\mathrm{Pr}^{\prime}$ such that $\mathsf{Pr}^{\prime}(J)$ is continuous. This is to say that\footnote{what follows is the well-known sum topology}
+must be continuous.
+But $\mathrm{id}_{\mathrm{Pr}}$ is continuous if and only if $\mathfrak{T} \subset \mathfrak{T}_{\mathrm{Pr}^{\prime}}$ as we saw in example \ref{exa:topology}.
+Hence $\mathfrak{T}_{\mathrm{Pr}^{\prime}}$ must be the finest topology on $\mathrm{Pr}^{\prime}$ such that $\mathsf{Pr}^{\prime}(J)$ is continuous.
+This is to say that\footnote{what follows is the well-known sum topology}
 \begin{align*}
   U
   \in
@@ -2519,7 +2704,8 @@ must be continuous. But $\mathrm{id}_{\mathrm{Pr}}$ is continuous if and only if
   \text{ open in }
   F(J)
 \end{align*}
-Now that all $\mathsf{C}^{\prime}(J)$ are continuous if $f$ is continuous is clear from the fact that composing continuous functions yields a continuous function. On the other hand if $\mathsf{C}^{\prime}(J)$ is continuous then for
+Now that all $\mathsf{C}^{\prime}(J)$ are continuous if $f$ is continuous is clear from the fact that composing continuous functions yields a continuous function.
+On the other hand if $\mathsf{C}^{\prime}(J)$ is continuous then for
 \begin{align*}
   O
   \in
@@ -2567,7 +2753,8 @@ we have the equivalences
   \text{ open in }
   F(J)
 \end{align*}
-which shows that $f^{-1}(O)$ is open since $\mathsf{C}^{\prime}(J)$ is continuous. This suffices to show that $f$ is continuous.
+which shows that $f^{-1}(O)$ is open since $\mathsf{C}^{\prime}(J)$ is continuous.
+This suffices to show that $f$ is continuous.
 \item[(b)]
 Let $\mathbf{J}$ denote a small category visualized by
 \[
@@ -2579,7 +2766,8 @@ Let $\mathbf{J}$ denote a small category visualized by
   Z_{1}
 \end{tikzcd}
 \]
-and $F \colon \mathbf{J} \rightarrow \mathbf{Top}$ a functor. Let further $\mathsf{Eq}^{\prime}$ be a colimiting cocone to
+and $F \colon \mathbf{J} \rightarrow \mathbf{Top}$ a functor.
+Let further $\mathsf{Eq}^{\prime}$ be a colimiting cocone to
 \begin{align*}
   F^{\backprime}
   &=
@@ -2587,7 +2775,8 @@ and $F \colon \mathbf{J} \rightarrow \mathbf{Top}$ a functor. Let further $\math
   \circ
   F
 \end{align*}
-with apex $\mathrm{Eq}^{\prime}$. Then for all cocones $\mathsf{C}^{\prime}$ to $F^{\backprime}$ with apex $Y$ there is a unique
+with apex $\mathrm{Eq}^{\prime}$.
+Then for all cocones $\mathsf{C}^{\prime}$ to $F^{\backprime}$ with apex $Y$ there is a unique
 \begin{align*}
   f
   &\in
@@ -2612,7 +2801,9 @@ such that for all $J$ the diagram
   \arrow[swap]{ur}{\mathsf{Eq}^{\prime}(J)}
 \end{tikzcd}
 \]
-commutes which is equivalent to the statement that it commutes for $J = Z_{1}$. With the same reasoning as in (a) we conclude that $\mathrm{Eq}^{\prime}$ has to be endowed with the finest topology $\mathfrak{T}_{\mathrm{Eq}^{\prime}}$ such that $\mathsf{Eq}^{\prime}(Z_{1})$ is continuous and for all spaces $(Y,\mathfrak{T})$ the function $\mathsf{C}^{\prime}(Z_{1})$ is continuous if and only if $f$ is continuous. The finest topology is to say that\footnote{what follows is the well-known quotient topology}
+commutes which is equivalent to the statement that it commutes for $J = Z_{1}$.
+With the same reasoning as in (a) we conclude that $\mathrm{Eq}^{\prime}$ has to be endowed with the finest topology $\mathfrak{T}_{\mathrm{Eq}^{\prime}}$ such that $\mathsf{Eq}^{\prime}(Z_{1})$ is continuous and for all spaces $(Y,\mathfrak{T})$ the function $\mathsf{C}^{\prime}(Z_{1})$ is continuous if and only if $f$ is continuous.
+The finest topology is to say that\footnote{what follows is the well-known quotient topology}
 \begin{align*}
   U
   \in
@@ -2625,7 +2816,8 @@ commutes which is equivalent to the statement that it commutes for $J = Z_{1}$. 
   \text{ open in }
   F(Z_{1})
 \end{align*}
-That $\mathsf{C}^{\prime}(Z_{1})$ is continuous if $f$ is, is as clear as in (a). On the other hand for
+That $\mathsf{C}^{\prime}(Z_{1})$ is continuous if $f$ is, is as clear as in (a).
+On the other hand for
 \begin{align*}
   O
   \in
@@ -2653,7 +2845,8 @@ we have the equivalences
   \text{ open in }
   F(J)
 \end{align*}
-which shows that $f^{-1}(O)$ is open since $\mathsf{C}(Z_{1})$ is continuous. Hence $f$ is continuous if $\mathsf{C}(Z_{1})$ is.
+which shows that $f^{-1}(O)$ is open since $\mathsf{C}(Z_{1})$ is continuous.
+Hence $f$ is continuous if $\mathsf{C}(Z_{1})$ is.
 \end{enumerate}
 \phantom{proven}
 \hfill
@@ -2668,11 +2861,21 @@ $\mathbf{Ab}_{\mathcal{U}}$ is bicomplete
 \end{enumerate}
 Moreover one can try this procedure whenever one has a representable functor mapping a structured set\footnote{compare to remark \ref{rem:c3trick}} to its underlying set while leaving morphisms untouched.
 \\\\
-We have now enough terminology to continue our example \ref{exa:gs1} about generalized spaces. However, it is worthwhile to first understand certain instances of the category of bundles better w.r.t. limits.
+We have now enough terminology to continue our example \ref{exa:gs1} about generalized spaces.
+However, it is worthwhile to first understand certain instances of the category of bundles better w.r.t. limits.
 \\
 \begin{exa}[Bundles 1]
 \label{exa:bundles1}
-In subsection \ref{sec:comcat} we said what the category of bundles is and that we can equivalently consider the according slice category. Most of the time one is interested in slice categories $\mathbf{C} \slash X$ over an object $X$ of a category $\mathbf{C}$ such that $\mathbf{C}$ is a category of spaces, that is, something like $\mathbf{Top}$ or $\mathbf{Diff}_{\infty}$. Keep this in mind. Anyways, since these are concrete categories we can interpret objects $\pi$ of $\mathbf{C} \slash X$ as functions (perhaps with a certain structure-preserving property). In particular, preimages are defined and one calls the preimage $\pi^{1}(\lbrace x \rbrace)$ of a point $x \in X$ the \textbf{fiber (of $\pi$ at $x$)}. It is natural to ask if there are functions choosing exactly one point from each fiber in a structure-preserving way. Such a function is called section and it is not clear in general that there are some. But the question makes sense for any category $\mathbf{C}$ and not only for concrete ones. So let $\mathbf{C}$ be a category and $\pi \in \mathrm{ob}_{\mathbf{C} \slash X}$. A morphism
+In subsection \ref{sec:comcat} we said what the category of bundles is and that we can equivalently consider the according slice category.
+Most of the time one is interested in slice categories $\mathbf{C} \slash X$ over an object $X$ of a category $\mathbf{C}$ such that $\mathbf{C}$ is a category of spaces, that is, something like $\mathbf{Top}$ or $\mathbf{Diff}_{\infty}$.
+Keep this in mind.
+Anyways, since these are concrete categories we can interpret objects $\pi$ of $\mathbf{C} \slash X$ as functions (perhaps with a certain structure-preserving property).
+In particular, preimages are defined and one calls the preimage $\pi^{1}(\lbrace x \rbrace)$ of a point $x \in X$ the \textbf{fiber (of $\pi$ at $x$)}.
+It is natural to ask if there are functions choosing exactly one point from each fiber in a structure-preserving way.
+Such a function is called section and it is not clear in general that there are some.
+But the question makes sense for any category $\mathbf{C}$ and not only for concrete ones.
+So let $\mathbf{C}$ be a category and $\pi \in \mathrm{ob}_{\mathbf{C} \slash X}$.
+A morphism
 \begin{align*}
   s
   \in
@@ -2690,7 +2893,9 @@ is a \textbf{section (for $\pi$)} if
   &=
   \mathrm{id}_{X}
 \end{align*}
-Now let's add some structure to $\mathbf{C}$. Namely, assume $\mathbf{C}$ to have pullbacks. Then it is clear that for objects $\pi_{1},\pi_{2}$ of $\mathbf{C} \slash X$ we get the pullback
+Now let's add some structure to $\mathbf{C}$.
+Namely, assume $\mathbf{C}$ to have pullbacks.
+Then it is clear that for objects $\pi_{1},\pi_{2}$ of $\mathbf{C} \slash X$ we get the pullback
 \begin{align*}
   \left(
     \mathrm{dom}_{\mathbf{C}}(\pi_{1})
@@ -2700,7 +2905,9 @@ Now let's add some structure to $\mathbf{C}$. Namely, assume $\mathbf{C}$ to hav
     \mathrm{Pr}_{2}
   \right)
 \end{align*}
-of $\pi_{1}$ and $\pi_{2}$. Note that $\mathrm{Pr}_{2}$ can be regarded as a bundle over $\mathrm{dom}_{\mathbf{C}}(\pi_{2})$ and that $(\mathrm{Pr}_{1},\pi_{1})$ is a morphism from $\mathrm{Pr}_{2}$ to $\pi_{2}$ in the arrow category $\mathbf{C}_{\rightarrow}$ - that is, a bundle map. Note the convention
+of $\pi_{1}$ and $\pi_{2}$.
+Note that $\mathrm{Pr}_{2}$ can be regarded as a bundle over $\mathrm{dom}_{\mathbf{C}}(\pi_{2})$ and that $(\mathrm{Pr}_{1},\pi_{1})$ is a morphism from $\mathrm{Pr}_{2}$ to $\pi_{2}$ in the arrow category $\mathbf{C}_{\rightarrow}$ - that is, a bundle map.
+Note the convention
 \begin{align*}
   \pi_{1}^{\ast}(\pi_{2})
   &\doteq
@@ -2730,7 +2937,8 @@ over $X$ of $\mathbf{C}$ with domain the fibered product
   \times_{X}
   \mathrm{dom}_{\mathbf{C}}(\pi_{2}),
 \end{align*}
-and this together with the morphisms $\mathrm{Pr}_{1}$ and $\mathrm{Pr}_{2}$ which are by definition bundle maps from $\pi_{1} \times \pi_{2}$ to $\pi_{1}$ and $\pi_{2}$, respectively, is a binary product of $\pi_{1}$ and $\pi_{2}$ in $\mathbf{C} \slash X$. This is because for any bundle $\pi^{\backprime}$ over $X$ and bundle maps $f_{1}$ and $f_{2}$ to $\pi_{1}$ and $\pi_{2}$, respectively, we get from the universality of the pullback a unique bundle map $f_{!}$ from $\pi^{\backprime}$ to $\pi_{1} \times \pi_{2}$ such that the diagram
+and this together with the morphisms $\mathrm{Pr}_{1}$ and $\mathrm{Pr}_{2}$ which are by definition bundle maps from $\pi_{1} \times \pi_{2}$ to $\pi_{1}$ and $\pi_{2}$, respectively, is a binary product of $\pi_{1}$ and $\pi_{2}$ in $\mathbf{C} \slash X$.
+This is because for any bundle $\pi^{\backprime}$ over $X$ and bundle maps $f_{1}$ and $f_{2}$ to $\pi_{1}$ and $\pi_{2}$, respectively, we get from the universality of the pullback a unique bundle map $f_{!}$ from $\pi^{\backprime}$ to $\pi_{1} \times \pi_{2}$ such that the diagram
 \[
 \begin{tikzcd}[sep=huge]
   &
@@ -2750,7 +2958,16 @@ and this together with the morphisms $\mathrm{Pr}_{1}$ and $\mathrm{Pr}_{2}$ whi
   \pi_{2}
 \end{tikzcd}
 \]
-commutes in $\mathbf{C} \slash X$. If you do not see this yet try to incorporate the pullback into the diagram and interpret it in $\mathbf{C}$. So pullbacks in $\mathbf{C}$ means binary products in $\mathbf{C} \slash X$. A particularly interesting case of these bundle products is when one (or both) bundles are \textit{trivial}. This is to say that the domain of the bundle is the coproduct of all its fibers and projecting the fibers to their index. Of course, in our current context this makes at best sense for concrete categories with coproducts. For the sake of simplicity let us confine ourselves to the case $\mathbf{C} = \mathbf{Top}$ and consider a narrower sense of triviality for the rest of the example though we want to emphasize that with some more effort the case $\mathbf{C} = \mathbf{Diff}_{\infty}$ can also be put to work. Assume spaces $E,B,F \in \mathrm{ob}_{\mathbf{Top}}$ and a bundle $\pi \in \mathrm{mor}_{\mathbf{Top}}(E,B)$ for the rest of the example. $\pi$ together with $F$ is called \textbf{(Cartan) fiber bundle (for $F$ in $\mathbf{Top}$)} if each fiber of $\pi$ is isomorphic to $F$. $\pi$ is called \textbf{trivial (for $F$ in $\mathbf{Top}$)} if it is isomorphic to the bundle
+commutes in $\mathbf{C} \slash X$.
+If you do not see this yet try to incorporate the pullback into the diagram and interpret it in $\mathbf{C}$.
+So pullbacks in $\mathbf{C}$ means binary products in $\mathbf{C} \slash X$.
+A particularly interesting case of these bundle products is when one (or both) bundles are \textit{trivial}.
+This is to say that the domain of the bundle is the coproduct of all its fibers and projecting the fibers to their index.
+Of course, in our current context this makes at best sense for concrete categories with coproducts.
+For the sake of simplicity let us confine ourselves to the case $\mathbf{C} = \mathbf{Top}$ and consider a narrower sense of triviality for the rest of the example though we want to emphasize that with some more effort the case $\mathbf{C} = \mathbf{Diff}_{\infty}$ can also be put to work.
+Assume spaces $E,B,F \in \mathrm{ob}_{\mathbf{Top}}$ and a bundle $\pi \in \mathrm{mor}_{\mathbf{Top}}(E,B)$ for the rest of the example.
+$\pi$ together with $F$ is called \textbf{(Cartan) fiber bundle (for $F$ in $\mathbf{Top}$)} if each fiber of $\pi$ is isomorphic to $F$.
+$\pi$ is called \textbf{trivial (for $F$ in $\mathbf{Top}$)} if it is isomorphic to the bundle
 \begin{align*}
   \mathrm{pr}_{1}
   \colon
@@ -2764,7 +2981,14 @@ commutes in $\mathbf{C} \slash X$. If you do not see this yet try to incorporate
   &\mapsto
   b
 \end{align*}
-w.r.t. the category $\mathbf{Top} \slash B$. If $\pi$ is trivial for $F$ then $\pi$ together with $F$ is automatically a fiber bundle. Most often one is concerned with fiber bundles which are trivial at least locally. So let us define what this means. For that purpose let $\mathrm{cov}_{B}$ be an open cover generator. Then $\pi$ is called \textbf{locally trivial (for $F$ w.r.t. $\mathrm{cov}_{B}$ in $\mathbf{Top}$)} if each bundle $\mathrm{i}_{U_{k}}^{\ast}(\pi)$ (which can be regarded as bundle restricted to $U_{k} \doteq \mathrm{cov}_{B}(k)$) is trivial for $F$. A Cartan fiber bundle $(\pi,F)$ for $F$ such that $\pi$ is locally trivial for $F$ w.r.t. to some $\mathrm{cov}_{B}$ is called \textbf{fiber bundle (for $F$ in $\mathbf{Top}$)}. Furthermore if $F$ has the discrete topology (i.e. its power set) we call a fiber bundle $(\pi,F)$ for $F$ a \textbf{cover (of $B$)} or equivalently \textbf{covering space (of $B$)}.\footnote{note that this is a bit a narrower sense than that from \cite{8b5861fc} because it is more convenient for us here}
+w.r.t. the category $\mathbf{Top} \slash B$.
+If $\pi$ is trivial for $F$ then $\pi$ together with $F$ is automatically a fiber bundle.
+Most often one is concerned with fiber bundles which are trivial at least locally.
+So let us define what this means.
+For that purpose let $\mathrm{cov}_{B}$ be an open cover generator.
+Then $\pi$ is called \textbf{locally trivial (for $F$ w.r.t. $\mathrm{cov}_{B}$ in $\mathbf{Top}$)} if each bundle $\mathrm{i}_{U_{k}}^{\ast}(\pi)$ (which can be regarded as bundle restricted to $U_{k} \doteq \mathrm{cov}_{B}(k)$) is trivial for $F$.
+A Cartan fiber bundle $(\pi,F)$ for $F$ such that $\pi$ is locally trivial for $F$ w.r.t. to some $\mathrm{cov}_{B}$ is called \textbf{fiber bundle (for $F$ in $\mathbf{Top}$)}.
+Furthermore if $F$ has the discrete topology (i.e. its power set) we call a fiber bundle $(\pi,F)$ for $F$ a \textbf{cover (of $B$)} or equivalently \textbf{covering space (of $B$)}.\footnote{note that this is a bit a narrower sense than that from \cite{8b5861fc} because it is more convenient for us here}
 \end{exa}
 \begin{prf}
 We think this example is explicit enough and doesn't need more proof.
@@ -2777,7 +3001,15 @@ But now the promised generalized spaces.
 \\
 \begin{exa}[Generalized Spaces II]
 \label{exa:gs2}
-In this part of the example we want to understand the second consistency condition quantitatively. We want to be able to probe a generalized object $P$ by a space $S$ in such a way that we can probe it by subspaces of $S$ and then consistently patch together the results. The only kind of space with a sensible notion of subspace, their intersection and cover we have dealt with in these notes yet are topological spaces. So let us take $S$ to be a topological space. Now we need a category with objects the subspaces of $S$ on which we can evaluate $P$ and morphisms ordering these subspaces. But we already have an appropriate category. Namely $\mathbf{Open}_{S}$ from example \ref{exa:topology}. So let us consider a presheaf $P$ on $\mathbf{Open}_{S}$ to inspect what the second consistency condition shall be. To become even more concrete take a bundle
+In this part of the example we want to understand the second consistency condition quantitatively.
+We want to be able to probe a generalized object $P$ by a space $S$ in such a way that we can probe it by subspaces of $S$ and then consistently patch together the results.
+The only kind of space with a sensible notion of subspace, their intersection and cover we have dealt with in these notes yet are topological spaces.
+So let us take $S$ to be a topological space.
+Now we need a category with objects the subspaces of $S$ on which we can evaluate $P$ and morphisms ordering these subspaces.
+But we already have an appropriate category.
+Namely $\mathbf{Open}_{S}$ from example \ref{exa:topology}.
+So let us consider a presheaf $P$ on $\mathbf{Open}_{S}$ to inspect what the second consistency condition shall be.
+To become even more concrete take a bundle
 \begin{align*}
   \pi
   &\in
@@ -2810,7 +3042,9 @@ Then define
   &\mapsto
   (s \mapsto s \circ \mathrm{i}_{12})
 \end{align*}
-Note that $\Gamma_{\pi}(\mathrm{i}_{12})$ literally restricts the probing results of $\Gamma_{\pi}(U_{2})$ to those of $\Gamma_{\pi}(U_{1})$. But the really nice property here is that given an open subspace $U$ of $S$ and an open cover generator $\mathrm{cov}_{U}$ then probing is locally consistent. This is since for $s_{k} \in \Gamma_{\pi}(U_{k})$ for all $k \in K$ such that for all $k_{1},k_{2} \in K$ and all $x \in U_{k_{1}} \cap U_{k_{2}}$ we have
+Note that $\Gamma_{\pi}(\mathrm{i}_{12})$ literally restricts the probing results of $\Gamma_{\pi}(U_{2})$ to those of $\Gamma_{\pi}(U_{1})$.
+But the really nice property here is that given an open subspace $U$ of $S$ and an open cover generator $\mathrm{cov}_{U}$ then probing is locally consistent.
+This is since for $s_{k} \in \Gamma_{\pi}(U_{k})$ for all $k \in K$ such that for all $k_{1},k_{2} \in K$ and all $x \in U_{k_{1}} \cap U_{k_{2}}$ we have
 \begin{align*}
   s_{k_{1}}(x)
   &=
@@ -2826,7 +3060,10 @@ that is, all the $s_{k} \in \Gamma_{\pi}(U_{k})$ match on intersections, there i
   &=
   s_{k}
 \end{align*}
-Informally, this says that for a bunch of probing results $s_{k}$ of $\Gamma_{\pi}$ w.r.t. $U_{k}$ such that these match on intersections of subspaces in the cover then we can reconstruct the according probing result $s$ of $\Gamma_{\pi}$ w.r.t. $U$. In this way we can get all the $s$ in $\Gamma_{\pi}(U)$. We just have to probe in all possible ways. Back to the formalities we can generalize this so-called sheaf or descent condition to arbitrary presheaves
+Informally, this says that for a bunch of probing results $s_{k}$ of $\Gamma_{\pi}$ w.r.t. $U_{k}$ such that these match on intersections of subspaces in the cover then we can reconstruct the according probing result $s$ of $\Gamma_{\pi}$ w.r.t. $U$.
+In this way we can get all the $s$ in $\Gamma_{\pi}(U)$.
+We just have to probe in all possible ways.
+Back to the formalities we can generalize this so-called sheaf or descent condition to arbitrary presheaves
 \begin{align*}
   P
   \colon
@@ -2834,7 +3071,11 @@ Informally, this says that for a bunch of probing results $s_{k}$ of $\Gamma_{\p
   &\rightarrow
   \mathbf{Set}
 \end{align*}
-But first some terminology motivated from the $\Gamma_{\pi}$ example. An element of $s \in \Gamma_{\pi}(U)$ is usually called a (local) section of the bundle $\pi$ (over $U$) since it actually is one (compare to example \ref{exa:bundles1}). Hence given a presheaf $P$ then for $U \in \mathrm{ob}_{\mathbf{Open}_{S}}$ we call $s \in P(U)$ a \textbf{section (over $U$ in $P$)}. Moreover we call $P(\mathrm{i_{12}})$ the \textbf{restriction from $U_{2}$ to $U_{1}$ (in $P$)}. And we write
+But first some terminology motivated from the $\Gamma_{\pi}$ example.
+An element of $s \in \Gamma_{\pi}(U)$ is usually called a (local) section of the bundle $\pi$ (over $U$) since it actually is one (compare to example \ref{exa:bundles1}).
+Hence given a presheaf $P$ then for $U \in \mathrm{ob}_{\mathbf{Open}_{S}}$ we call $s \in P(U)$ a \textbf{section (over $U$ in $P$)}.
+Moreover we call $P(\mathrm{i_{12}})$ the \textbf{restriction from $U_{2}$ to $U_{1}$ (in $P$)}.
+And we write
 \begin{align*}
   s
   \vert
@@ -2931,7 +3172,8 @@ is the equalizer of
   \right)
 \end{align*}
 \end{enumerate}
-We refer to (DC) as \textbf{descent condition (for sheaves on $\mathbf{Open}_{S}$)} or sometimes equivalently \textbf{sheaf condition (on $\mathbf{Open}_{S}$)}. Note that\begin{align*}
+We refer to (DC) as \textbf{descent condition (for sheaves on $\mathbf{Open}_{S}$)} or sometimes equivalently \textbf{sheaf condition (on $\mathbf{Open}_{S}$)}.
+Note that\begin{align*}
   \left(
     \left(
       \mathrm{res}_{1}
@@ -2958,7 +3200,8 @@ We refer to (DC) as \textbf{descent condition (for sheaves on $\mathbf{Open}_{S}
   \right)
   (k_{2})
 \end{align*}
-precisely expresses that the $s_{k} \in P(U_{k})$ match on intersections and the existence of the equalizer then assures that the $s_{k}$ can be patched together in a unique way precisely then if they match. For clarity let us visualize $\mathrm{res}_{1}$ and $\mathrm{res}_{2}$ in the case of
+precisely expresses that the $s_{k} \in P(U_{k})$ match on intersections and the existence of the equalizer then assures that the $s_{k}$ can be patched together in a unique way precisely then if they match.
+For clarity let us visualize $\mathrm{res}_{1}$ and $\mathrm{res}_{2}$ in the case of
 \begin{align*}
   (s_{0},s_{1},s_{2})
   &\in
@@ -3134,7 +3377,10 @@ while $(\mathrm{res}_{2}(s_{0},s_{1},s_{2}))(s_{0})$ is illustrated by the three
     [radius=1];
 \end{tikzpicture}
 \]
-if the dotted areas correspond to the first index $k_{1}$ we fix and the second index $k_{2}$ corresponds to the three diagrams. The restriction results are always the color filled areas. We hope this illustration helps a bit. Anyways, in the end we get for a space $S$ a full subcategory
+if the dotted areas correspond to the first index $k_{1}$ we fix and the second index $k_{2}$ corresponds to the three diagrams.
+The restriction results are always the color filled areas.
+We hope this illustration helps a bit.
+Anyways, in the end we get for a space $S$ a full subcategory
 \begin{align*}
   \mathbf{Sh}(S)
 \end{align*}
@@ -3142,11 +3388,19 @@ of
 \begin{align*}
   \mathbf{Set}^{\mathbf{Open}_{S}^{\mathrm{op}}}
 \end{align*}
-by restricting the object set to sheaves on $\mathbf{Open}_{S}$. $\mathbf{Sh}(S)$ is called the \textbf{category of sheaves (on $S$)}
+by restricting the object set to sheaves on $\mathbf{Open}_{S}$.
+$\mathbf{Sh}(S)$ is called the \textbf{category of sheaves (on $S$)}
 \\
-Note that this definition also makes sense in other categories than $\mathbf{Set}$. The category must only have enough limits. In particular the sheaf definition makes sense for $\mathbf{C}_{\alpha}$-valued presheaves if $\mathbf{C}_{\alpha}$ is complete. In fact, $\mathbf{Grp}$-valued sheaves are common (and a few others). But one can also think of $\mathbf{Grp}$-valued sheaves as internalization (see subsection \ref{sec:internaliz}). Namely as group object (again see subsection \ref{sec:internaliz}) in $\mathbf{Sh}(S)$ since this category as topos (see subsection \ref{sec:internaliz}) has enough structure to allow these.
+Note that this definition also makes sense in other categories than $\mathbf{Set}$.
+The category must only have enough limits.
+In particular the sheaf definition makes sense for $\mathbf{C}_{\alpha}$-valued presheaves if $\mathbf{C}_{\alpha}$ is complete.
+In fact, $\mathbf{Grp}$-valued sheaves are common (and a few others).
+But one can also think of $\mathbf{Grp}$-valued sheaves as internalization (see subsection \ref{sec:internaliz}).
+Namely as group object (again see subsection \ref{sec:internaliz}) in $\mathbf{Sh}(S)$ since this category as topos (see subsection \ref{sec:internaliz}) has enough structure to allow these.
 \\
-We almost achieved our goal of formulating the second consistency condition by the descent condition. What is missing is a more general notion sensibly replacing $\mathbf{Open}_{S}$ by any category with a reasonable notion of (open) cover. Note that $\mathrm{Mor}_{\mathbf{Open}_{S}}$ has the property that
+We almost achieved our goal of formulating the second consistency condition by the descent condition.
+What is missing is a more general notion sensibly replacing $\mathbf{Open}_{S}$ by any category with a reasonable notion of (open) cover.
+Note that $\mathrm{Mor}_{\mathbf{Open}_{S}}$ has the property that
 \begin{align*}
   \mathrm{i}_{U_{2}}
   \in
@@ -3172,7 +3426,8 @@ we have
   \in
   \mathrm{Mor}_{\mathbf{Open}_{S}}
 \end{align*}
-This can be interpreted as $\mathrm{i}_{U_{2}}$ punching a hole into $S$ in the form of $U_{2}$ and any $U_{1}$ smaller than $U_{2}$ fits through this hole. As a picture
+This can be interpreted as $\mathrm{i}_{U_{2}}$ punching a hole into $S$ in the form of $U_{2}$ and any $U_{1}$ smaller than $U_{2}$ fits through this hole.
+As a picture
 \[
 \begin{tikzpicture}[scale=0.25]
   \draw[pattern=grid]
@@ -3200,7 +3455,8 @@ This can be interpreted as $\mathrm{i}_{U_{2}}$ punching a hole into $S$ in the 
     node [below] {\tiny{$U_{2}$}};
 \end{tikzpicture}
 \]
-It is clear that this has to do with covers. And the idea works in general for any category since given a category $\mathbf{C}$ and an object $X$ then a subset $\mathfrak{S}_{X} \subset \mathrm{Mor}_{\mathbf{C}}$ such that
+It is clear that this has to do with covers.
+And the idea works in general for any category since given a category $\mathbf{C}$ and an object $X$ then a subset $\mathfrak{S}_{X} \subset \mathrm{Mor}_{\mathbf{C}}$ such that
 \begin{align*}
   f
   \in
@@ -3237,16 +3493,24 @@ It is clear that
   \bigcup_{X \in \mathrm{ob}_{\mathbf{C}}}
   \mathrm{mor}_{\mathbf{C}}(X,X_{0})
 \end{align*}
-is a sieve on $X_{0}$ and we call it the \textbf{maximal sieve (on $X_{0}$)}. We would still like to think of a sieve on $X$ as a cover of $X$ but we gave up on the injectivity of morphisms by this generalization which was crucial in the topological case. Hence we have to make up for this loss by demanding some properties which make the idea sufficiently close to covers. So let's see what properties we can abstract from $\mathbf{Open}_{S}$.
+is a sieve on $X_{0}$ and we call it the \textbf{maximal sieve (on $X_{0}$)}.
+We would still like to think of a sieve on $X$ as a cover of $X$ but we gave up on the injectivity of morphisms by this generalization which was crucial in the topological case.
+Hence we have to make up for this loss by demanding some properties which make the idea sufficiently close to covers.
+So let's see what properties we can abstract from $\mathbf{Open}_{S}$.
 \begin{enumerate}
 \item[(1)]
-For any open subspace $U$ of $S$ we can cover $U$ by the collection of all the open subspaces of $U$. In terms of sieves we can express that by demanding the maximal sieve on $U$ to cover $U$.
+For any open subspace $U$ of $S$ we can cover $U$ by the collection of all the open subspaces of $U$.
+In terms of sieves we can express that by demanding the maximal sieve on $U$ to cover $U$.
 \item[(2)]
 Given an open subspace $U$ of $S$ which is covered by some $U_{k}$ indexed by some small set $K$ then we can clearly intersect $U$ with some other open subspace $U^{\backprime}$ of $S$ and it is clear that $U_{k} \cap U^{\backprime}$ for $k \in K$ covers $U \cap U^{\backprime}$.
 \item[(3)]
 Given an open subspace $U$ of $S$ which is covered by some $U_{k}$ indexed by some small set $K$ and for each $U_{k}$ a cover consisting of sets $(U_{k})_{l_{k}}$ indexed by $l_{k} \in L_{k}$ with $L_{k}$ a small set for all $k \in K$ then clearly all the $(U_{k})_{l_{k}}$ can be taken together to cover $U$.
 \end{enumerate}
-These ideas will yield the definition of Grothendieck topology. But we still need one last ingredient. We must somehow express the intersection in categorical terms. And here the pullback from example \ref{exa:oflimits} puts itself forward. Given a sieve $\mathfrak{S}_{X}$ and a $f \in \mathrm{Mor}_{\mathbf{C}}$ then 
+These ideas will yield the definition of Grothendieck topology.
+But we still need one last ingredient.
+We must somehow express the intersection in categorical terms.
+And here the pullback from example \ref{exa:oflimits} puts itself forward.
+Given a sieve $\mathfrak{S}_{X}$ and a $f \in \mathrm{Mor}_{\mathbf{C}}$ then 
 \begin{align*}
   f^{\ast}(\mathfrak{S}_{X})
   &:=
@@ -3294,7 +3558,14 @@ which is to say that
   &\in
   f^{\ast}(\mathfrak{S}_{X})
 \end{align*}
-proving the claim. We then call $f^{\ast}(\mathfrak{S}_{X})$ the \textbf{pullback sieve (of $\mathfrak{S}_{X}$ along $f$)}. Indeed, it can be shown that this is actually a pullback in $\mathbf{Set}^{\mathbf{C}^{\mathrm{op}}}$. This is since sieves correspond to presheaves which can be reasonably included into representable presheaves. This inclusion is then pulled back along $\mathrm{y}_{\mathbf{C}}(f)$. Details can be found in the source we will cite in a moment. But now to Grothendieck topologies. Given a small category $\mathbf{C}$ a \textbf{Grothendieck topology (on $\mathbf{C}$)} is a function
+proving the claim.
+We then call $f^{\ast}(\mathfrak{S}_{X})$ the \textbf{pullback sieve (of $\mathfrak{S}_{X}$ along $f$)}.
+Indeed, it can be shown that this is actually a pullback in $\mathbf{Set}^{\mathbf{C}^{\mathrm{op}}}$.
+This is since sieves correspond to presheaves which can be reasonably included into representable presheaves.
+This inclusion is then pulled back along $\mathrm{y}_{\mathbf{C}}(f)$.
+Details can be found in the source we will cite in a moment.
+But now to Grothendieck topologies.
+Given a small category $\mathbf{C}$ a \textbf{Grothendieck topology (on $\mathbf{C}$)} is a function
 \begin{align*}
   \mathrm{J}
   \colon
@@ -3323,9 +3594,12 @@ if $\mathfrak{S}_{X} \in \mathrm{J}(X)$ and $\mathfrak{S}_{X}^{\backprime}$ is a
 \end{align*}
 then $\mathfrak{S}_{X}^{\backprime}$ is element of $\mathrm{J}(X)$.
 \end{enumerate}
-For a Grothendieck topology $\mathrm{J}$ we call $\mathfrak{S}_{X} \in \mathrm{J}(X)$ a \textbf{covering sieve (on $X$ w.r.t. $\mathrm{J}$)} while the pair $(\mathbf{C},\mathrm{J})$ is called a \textbf{site}.
+For a Grothendieck topology $\mathrm{J}$ we call $\mathfrak{S}_{X} \in \mathrm{J}(X)$ a \textbf{covering sieve (on $X$ w.r.t.
+$\mathrm{J}$)} while the pair $(\mathbf{C},\mathrm{J})$ is called a \textbf{site}.
 \\
-Sites are sufficient to define what it means for a presheaf on a site to be a sheaf. So assume a site $(\mathbf{C},\mathrm{J})$. Then a presheaf $P$ on $\mathbf{C}$ is a \textbf{sheaf (on $(\mathbf{C},\mathrm{J})$)} if
+Sites are sufficient to define what it means for a presheaf on a site to be a sheaf.
+So assume a site $(\mathbf{C},\mathrm{J})$.
+Then a presheaf $P$ on $\mathbf{C}$ is a \textbf{sheaf (on $(\mathbf{C},\mathrm{J})$)} if
 \begin{enumerate}
 \item[(DC)]
 for each object $X$ and each covering sieve $\mathfrak{S}_{X} \in \mathrm{J}(X)$ the pair $(P(X),e)$ with
@@ -3394,18 +3668,29 @@ is the equalizer of
   \right)
 \end{align*}
 \end{enumerate}
-We refer to (DC) as \textbf{descent condition (for sheaves on $(\mathbf{C},\mathrm{J})$)} or sometimes equivalently \textbf{sheaf condition (on $(\mathbf{C},\mathrm{J})$)}. There is a site on $\mathbf{Open}_{S}$ such that the sheaf condition on that site is the sheaf condition on $\mathbf{Open}_{S}$. We have now a whole lot of possible categories of spaces. In particular there are sites on categories with objects some manifolds. This fact should make physicists prick up their ears.
+We refer to (DC) as \textbf{descent condition (for sheaves on $(\mathbf{C},\mathrm{J})$)} or sometimes equivalently \textbf{sheaf condition (on $(\mathbf{C},\mathrm{J})$)}.
+There is a site on $\mathbf{Open}_{S}$ such that the sheaf condition on that site is the sheaf condition on $\mathbf{Open}_{S}$.
+We have now a whole lot of possible categories of spaces.
+In particular there are sites on categories with objects some manifolds.
+This fact should make physicists prick up their ears.
 \\
-We have to admit here that what we have written is a bit sketchy on the motivational side. But you can convince yourself that all this is sensible by reading the first three to four chapters of the somehow worthwhile book \cite{c55c71e8}. You will then see that what we have described here is only the tip of the iceberg of some beautiful mathematics. We will mention the book again when we come to topoi in subsection \ref{sec:internaliz}.
+We have to admit here that what we have written is a bit sketchy on the motivational side.
+But you can convince yourself that all this is sensible by reading the first three to four chapters of the somehow worthwhile book \cite{c55c71e8}.
+You will then see that what we have described here is only the tip of the iceberg of some beautiful mathematics.
+We will mention the book again when we come to topoi in subsection \ref{sec:internaliz}.
 \end{exa}
 \begin{prf}
-You might wish to prove here that $\Gamma_{\pi}$ is in fact a sheaf on $\mathbf{Open}_{S}$. This is essentially the topological fact that continuity is a local property and the theorem that a bunch of locally given continuous functions patch together - or better say extend here - to a unique continuous function which can be found in any topology book such as \cite{273ba834}.
+You might wish to prove here that $\Gamma_{\pi}$ is in fact a sheaf on $\mathbf{Open}_{S}$.
+This is essentially the topological fact that continuity is a local property and the theorem that a bunch of locally given continuous functions patch together - or better say extend here - to a unique continuous function which can be found in any topology book such as \cite{273ba834}.
 \\
 \phantom{proven}
 \hfill
 $\square$
 \end{prf}
-We have one last thing on limits that will be very convenient. Motivated from analysis we would like to define a sensible functor mapping functors $F$ to the apex of their (co)limiting (co)cone like one does in analysis when mapping a sequence to its limit. To this end let $F \colon \mathbf{J} \rightarrow \mathbf{C}$ be a functor with $\mathbf{J}$ small and $\mathbf{C}$ locally small. Then define the sets
+We have one last thing on limits that will be very convenient.
+Motivated from analysis we would like to define a sensible functor mapping functors $F$ to the apex of their (co)limiting (co)cone like one does in analysis when mapping a sequence to its limit.
+To this end let $F \colon \mathbf{J} \rightarrow \mathbf{C}$ be a functor with $\mathbf{J}$ small and $\mathbf{C}$ locally small.
+Then define the sets
 \begin{align*}
   \mathrm{Lim}_{F}
   &:=
@@ -3433,7 +3718,10 @@ if $\mathbf{C}$ is complete and
       F
   \right\rbrace
 \end{align*}
-if $\mathbf{C}$ is cocomplete. To achieve our goal we first need to define functions mapping functors $F$ to an element of $\mathrm{Lim}_{F}$ and $\mathrm{Colim}_{F}$, respectively. So we have to choose an element of $\mathrm{Lim}_{F}$ and $\mathrm{Colim}_{F}$, respectively, for all $F$. But the axiom of choice of TG asserts that dependent functions
+if $\mathbf{C}$ is cocomplete.
+To achieve our goal we first need to define functions mapping functors $F$ to an element of $\mathrm{Lim}_{F}$ and $\mathrm{Colim}_{F}$, respectively.
+So we have to choose an element of $\mathrm{Lim}_{F}$ and $\mathrm{Colim}_{F}$, respectively, for all $F$.
+But the axiom of choice of TG asserts that dependent functions
 \begin{align*}
   c_{\mathrm{Lim}}
   &\in
@@ -3445,11 +3733,22 @@ if $\mathbf{C}$ is cocomplete. To achieve our goal we first need to define funct
   \prod_{F \in \mathrm{ob}_{\mathbf{C}^{\mathbf{J}}}}
   \mathrm{Colim}_{F}
 \end{align*}
-exist. To this we have an important remark.
+exist.
+To this we have an important remark.
 \\
 \begin{rem}
 \label{rem:ordinaltrick}
-Note that it is not clear that $\mathrm{Lim}_{F}$ and $\mathrm{Colim}_{F}$ are small sets and foundations such as ZFC and von Neumann-Bernays-G\"odel (abbr. NGB) lack a choice axiom powerful enough to choose from such large collections. But there is a trick with well-orders which shows how to make this still possible. The axiom of choice does only grant existence but it does not explicitly tell us what is chosen. This is actually not very nice. If, however, we constrained first-order logic to intuitionistic logic then we would have to contruct a limit/colimit explicitly to show that it exists and the axiom of choice would be superfluous here since we could define a choice function as above by just proving that the limits/colimits exist for all $F$. Hence an intuitionist does not need the axiom of choice to do the same as we do here. Indeed, in category theory it is common to work with intuitionistic logic if possible and we use the axiom of choice here only for the sake of rigor. Many authors ignore the issue due to this common practice since they think limits/colimits are constructed anyway in practice. Also note that in UFP-HoTT the issue is not really an issue since it is usually assumed intuitionistic (and all limits/colimits are formally equal by univalence). The same issue in another guise will arise for adjoints in subsection \ref{sec:adjoint} an we will refer back to this remark.
+Note that it is not clear that $\mathrm{Lim}_{F}$ and $\mathrm{Colim}_{F}$ are small sets and foundations such as ZFC and von Neumann-Bernays-G\"odel (abbr.
+NGB) lack a choice axiom powerful enough to choose from such large collections.
+But there is a trick with well-orders which shows how to make this still possible.
+The axiom of choice does only grant existence but it does not explicitly tell us what is chosen.
+This is actually not very nice.
+If, however, we constrained first-order logic to intuitionistic logic then we would have to contruct a limit/colimit explicitly to show that it exists and the axiom of choice would be superfluous here since we could define a choice function as above by just proving that the limits/colimits exist for all $F$.
+Hence an intuitionist does not need the axiom of choice to do the same as we do here.
+Indeed, in category theory it is common to work with intuitionistic logic if possible and we use the axiom of choice here only for the sake of rigor.
+Many authors ignore the issue due to this common practice since they think limits/colimits are constructed anyway in practice.
+Also note that in UFP-HoTT the issue is not really an issue since it is usually assumed intuitionistic (and all limits/colimits are formally equal by univalence).
+The same issue in another guise will arise for adjoints in subsection \ref{sec:adjoint} an we will refer back to this remark.
 \end{rem}
 \begin{prf}
 The ordnial trick we addressed can be found in \cite{53fd7d7e} in chapter 7 footnote 7.
@@ -3458,7 +3757,9 @@ The ordnial trick we addressed can be found in \cite{53fd7d7e} in chapter 7 foot
 \hfill
 $\square$
 \end{prf}
-On the whole any choice function as above yields a function mapping functors to a limit of it and the same for colimits. This function can be made into a functor as can be seen from the following discussion. So take $G_{1},G_{2} \in \mathrm{ob}_{\mathbf{C}^{\mathbf{J}}}$ and a natural transformation $\mathsf{T} \colon G_{1} \Rightarrow G_{2}$.
+On the whole any choice function as above yields a function mapping functors to a limit of it and the same for colimits.
+This function can be made into a functor as can be seen from the following discussion.
+So take $G_{1},G_{2} \in \mathrm{ob}_{\mathbf{C}^{\mathbf{J}}}$ and a natural transformation $\mathsf{T} \colon G_{1} \Rightarrow G_{2}$.
 \begin{align*}
   \left(
     X_{T}^{k},
@@ -3466,7 +3767,8 @@ On the whole any choice function as above yields a function mapping functors to 
     \mathsf{C}_{T}^{k}
   \right)
 \end{align*}
-shall denote a limiting cone to $G_{k}$ with apex $X_{T}^{k}$ for $k = 1,2$. Then there is a unique morphism
+shall denote a limiting cone to $G_{k}$ with apex $X_{T}^{k}$ for $k = 1,2$.
+Then there is a unique morphism
 \begin{align*}
   \mathsf{T}_{!}
   &\in
@@ -3507,7 +3809,8 @@ determined by the commutative diagram
   G_{2}(J_{2})
 \end{tikzcd}
 \]
-This works since $\mathsf{T} \circ \mathsf{C}_{T}^{1}$ is a cone to $G_{2}$ with apex $X_{T}^{1}$. Dually, let
+This works since $\mathsf{T} \circ \mathsf{C}_{T}^{1}$ is a cone to $G_{2}$ with apex $X_{T}^{1}$.
+Dually, let
 \begin{align*}
   \left(
     G_{k},
@@ -3515,7 +3818,8 @@ This works since $\mathsf{T} \circ \mathsf{C}_{T}^{1}$ is a cone to $G_{2}$ with
     \mathsf{C}_{I}^{k}
   \right)
 \end{align*}
-denote a colimiting cocone to $G_{k}$ with apex $X_{I}^{k}$ for $k = 1,2$. Then there is a unique morphism
+denote a colimiting cocone to $G_{k}$ with apex $X_{I}^{k}$ for $k = 1,2$.
+Then there is a unique morphism
 \begin{align*}
   \mathsf{T}_{!}^{\prime}
   &\in
@@ -3556,7 +3860,9 @@ determined by the commutative diagram
   \arrow{ul}{\mathsf{C}_{I}^{2}(J_{2})}
 \end{tikzcd}
 \]
-This works again since $\mathsf{C}_{I}^{2} \circ \mathsf{T}$ is a cocone to $G_{1}$ with apex $X_{I}^{2}$. Now we are sufficiently prepared to define the functors. Given the choice functions $c_{\mathrm{Lim}}$ and $c_{\mathrm{Colim}}$ we can define functors
+This works again since $\mathsf{C}_{I}^{2} \circ \mathsf{T}$ is a cocone to $G_{1}$ with apex $X_{I}^{2}$.
+Now we are sufficiently prepared to define the functors.
+Given the choice functions $c_{\mathrm{Lim}}$ and $c_{\mathrm{Colim}}$ we can define functors
 \begin{align*}
   \varprojlim_{\mathbf{J}}
   \doteq
@@ -3595,9 +3901,14 @@ This works again since $\mathsf{C}_{I}^{2} \circ \mathsf{T}$ is a cocone to $G_{
   &\mapsto
   \mathsf{T}_{!}^{\prime}
 \end{align*}
-$\varprojlim_{\mathbf{J}}^{c_{\mathrm{Lim}}}$ is called \textbf{limit functor (for $c_{\mathrm{Lim}}$ over $\mathbf{J}$)} while $\varinjlim_{\mathbf{J}}^{c_{\mathrm{Colim}}}$ is called \textbf{colimit functor (for $c_{\mathrm{colim}}$ over $\mathbf{J}$)}. The convention is that the choice functions $c_{\mathrm{Lim}}$ and $c_{\mathrm{Colim}}$ are silently assumed to be the canonical ones obtained from constructing the limits explicitly if possible (which is practically always possible in category theory) and else the choice functions obtained from the axiom of choice when technically necessary. Again, it is common not to mention them in practice and so will we do in the following. As a last remark here, limit and colimit functors for different choice functions are naturally isomorphic as is apparent essentially from theorem \ref{thm:uniqueuniarr} which implies that limits are unique up to unique isomorphism. So structurally the choice function is not essential.
+$\varprojlim_{\mathbf{J}}^{c_{\mathrm{Lim}}}$ is called \textbf{limit functor (for $c_{\mathrm{Lim}}$ over $\mathbf{J}$)} while $\varinjlim_{\mathbf{J}}^{c_{\mathrm{Colim}}}$ is called \textbf{colimit functor (for $c_{\mathrm{colim}}$ over $\mathbf{J}$)}.
+The convention is that the choice functions $c_{\mathrm{Lim}}$ and $c_{\mathrm{Colim}}$ are silently assumed to be the canonical ones obtained from constructing the limits explicitly if possible (which is practically always possible in category theory) and else the choice functions obtained from the axiom of choice when technically necessary.
+Again, it is common not to mention them in practice and so will we do in the following.
+As a last remark here, limit and colimit functors for different choice functions are naturally isomorphic as is apparent essentially from theorem \ref{thm:uniqueuniarr} which implies that limits are unique up to unique isomorphism.
+So structurally the choice function is not essential.
 \\\\
-We are now able to prove the last fact about bicompleteness we need. It is that functor categories are bicomplete if the codomain category is.
+We are now able to prove the last fact about bicompleteness we need.
+It is that functor categories are bicomplete if the codomain category is.
 \\
 \begin{thm}
 \label{thm:funccatbicomplete}
@@ -3620,7 +3931,8 @@ Let
   &\rightarrow
   \mathbf{C}_{\alpha}^{\mathbf{C}}
 \end{align*}
-be a functor. By premise, we have a limiting cone $\mathsf{C}_{T}^{X}$ to $(F(\cdot))(X)$ with apex
+be a functor.
+By premise, we have a limiting cone $\mathsf{C}_{T}^{X}$ to $(F(\cdot))(X)$ with apex
 \begin{align*}
   \varprojlim_{\mathbf{J}}
   \left(
@@ -3714,7 +4026,8 @@ such that
   &=
   (\mathsf{C}(J))(X)
 \end{align*}
-for all $J$. Hence the natural transformation
+for all $J$.
+Hence the natural transformation
 \begin{align*}
   \mathsf{C}_{!}
   \colon
@@ -3758,4 +4071,5 @@ The duality principle \ref{thm:dp}.
 \hfill
 $\square$
 \end{prf}
-Hence in the case of completeness limits are computed {\glqq}pointwise{\grqq} and so are colimits in case of cocompleteness. But if we are not complete or cocomplete this is not necessarily the case. 
+Hence in the case of completeness limits are computed {\glqq}pointwise{\grqq} and so are colimits in case of cocompleteness.
+But if we are not complete or cocomplete this is not necessarily the case.

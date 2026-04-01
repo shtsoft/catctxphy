@@ -30,7 +30,13 @@ Further the identity in
     (X^{\alpha},X^{\beta})
   \right)
 \end{align*}
-is given by $(\mathrm{id}_{X^{\alpha}},\mathrm{id}_{X^{\beta}})$. It is easy to check that this makes sense and is therefore left to the reader. $\mathbf{C}_{\alpha} \times \mathbf{C}_{\beta}$ is called the \textbf{product category (of $\mathbf{C}_{\alpha}$ and $\mathbf{C}_{\beta}$)}. From the above it is clear how the product category $\mathbf{C}_{\alpha} \times \mathbf{C}_{\beta} \times\mathbf{C}_{\gamma}$ of three categories is defined. In fact, even the case of finitely many categories is clear now. To introduce the behavior of functors regarding the construction of product categories we begin with an example. Given functors $F_{\alpha\gamma}$ and $F_{\beta\delta}$ one can define a functor
+is given by $(\mathrm{id}_{X^{\alpha}},\mathrm{id}_{X^{\beta}})$.
+It is easy to check that this makes sense and is therefore left to the reader.
+$\mathbf{C}_{\alpha} \times \mathbf{C}_{\beta}$ is called the \textbf{product category (of $\mathbf{C}_{\alpha}$ and $\mathbf{C}_{\beta}$)}.
+From the above it is clear how the product category $\mathbf{C}_{\alpha} \times \mathbf{C}_{\beta} \times\mathbf{C}_{\gamma}$ of three categories is defined.
+In fact, even the case of finitely many categories is clear now.
+To introduce the behavior of functors regarding the construction of product categories we begin with an example.
+Given functors $F_{\alpha\gamma}$ and $F_{\beta\delta}$ one can define a functor
 \begin{align*}
   F_{\alpha\gamma}
   \times
@@ -55,7 +61,9 @@ is given by $(\mathrm{id}_{X^{\alpha}},\mathrm{id}_{X^{\beta}})$. It is easy to 
     F_{\beta\delta}(f_{12}^{\beta})
   \right)
 \end{align*}
-That this is a functor is quite clear from the assumption that $F_{\alpha\gamma}$ and $F_{\beta\delta}$ are functors. In a more general setting, too, functors behave almost as nicely as one would wish on product categories $\mathbf{C}_{\alpha} \times \mathbf{C}_{\beta}$. If
+That this is a functor is quite clear from the assumption that $F_{\alpha\gamma}$ and $F_{\beta\delta}$ are functors.
+In a more general setting, too, functors behave almost as nicely as one would wish on product categories $\mathbf{C}_{\alpha} \times \mathbf{C}_{\beta}$.
+If
 \begin{align*}
   F
   \colon
@@ -97,7 +105,8 @@ for arbitrary but fixed $X^{\beta}$ and
   &\mapsto
   F(\mathrm{id}_{X^{\alpha}},f_{12}^{\beta})
 \end{align*}
-for arbitrary but fixed $X^{\alpha}$. Even the reverse is true under some conditions as stated in the following theorem.
+for arbitrary but fixed $X^{\alpha}$.
+Even the reverse is true under some conditions as stated in the following theorem.
 \\
 \begin{thm}
 \label{thm:bifuncconstr}
@@ -107,7 +116,8 @@ Let $F_{X^{\beta}} \colon \mathbf{C}_{\alpha} \rightarrow \mathbf{C}$ and $F_{X^
   &=
   F_{X^{\alpha}}(X^{\beta})
 \end{align*}
-for all objects $X^{\alpha},X^{\beta}$. Then there exists a functor
+for all objects $X^{\alpha},X^{\beta}$.
+Then there exists a functor
 \begin{align*}
   F
   \colon
@@ -259,7 +269,8 @@ We can define a functor $F$ by
   \circ
   F_{X_{1}^{\beta}}(f_{12}^{\alpha})
 \end{align*}
-Well-definedness and functoriality of $F$ comes from the well-definedness and functoriality of $F_{X^{\alpha}}$ and $F_{X^{\beta}}$. Further,
+Well-definedness and functoriality of $F$ comes from the well-definedness and functoriality of $F_{X^{\alpha}}$ and $F_{X^{\beta}}$.
+Further,
 \begin{align*}
   F_{X_{2}^{\alpha}}(f_{12}^{\beta})
   \circ
@@ -320,7 +331,8 @@ finishing the proof.
 \hfill
 $\square$
 \end{prf}
-The same results hold for functors on any product of categories with finite number of factors after all. Now, the above theorem \ref{thm:bifuncconstr} can be applied to the co- and contravariant hom-functors for $\mathbf{C}$ by observing that
+The same results hold for functors on any product of categories with finite number of factors after all.
+Now, the above theorem \ref{thm:bifuncconstr} can be applied to the co- and contravariant hom-functors for $\mathbf{C}$ by observing that
 \begin{align*}
   F_{X_{2}^{\alpha}}(f_{12}^{\beta})
   \circ
@@ -330,7 +342,8 @@ The same results hold for functors on any product of categories with finite numb
   \circ
   F_{X_{1}^{\alpha}}(f_{12}^{\beta})
 \end{align*}
-in this case is precisely the compatibilty of hom. The functor we get is called \textbf{hom-functor (for $\mathbf{C}$)} and is denoted
+in this case is precisely the compatibilty of hom.
+The functor we get is called \textbf{hom-functor (for $\mathbf{C}$)} and is denoted
 \begin{align*}
   \mathrm{hom}_{\mathbf{C}}
   \colon
