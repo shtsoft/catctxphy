@@ -4,18 +4,18 @@
 %\nocite{de09a3f9}
 \nocite{bc53e62a}
 %\nocite{00000011}
-In this subsubsection we categorify monoids with the method described earlier in this subsection to get the notion of monoidal category.
-Subsequently, it turns out that that we can define functors and natural transformations preserving the monoidal structure.
-We then do the same when the monoid is commutative.
-After this we look at an example regarding vector spaces before generalizing category theory to enriched category theory.
-From all this it will become quite clear that we can internalize monoids in monoidal categories and this will be utilized to define monads as oidification of monoid objects in monoidal categories.
-The original case of monads is the case $\mathbf{Cat}$.
-An even more special case is the restriction to a certain category of set-valued functors we allude to and provide references for.
-The monoidal objects there are operads\footnote{a word built from operation an monad} which were developed by May (among others) to study iterated loop spaces which can be used to define the homotopy groups and are hence of interest regarding the coherence conditions for higher categories
+In this subsubsection, we categorify monoids using the method described earlier in this subsection to get the notion of a monoidal category.
+Subsequently, it turns out that we can define functors and natural transformations preserving the monoidal structure.
+We then do the same for commutative monoids.
+After this, we look at an example regarding vector spaces before generalizing category theory to enriched category theory.
+From all this, it will become quite clear that we can internalize monoids in monoidal categories, and this will be utilized to define monads as the oidification of monoid objects in monoidal categories.
+The original case of monads is the case of $\mathbf{Cat}$.
+An even more special case is the restriction to a certain category of set-valued functors that we allude to and provide references for.
+The monoidal objects there are operads\footnote{a word built from operation and monad}, which were developed by May (among others) to study iterated loop spaces, which can be used to define homotopy groups and are hence of interest regarding the coherence conditions for higher categories.
 \\
-But be warned that the discussion in this subsubsection is mostly superficial and we mostly provide only terminology.
+But be warned that the discussion in this subsubsection is mostly superficial, and we mostly just provide terminology.
 Unfortunately, we do not have the time (and means) here to prove any deep theorems like coherence theorems or the strictification theorem.
-We only provide the bare necessities needed to delve into the literaure we refer to.
+We only provide the bare necessities needed to delve into the literature we refer to.
 \\\\
 But now back to the salt mines.
 A set $\mathcal{M}_{\mathbf{C}}$ is a \textbf{monoidal category} if it is a $6$-tuple
@@ -112,7 +112,7 @@ a natural isomorphism
   \otimes_{\otimes}
 \end{align*}
 \item[(4)]
-an object\footnote{don't mix this up with terminal objects since it is just an unfortunate notational coincidence as so often is the case for this symbol} $1$ of $\mathrm{ob}_{\mathbf{C}}$
+an object\footnote{don't mix this up with terminal objects, since it is just an unfortunate notational coincidence, as is so often the case for this symbol} $1$ of $\mathrm{ob}_{\mathbf{C}}$
 \item[(5)]
 for the functor
 \begin{align*}
@@ -272,16 +272,16 @@ $\mathsf{L}$ is called the \textbf{left unit law (in $\mathcal{M}_{\mathbf{C}}$)
 \item[(6)]
 $\mathsf{R}$ is called the \textbf{right unit law (in $\mathcal{M}_{\mathbf{C}}$)}
 \end{enumerate}
-For the monoidal category property (MC1) we also say that the \textbf{pentagon equation (in $\mathcal{M}_{\mathbf{C}}$) holds} whereas we say for the monoidal category property (MC2) that the \textbf{triangle equation (in $\mathcal{M}_{\mathbf{C}}$) holds}.
-The pentagon equation is the coherence condition for associativity of weak $2$-categories we already talked about in subsection \ref{sec:nt}.
-That this suffices is Mac Lane's coherence theorem which can be found in his category book \cite{e837ef86} or various other sources.
-The triangle equation is the identity law counterpart, that is, the coherence condition for the identity law which can also be found in \cite{e837ef86} or various other sources.
-Hence the pentagon and tirangle equation make monoidal category a sensible (weak\footnote{if we only wanted to categorify it strictly we would not need them}) categorification of monoid.
-The relation to weak $2$-categories should be clear from this - at least if one keeps in mind the different notational conventions for composition and tensor product (the arguments are in reversed order): monoidal categories correspond to the weak $2$-categories with precisely one object (in anology to monoids corresponding to ordinary categories with precisely one object).
-Hence weak $2$-categories are the oidification of monoidal categories (as categories are the oidification of monoids).
-One might expect this to continue and so it is.
+For the monoidal category property (MC1), we also say that the \textbf{pentagon equation (in $\mathcal{M}_{\mathbf{C}}$) holds}, whereas we say for the monoidal category property (MC2) that the \textbf{triangle equation (in $\mathcal{M}_{\mathbf{C}}$) holds}.
+The pentagon equation is the coherence condition for the associativity of weak $2$-categories we already talked about in subsection \ref{sec:nt}.
+That this suffices is Mac Lane's coherence theorem, which can be found in his category theory book \cite{e837ef86} or various other sources.
+The triangle equation is the identity law counterpart, that is, the coherence condition for the identity law, which can also be found in \cite{e837ef86} or various other sources.
+Hence, the pentagon and triangle equations make a monoidal category a sensible (weak\footnote{if we only wanted to categorify it strictly, we would not need them}) categorification of a monoid.
+The relation to weak $2$-categories should be clear from this - at least if one keeps in mind the different notational conventions for composition and tensor product (the arguments are in reversed order): monoidal categories correspond to weak $2$-categories with precisely one object (in analogy to monoids corresponding to ordinary categories with precisely one object).
+Hence, weak $2$-categories are the oidification of monoidal categories (as categories are the oidification of monoids).
+One might expect this to continue, and so it does.
 But this is another story not told here.
-What is interesting  to us here is that we directly get examples for monoidal categories from the examples of weak $2$-categories we already know since for a weak $2$-category ${}_{2}\mathbf{C}$ (in the notation we used in the definition of the concept) we get for all
+What is interesting to us here is that we directly get examples of monoidal categories from the examples of weak $2$-categories we already know, since for a weak $2$-category ${}_{2}\mathbf{C}$ (in the notation we used in the definition of the concept) we get for all
 \begin{align*}
   X
   \in
@@ -298,8 +298,8 @@ a monoidal category
     \mathsf{R}(X)
   \right)
 \end{align*}
-Now, well, we do not know many examples but we could consider ${}_{2}\mathbf{Cat}$ as weak $2$-category with associators and unitors just identities.
-In this case, the monoidal categories are the functor categories $\mathbf{C}^{\mathbf{C}}$ for any small $\mathbf{C}$ which some people call category of endofunctors.
+Now, well, we do not know many examples, but we could consider ${}_{2}\mathbf{Cat}$ as a weak $2$-category with associators and unitors that are just identities.
+In this case, the monoidal categories are the functor categories $\mathbf{C}^{\mathbf{C}}$ for any small $\mathbf{C}$, which some people call the category of endofunctors.
 Let us write
 \begin{align*}
   \mathrm{end}(\mathbf{C})
@@ -308,7 +308,7 @@ Let us write
 \end{align*}
 for this monoidal category.
 \\
-The next point are monoidal functors.
+The next point is monoidal functors.
 A set $\mathcal{M}_{F}$ is a \textbf{lax monoidal functor (from $\mathcal{M}_{\mathbf{C}}$ to $\mathcal{M}_{\mathbf{C}_{\alpha}}$)} if it is a $3$-tuple
 \begin{align*}
   F
@@ -335,7 +335,7 @@ consisting of a functor $F$ from $\mathbf{C}$ to $\mathbf{C}_{\alpha}$, a natura
   \circ
   \otimes
 \end{align*}
-and an morphism
+and a morphism
 \begin{align*}
   \Phi
   &\in
@@ -428,8 +428,8 @@ and
 \]
 commute
 \end{enumerate}
-Furthermore monoidal functor properties (MF1) and (MF2) express that the functor $F$ is compatible with the according monoidal structures as coherence condition.
-A lax monoidal functor $(F,\mathsf{H},\Phi)$ is called\footnote{some use strong monoidal functor here but we don't since this is our standard case} \textbf{monoidal functor} if both $\mathsf{H}$ and $\Phi$ are isomorphisms while it is called \textbf{strict monoidal functor} if both are identities.
+Furthermore, the monoidal functor properties (MF1) and (MF2) express that the functor $F$ is compatible with the respective monoidal structures as a coherence condition.
+A lax monoidal functor $(F,\mathsf{H},\Phi)$ is called\footnote{some use strong monoidal functor here, but we don't, since this is our standard case} a \textbf{monoidal functor} if both $\mathsf{H}$ and $\Phi$ are isomorphisms, while it is called a \textbf{strict monoidal functor} if both are identities.
 It is clear that
 \begin{align*}
   \left(
@@ -440,7 +440,7 @@ It is clear that
 \end{align*}
 is a monoidal functor if $\mathcal{M}_{\mathbf{C}}$ is a monoidal category.
 Checking the axioms is straightforward and therefore omitted.
-A little more tedious - above all with respect to notation - is the proof that
+A little more tedious - especially with respect to notation - is the proof that
 \begin{align*}
   \left(
     F_{\beta\gamma}
@@ -483,11 +483,11 @@ is a monoidal functor if
 \end{align*}
 are monoidal functors.
 So let us forgo the proof here, too.
-After all, it is clear what the category of small monoidal categories $\mathbf{MonCat}$ shall be.
-That this is actually a (strict) $2$-category comes now.
+After all, it is clear what the category of small monoidal categories $\mathbf{MonCat}$ should be.
+That this is actually a (strict) $2$-category comes next.
 \\
-One can strightforwardly guess that if there are notions of monoidal category and monoidal functor there is also a notion of monoidal natural transformation.
-Indeed, there is one and it turns out that not much is required for natural transformations to be monoidal, that is, to get along with the monoidal structures.
+One can straightforwardly guess that if there are notions of a monoidal category and monoidal functor, there is also a notion of a monoidal natural transformation.
+Indeed, there is one, and it turns out that not much is required for natural transformations to be monoidal, that is, to get along with the monoidal structures.
 Given monoidal functors
 \begin{align*}
   \left(
@@ -545,14 +545,14 @@ the diagram
 \]
 commutes
 \end{enumerate}
-Again the monoidal natural transformation properties (MT1) and (MT2) apparently express compatibility regarding the involved structures and are hence coherence conditions.
+Again, the monoidal natural transformation properties (MT1) and (MT2) apparently express compatibility regarding the involved structures and are hence coherence conditions.
 One is now tempted to define a version of functor equivalence which is adapted to the new situation, that is, which respects the monoidal structure.
 Since the identity functor and the composition of functors are monoidal, all we have to do to achieve this is to add the word monoidal in the definition of equivalence: $\mathcal{M}_{F_{\alpha\beta}}$ is a \textbf{monoidal equivalence (from $\mathcal{M}_{\mathbf{C}_{\alpha}}$ to $\mathcal{M}_{\mathbf{C}_{\beta}}$)} if there is $\mathcal{M}_{F_{\beta\alpha}}$ such that there exist monoidal natural isomorphisms from $F_{\beta\alpha} \circ F_{\alpha\beta}$ to $\mathrm{id}_{\mathbf{C_{\alpha}}}$ and from $F_{\alpha\beta} \circ F_{\beta\alpha} $ to $\mathrm{id}_{\mathbf{C_{\beta}}}$, respectively.
 Thus we get the correct idea of when two monoidal categories are {\glqq}the same{\grqq} in the higher structural setting.
 \\\\
-As in abstract algebra a monoid can satisfy a commutative law and so can a monoidal category in a somewhat weaker form.
-This is braiding - or a little stronger - symmetry on a monoidal category.
-As the name suggests it is inspired by \textit{braids} in algebraic topology.
+As in abstract algebra, a monoid can satisfy a commutative law, and so can a monoidal category in a somewhat weaker form.
+This is a braiding - or, a little stronger, symmetry - on a monoidal category.
+As the name suggests, it is inspired by \textit{braids} in algebraic topology.
 However, we only provide the categorical basics for braids here.
 A set $\mathcal{B}_{\mathbf{C}}$ is a \textbf{braided monoidal category} if it is a tuple $(\mathcal{M}_{\mathbf{C}},\mathsf{B})$ consisting of a monoidal category $\mathcal{M}_{\mathbf{C}}$ and for the functor
 \begin{align*}
@@ -655,10 +655,10 @@ the diagram
 \]
 commutes
 \end{enumerate}
-For the braided monoidal category properties (BC1) and (BC2) we also say that the \textbf{hexagon equations (in $\mathcal{B}_{\mathbf{C}}$) hold}.
+For the braided monoidal category properties (BC1) and (BC2), we also say that the \textbf{hexagon equations (in $\mathcal{B}_{\mathbf{C}}$) hold}.
 This is again a coherence condition.
-Often people only mention the underlying category of the monoidal category when they mean a braided monoidal category letting the rest of the data be implicit.
-The coordinate $\mathsf{B}$ in $\mathcal{B}_{\mathbf{C}}$ is called \textbf{braiding} and there is a case of special interest.
+Often, people only mention the underlying category of the monoidal category when they mean a braided monoidal category, leaving the rest of the data implicit.
+The coordinate $\mathsf{B}$ in $\mathcal{B}_{\mathbf{C}}$ is called the \textbf{braiding}, and there is a case of special interest.
 Namely, a braided monoidal category $\mathcal{B}_{\mathbf{C}}$ is \textbf{symmetric} if
 \begin{align*}
   \mathsf{B}(X_{2},X_{1})
@@ -667,8 +667,8 @@ Namely, a braided monoidal category $\mathcal{B}_{\mathbf{C}}$ is \textbf{symmet
   &=
   \mathrm{id}_{\otimes}(X_{1},X_{2})
 \end{align*}
-holds for all $X_{1}$ and $X_{2}$.\footnote{by the way, this equation is abstracted from a trivial braid}.
-People often say a bit inaccurately {\glqq}symmetric monoidal category{\grqq} instead of {\glqq}symmetric braided monoidal category{\grqq}.
+holds for all $X_{1}$ and $X_{2}$.\footnote{by the way, this equation is abstracted from a trivial braid}
+People often say, a bit inaccurately, {\glqq}symmetric monoidal category{\grqq} instead of {\glqq}symmetric braided monoidal category{\grqq}.
 \\
 Of course, one can define functors respecting these extra pieces of structure.
 A set $\mathcal{B}_{F}$ is a \textbf{braided monoidal functor (from $\mathcal{B}_{\mathbf{C}}$ to $\mathcal{B}_{\mathbf{C}_{\alpha}}$)} if it is a monoidal functor $(F,\mathsf{H},\Phi)$ such that
@@ -697,7 +697,7 @@ the diagram
 commutes
 \end{enumerate}
 Let us consider the symmetric case.
-As a special case of braiding there are clearly no extra conditions required for functors except for a restriction to symmetric monoidal categories.\footnote{so, if at all, axiom (BF) simplifies} Therefore a braided monoidal functor $\mathcal{B}_{F_{1}}$ is \textbf{symmetric} if
+As a special case of braiding, there are clearly no extra conditions required for functors except for a restriction to symmetric monoidal categories.\footnote{so, if at all, axiom (BF) simplifies} Therefore a braided monoidal functor $\mathcal{B}_{F_{1}}$ is \textbf{symmetric} if
 \begin{align*}
   \mathsf{B}(X_{2},X_{1})
   \circ
@@ -711,9 +711,9 @@ As a special case of braiding there are clearly no extra conditions required for
   &=
   \mathsf{id}_{\otimes_{\alpha}}(X_{1},X_{2})
 \end{align*}
-hold.
+both hold.
 That is, the involved categories are symmetric.
-Again, people say a bit inaccurately {\glqq}symmetric monoidal functor{\grqq} instead of {\glqq}symmetric braided monoidal functor{\grqq}.
+Again, people say, a bit inaccurately, {\glqq}symmetric monoidal functor{\grqq} instead of {\glqq}symmetric braided monoidal functor{\grqq}.
 Once more, it is clear that
 \begin{align*}
   \left(
@@ -767,30 +767,29 @@ is a braided monoidal functor if
 \end{align*}
 are braided monoidal functors.
 So let's forgo the proof here once more.
-In particular, we can replace braided by symmetric and the statements about the identity and composition will still hold.
-Again, it is clear what the category of small braided monoidal categories $\mathbf{BMonCat}$ and symmetric braided monoidal categories $\mathbf{SMonCat}$, respectively, shall be.
-That both of them are actually a (strict) $2$-category comes now.
+In particular, we can replace braided with symmetric and the statements about the identity and composition will still hold.
+Again, it is clear what the category of small braided monoidal categories $\mathbf{BMonCat}$ and symmetric braided monoidal categories $\mathbf{SMonCat}$, respectively, should be.
+That both of them are actually a (strict) $2$-category comes next.
 \\
-We wonder what we have to demand for naturality in case of braided monoidal functors.
-The answer is: actually nothing since the braiding as natural transformation between functors does not make use of the braided monoidal functors we want to define a certain kind of natural transformation for.
+One might wonder what we have to demand for naturality in the case of braided monoidal functors.
+The answer is: actually nothing, since the braiding as a natural transformation between functors does not make use of the braided monoidal functors we want to define a certain kind of natural transformation for.
 So we are led to the definition that a natural transformation is \textbf{braided monoidal (w.r.t. $\mathcal{B}_{F_{1}}$ and $\mathcal{B}_{F_{2}}$)} if it is monoidal w.r.t.
 $\mathcal{B}_{F_{1}}$ and $\mathcal{B}_{F_{2}}$.
-To shine a light on the perhaps a little obscured part of this definition: the difference between braided monoidal and mere monoidal natural transformations is that the involved functors are braided monoidal and not just monoidal.
-Obtaining the symmetric monoidal case from the braided monoidal case of natural transformation is straightforward.
+To shine a light on the perhaps a little obscure part of this definition: the difference between braided monoidal and mere monoidal natural transformations is that the involved functors are braided monoidal and not just monoidal.
+Obtaining the symmetric monoidal case from the braided monoidal case of natural transformations is straightforward.
 A braided monoidal natural transformation w.r.t. $\mathcal{B}_{F_{1}}$ and $\mathcal{B}_{F_{2}}$ is \textbf{symmetric} if each of $\mathcal{B}_{F_{1}}$ and $\mathcal{B}_{F_{2}}$ is symmetric.
-Eventually, we shall provide an approriate conception of equivalence that the reader can already guess from what has been said so far.
+Finally, we will provide an appropriate conception of equivalence that the reader can already guess from what has been said so far.
 $\mathcal{B}_{F_{\alpha\beta}}$ is a \textbf{braided monoidal equivalence (from $\mathcal{B}_{\mathbf{C}_{\alpha}}$ to $\mathcal{B}_{\mathbf{C}_{\beta}}$)} if there is $\mathcal{B}_{F_{\beta\alpha}}$ such that there exist braided monoidal natural isomorphisms from $F_{\beta\alpha} \circ F_{\alpha\beta}$ to $\mathrm{id}_{\mathbf{C_{\alpha}}}$ and from $F_{\alpha\beta} \circ F_{\beta\alpha}$ to $\mathrm{id}_{\mathbf{C_{\beta}}}$, respectively.
 A braided monoidal equivalence $\mathcal{B}_{F_{\alpha\beta}}$ is \textbf{symmetric} if $\mathcal{B}_{F_{\alpha\beta}}$ is symmetric and if there is a symmetric $\mathcal{B}_{F_{\beta\alpha}}$ such that there exist symmetric braided monoidal natural isomorphisms from $F_{\beta\alpha} \circ F_{\alpha\beta}$ to $\mathrm{id}_{\mathbf{C_{\alpha}}}$ and from $F_{\alpha\beta} \circ F_{\beta\alpha}$ to $\mathrm{id}_{\mathbf{C_{\beta}}}$, respectively.
 %srictification theorem
 \\\\
-We now come to an important (esp.
-w.r.t. phyisics) example of symmetric monoidal categories.
-Namely finite-dimensional vector spaces over some field.
+We now come to an important (esp. w.r.t. physics) example of symmetric monoidal categories.
+Namely, finite-dimensional vector spaces over some field.
 \\
 \begin{exa}
 \label{exa:finvecmoncat}
-The finite-dimensional vector spaces over a field $K$ make up a category $\mathbf{Finvec}_{K}$ with objects the vector spaces and morphisms the $K$-linear maps between them.
-$\mathbf{Finvec}_{K}$ together with the tensor product $\otimes$ for vector spaces and the field $K$ as unit object make $\mathbf{Finvec}_{K}$ even a symmetric monoidal category.
+The finite-dimensional vector spaces over a field $K$ make up a category $\mathbf{Finvec}_{K}$ whose objects are the vector spaces and whose morphisms are the $K$-linear maps between them.
+$\mathbf{Finvec}_{K}$ together with the tensor product $\otimes$ for vector spaces and the field $K$ as unit object even make $\mathbf{Finvec}_{K}$ a symmetric monoidal category.
 A vector space
 \begin{align*}
   V
@@ -808,8 +807,8 @@ Therefore the most direct approach to define a dual object $X^{\prime}$ of $X$ i
   :=
   \mathrm{mor}_{\mathbf{C}}(X,1)
 \end{align*}
-However, it is not always possible to make this set of arrows an object of $\mathbf{C}$ in a canonical way as for vector spaces.
-Another more indirect approach is provided by the tensor product: Given a finite-dimensional vector space $V$ then the dual space $V^{\prime}$ is again a finite-dimensional vector space.
+However, it is not always possible to make this set of arrows an object of $\mathbf{C}$ in a canonical way, as it is for vector spaces.
+Another more indirect approach is provided by the tensor product: Given a finite-dimensional vector space $V$, the dual space $V^{\prime}$ is again a finite-dimensional vector space.
 One can then show that $\otimes(\cdot,V)$ is a left adjoint of $\otimes(V^{\prime},\cdot)$, that is, for all
 \begin{align*}
   V_{1},
@@ -844,8 +843,8 @@ in a natural way by mapping $f$ to
   \right)
   (v)
 \end{align*}
-And this property defines the dual space $V^{\prime}$ of $V$ up to a unique isomorphism since adjoints are unique up to unique isomorphism and tensoring a vector space with $K$ reproduces this vector space up to unique isomorphism.
-Hence for any other finite-dimensional vector space $\tilde{V}$ over $K$ such that $\otimes(\tilde{V},\cdot)$ is right adjoint to $\otimes(\cdot,V)$ we must have
+And this property defines the dual space $V^{\prime}$ of $V$ up to a unique isomorphism, since adjoints are unique up to unique isomorphism and tensoring a vector space with $K$ reproduces this vector space up to unique isomorphism.
+Hence for any other finite-dimensional vector space $\tilde{V}$ over $K$ such that $\otimes(\tilde{V},\cdot)$ is a right adjoint to $\otimes(\cdot,V)$ we must have
 \begin{align*}
   \tilde{V}
   \cong
@@ -855,8 +854,8 @@ Hence for any other finite-dimensional vector space $\tilde{V}$ over $K$ such th
   \cong
   V^{\prime}
 \end{align*}
-This suffices to structurally characterize the dual space which is all we are interested in as we made clear throughout these notes.
-Thus we are tempted to extend this definition of a dual space to an arbitrary monoidal category $\mathbf{C}$ by saying that $X^{\prime}$ is a dual object of $X$ if $\otimes(\cdot,X)$ is a left adjoint of $\otimes(X^{\prime},\cdot)$ and maybe some axioms incorporating monoidal compatibility.
+This suffices to structurally characterize the dual space, which is all we are interested in as we have made clear throughout these notes.
+Thus we are tempted to extend this definition of a dual space to an arbitrary monoidal category $\mathbf{C}$ by saying that $X^{\prime}$ is a dual object of $X$ if $\otimes(\cdot,X)$ is a left adjoint of $\otimes(X^{\prime},\cdot)$ along with maybe some axioms incorporating monoidal compatibility.
 Also note the version of adjoints with unit and counit according to theorem \ref{thm:adjoints} (d).
 In the proof there we saw that
 \begin{align*}
@@ -873,7 +872,7 @@ In the proof there we saw that
     v^{\prime}(v)
   \right)
 \end{align*}
-explaining the alternative terminology evaluation for counit.
+explaining the alternative terminology evaluation for the counit.
 \end{exa}
 \begin{prf}
 See any algebra book with a chapter about tensor products.
@@ -883,8 +882,8 @@ Or just the \cite{wiki-pedia0en} article: tensor products of modules.
 \hfill
 $\square$
 \end{prf}
-So motivated by example \ref{exa:finvecmoncat} we define dual objects of a monoidal category.
-In $\mathcal{M}_{\mathbf{C}}$ an object $X^{\prime}$ of $\mathbf{C}$ is a \textbf{left dual (of $X$)} if there is
+Motivated by example \ref{exa:finvecmoncat} we define dual objects of a monoidal category.
+In $\mathcal{M}_{\mathbf{C}}$ an object $X^{\prime}$ of $\mathbf{C}$ is a \textbf{left dual (of $X$)} if there are
 \begin{align*}
   \mathrm{ev}_{X}
   &\in
@@ -971,35 +970,35 @@ the diagram
 \]
 commutes
 \end{enumerate}
-If $X$ as object of the underlying category of a monoidal category $\mathcal{M}_{\mathbf{C}}$ has a left dual then $\mathrm{ev}_{X}$ is called \textbf{(left) evaluation (of $X$)} and $\mathrm{coev}_{X}$ is called \textbf{(left) coevaluation (of $X$)}.\footnote{by the way, a right dual can be defined in the same way with the roles of $X$ and $X^{\prime}$ interchanged} Now, a monoidal category is \textbf{left rigid} if every object has a left dual.
+If $X$ as an object of the underlying category of a monoidal category $\mathcal{M}_{\mathbf{C}}$ has a left dual then $\mathrm{ev}_{X}$ is called \textbf{(left) evaluation (of $X$)} and $\mathrm{coev}_{X}$ is called \textbf{(left) coevaluation (of $X$)}.\footnote{by the way, a right dual can be defined in the same way with the roles of $X$ and $X^{\prime}$ interchanged} Now, a monoidal category is \textbf{left rigid} if every object has a left dual.
 \\\\
-All this is important in a try to formalize the still informal idea of quantum field theory - at least when the quantum field theory does not depend on the metric.
-The formalization is called topological quantum fied theory (abbr. TQFT) and is just a symmetric monoidal functor from a certain {\glqq}geometric{\grqq} symmetric monoidal category to the {\glqq}algebraic{\grqq} one of $\mathbf{Finvec}_{K}$ for some field $K$.
+All this is important in an attempt to formalize the still informal idea of quantum field theory - at least when the quantum field theory does not depend on the metric.
+The formalization is called topological quantum field theory (abbr. TQFT) and is just a symmetric monoidal functor from a certain {\glqq}geometric{\grqq} symmetric monoidal category to the {\glqq}algebraic{\grqq} one of $\mathbf{Finvec}_{K}$ for some field $K$.
 The keyword for the geometric one is \textit{cobordism}.
 A clean discussion of TQFTs including a concise motivation from path integrals is given in \cite{00000011}.
-This source does also try to explain the connection of TQFTs to higher category theory.
+This source also tries to explain the connection of TQFTs to higher category theory.
 In particular, it contains a semi-formal discussion of Lurie's formulation of the cobordism hypothesis due to Baez.
-In low space-time dimensions TQFTs have to do with knot theory.
-This has much to do with Turaev's work on the subject and is part of his book \cite{24253327}.
+In low space-time dimensions, TQFTs have to do with knot theory.
+This is closely related to Turaev's work on the subject and is part of his book \cite{24253327}.
 \\
 This is a good point to discuss the notion of {\glqq}enrichment{\grqq}.
-At one place, at least, in these notes we had the problem that
+In at least one place in these notes, we had the problem that
 \begin{align*}
   \mathrm{mor}_{\mathbf{C}}(X_{1},X_{2})
 \end{align*}
-had to be more than a mere set - namely we wanted it to be an object of $\mathbf{C}$ itself.
-Namely in example \ref{exa:finvecmoncat} when we wanted
+had to be more than a mere set - namely, we wanted it to be an object of $\mathbf{C}$ itself.
+Namely, in example \ref{exa:finvecmoncat}, when we wanted
 \begin{align*}
   \mathrm{mor}_{\mathbf{Finvec}_{k}}(V,K)
 \end{align*}
-to be the the vector space dual to $V$.
+to be the vector space dual to $V$.
 Another case will be the path space
 \begin{align*}
   \mathrm{mor}_{\mathbf{Top}}([0,1],Y)
 \end{align*}
-for some space $Y$ which we need when we define \textit{cofibration} in section \ref{sec:fibration} to make currying possible.
+for some space $Y$, which we need when we define \textit{cofibration} in section \ref{sec:fibration} to make currying possible.
 This case is the original motivation for enrichment.
-Anyways, monoidal categories provide a way for a definition of so-called enriched categories where the set of morphisms from one object to a second one is itself an object of the category.\footnote{we could potentially also achieve this by internalizing categories in a category with enough structure (pullbacks suffice, that is, i.p. topoi) as briefly discussed in subsection \ref{sec:internaliz} but then also the object set becomes an object} We now give a precise definition of enriched categories.
+Anyway, monoidal categories provide a way to define so-called enriched categories, where the set of morphisms from one object to a second one is itself an object of the category.\footnote{we could potentially also achieve this by internalizing categories in a category with enough structure (pullbacks suffice, i.e., in topoi) as briefly discussed in subsection \ref{sec:internaliz} but then the object set also becomes an object} We now give a precise definition of enriched categories.
 It should be noted that almost all of category theory has its counterpart in the enriched case.
 Most prominently: the Yoneda lemma.
 Assume a monoidal category $\mathcal{M}_{\mathbf{C}}$.
@@ -1161,8 +1160,8 @@ implies
   M_{34}
 \end{align*}
 \end{enumerate}
-Property (EC3) is a bit debatable but one should demand it in a material theory which allows comparsion of objects for equality so that $\mathbf{Set}$-enriched categories precisely reproduce ordinary categories.
-From what we have said so far and subsection \ref{sec:internaliz} where we defined group object it is pretty straightforward what a monoid object in a monoidal category shall be.
+Property (EC3) is a bit debatable but one should demand it in a material theory which allows comparison of objects for equality so that $\mathbf{Set}$-enriched categories precisely reproduce ordinary categories.
+From what we have said so far and subsection \ref{sec:internaliz}, where we defined group objects, it is pretty straightforward what a monoid object in a monoidal category should be.
 Hence we come directly to the definition.
 Assume a monoidal category $\mathcal{M}_{\mathbf{C}}$ and $M \in \mathrm{ob}_{\mathbf{C}}$ as well as morphisms
 \begin{align*}
@@ -1184,7 +1183,7 @@ Assume a monoidal category $\mathcal{M}_{\mathbf{C}}$ and $M \in \mathrm{ob}_{\m
     M
   \right)
 \end{align*}
-Then $M$ is called \textbf{monoid object (of $\mathcal{M}_{\mathbf{C}}$ w.r.t. $(\mu,\iota)$)} if
+Then $M$ is called a \textbf{monoid object (of $\mathcal{M}_{\mathbf{C}}$ w.r.t. $(\mu,\iota)$)} if
 \begin{enumerate}
 \item[(MO1)]
 the diagram
@@ -1258,9 +1257,9 @@ the diagrams
 \]
 commute.
 \end{enumerate}
-When one has monoids we have also seen that actions on it are usually interesting.
-And we can let a monoidal category act on an ordinary one by categorification of monoid actions.
-Given a monoidal category $\mathcal{M}_{\mathbf{C}}$ then a monoidal functor
+When dealing with monoids, we have also seen that actions on them are usually interesting.
+And we can let a monoidal category act on an ordinary one by categorifying monoid actions.
+Given a monoidal category $\mathcal{M}_{\mathbf{C}}$, a monoidal functor
 \begin{align*}
   A
   \colon
@@ -1268,7 +1267,7 @@ Given a monoidal category $\mathcal{M}_{\mathbf{C}}$ then a monoidal functor
   &\rightarrow
   \mathrm{end}(\mathbf{C}_{\alpha})
 \end{align*}
-is called \textbf{action (of $\mathcal{M}_{\mathbf{C}}$ on $\mathbf{C}_{\alpha}$)}.
+is called an \textbf{action (of $\mathcal{M}_{\mathbf{C}}$ on $\mathbf{C}_{\alpha}$)}.
 One can show that an action
 \begin{align*}
   A
@@ -1307,9 +1306,9 @@ such that
   &\cong
   X^{\alpha}
 \end{align*}
-naturally with approriate coherence conditions translated from those of a monoidal functors.
-If you are bored then find out how this works.
-Anyways, given a monoid object $M$ of $\mathcal{M}_{\mathbf{C}}$ w.r.t. $(\mu,\iota)$ and an action
+naturally with appropriate coherence conditions translated from those of a monoidal functor.
+If you are bored, try finding out how this works.
+Anyway, given a monoid object $M$ of $\mathcal{M}_{\mathbf{C}}$ w.r.t. $(\mu,\iota)$ and an action
 \begin{align*}
   A
   \colon
@@ -1317,7 +1316,7 @@ Anyways, given a monoid object $M$ of $\mathcal{M}_{\mathbf{C}}$ w.r.t. $(\mu,\i
   &\rightarrow
   \mathrm{end}(\mathbf{C}_{\alpha})
 \end{align*}
-then an \textbf{action (of $M$ in $\mathbf{C}_{\alpha}$ riding $A$)} is a morphism
+an \textbf{action (of $M$ in $\mathbf{C}_{\alpha}$ riding $A$)} is a morphism
 \begin{align*}
   \mathrm{a}
   &\in
@@ -1378,7 +1377,7 @@ the diagram
 commutes
 \end{enumerate}
 %what is \cong?
-There is also a notion of morphism between actions riding $A$.
+There is also a notion of a morphism between actions riding $A$.
 So let
 \begin{align*}
   \mathrm{a}_{1}
@@ -1397,7 +1396,7 @@ So let
     X_{2}^{\alpha}
   \right)
 \end{align*}
-be actions of $M$ in $\mathbf{C}_{\alpha}$ riding $A$ then a morphism $f_{12}^{\alpha}$ is called \textbf{$M$-equivariant morphism (from $\mathrm{a}_{1}$ to $\mathrm{a}_{2}$)} if the diagram
+be actions of $M$ in $\mathbf{C}_{\alpha}$ riding $A$, a morphism $f_{12}^{\alpha}$ is called an \textbf{$M$-equivariant morphism (from $\mathrm{a}_{1}$ to $\mathrm{a}_{2}$)} if the diagram
 \[
 \begin{tikzcd}[sep=large]
   A(M,X_{1}^{\alpha})
@@ -1416,8 +1415,8 @@ be actions of $M$ in $\mathbf{C}_{\alpha}$ riding $A$ then a morphism $f_{12}^{\
 commutes.
 Note that actions are an instance of the mentioned microcosm principle.
 \\
-We now oidify monoid objects and actions to monads and algebras.
-To this end, rememeber that a monoidal category is the same as a weak $2$-category with one object.
+We now oidify monoid objects and actions into monads and algebras.
+To this end, remember that a monoidal category is the same as a weak $2$-category with one object.
 First, we translate monoid objects of $\mathcal{M}_{\mathbf{C}}$ to the more general context of weak $2$-categories.
 So let ${}_{2}\mathbf{C}$ be a weak $2$-category.
 A set $M$ is a \textbf{monad (of ${}_{2}\mathbf{C}$)} if it is a $4$-tuple consisting of
@@ -1545,7 +1544,7 @@ the diagram
 \]
 commutes
 \end{enumerate}
-Second let us translate the notion of actions on monoid objects to modules over monads.
+Second, let us translate the notion of actions on monoid objects to modules over monads.
 Suppose
 \begin{align*}
   T
@@ -1677,9 +1676,9 @@ is called a \textbf{morphism of left $T$-modules} if the diagram
 \]
 commutes.
 The classical example is when the weak $2$-category is the strict $2$-category $\mathbf{Cat}$.
-Then the $0$-morphisms are (small) categories, the $1$-morphisms are functors and the $2$-morphisms are natural transformations while the associator and the left and right unit law are suitable identities, that is, strict equality.
-This is then what is usually presented as monad in a book about category theory.
-Left $T$-modules are usually called $T$-algebra in his case.
+Then the $0$-morphisms are (small) categories, the $1$-morphisms are functors and the $2$-morphisms are natural transformations while the associator and the left and right unit laws are suitable identities, that is, strict equality.
+This is then what is usually presented as a monad in a book about category theory.
+Left $T$-modules are usually called $T$-algebras in this case.
 The reason for this is that if we have an endofunctor
 \begin{align*}
   F
@@ -1688,13 +1687,13 @@ The reason for this is that if we have an endofunctor
   &\rightarrow
   \mathbf{C}
 \end{align*}
-an \textbf{$F$-algebra} is an object $X$ together with a morphism\footnote{if $F$ is a monad and the pair $(X,f)$ satisfies (LM1) and (LM2) then $(X,f)$ is nothing but a $F$-module with domain the terminal category $1_{\mathbf{Cat}}$}
+an \textbf{$F$-algebra} is an object $X$ together with a morphism\footnote{if $F$ is a monad and the pair $(X,f)$ satisfies (LM1) and (LM2) then $(X,f)$ is nothing but an $F$-module with domain the terminal category $1_{\mathbf{Cat}}$}
 \begin{align*}
   f
   &\in
   \mathrm{mor}_{\mathbf{C}}(F(X),X)
 \end{align*}
-while given $F$-algebras $(X_{1},f_{1})$ and $(X_{2},f_{2})$ a \textbf{homomorphism (of $F$-algebras from $(X_{1},f_{1})$ to $(X_{2},f_{2})$)} is a morphism $f_{12}$ such that the diagram
+and given $F$-algebras $(X_{1},f_{1})$ and $(X_{2},f_{2})$ a \textbf{homomorphism (of $F$-algebras from $(X_{1},f_{1})$ to $(X_{2},f_{2})$)} is a morphism $f_{12}$ such that the diagram
 \[
 \begin{tikzcd}[sep=large]
   F(X_{1})
@@ -1711,10 +1710,10 @@ while given $F$-algebras $(X_{1},f_{1})$ and $(X_{2},f_{2})$ a \textbf{homomorph
 \end{tikzcd}
 \]
 commutes.
-Moreover $F$-algebras have their names from generalizing abstract algebra.
+Moreover, $F$-algebras get their names from generalizing abstract algebra.
 This can be seen for groups in the following way.
 Let $\mathbf{C}$ have finite products and coproducts.
-Furthermore let $F$ be such that
+Furthermore, let $F$ be such that
 \begin{align*}
   F(X)
   &=
@@ -1749,16 +1748,16 @@ it suffices to provide morphisms
   &\in
   \mathrm{mor}_{\mathbf{C}}(X,X)
 \end{align*}
-If we subject $(\mathrm{m},\mathrm{id},\mathrm{inv})$ to group object properties (GO1)-(GO3) from subsection \ref{sec:internaliz} and take $\mathbf{C}$ to be $\mathbf{Set}$ then we have a definition for groups in set theory.
+If we subject $(\mathrm{m},\mathrm{id},\mathrm{inv})$ to group object properties (GO1)-(GO3) from subsection \ref{sec:internaliz} and take $\mathbf{C}$ to be $\mathbf{Set}$, then we have a definition for groups in set theory.
 This strategy works in general for algebraic structures.
-Another interesting point here are the initial $F$-algebras in the category built of $F$-algebras and their homomorphisms since these contain induction priniciples.
-The most prominent examples are the natural numbers or more precisely the natural numbers objects.
-Initial $F$-algebras are used in UFP-HoTT to generally define inductive types which are of major significance for type theory.
-These are the types one wants to have in type theory: types freely constructed by its constructors as are for example the natural number by zero and the successor function.
-But in UFP-HoTT one also wants \textit{higher inductive types} which can also be constructed by higher dimensional paths and not only zero dimensional ones as for ordinary inductive types.
+Another interesting point here is the initial $F$-algebras in the category built from $F$-algebras and their homomorphisms, since these contain induction principles.
+The most prominent examples are the natural numbers or more precisely the natural number objects.
+Initial $F$-algebras are used in UFP-HoTT to generally define inductive types, which are of major significance for type theory.
+These are the types one wants to have in type theory: types freely constructed by their constructors, such as, for example, the natural numbers from zero and the successor function.
+But in UFP-HoTT one also wants \textit{higher inductive types}, which can also be constructed by higher-dimensional paths and not only zero-dimensional ones as is the case for ordinary inductive types.
 This is a topic of current research with progress made in recent years.
 \\
-Last, let us take a brief look at operads.
+Lastly, let us take a brief look at operads.
 $\mathbf{C}$-operads can be defined as monoid objects of a monoidal category with underlying category
 \begin{align*}
   \mathrm{sig}(\mathbf{C})
@@ -1766,7 +1765,7 @@ $\mathbf{C}$-operads can be defined as monoid objects of a monoidal category wit
   \mathbf{Set}^{\mathrm{fam}(\mathbf{C})^{\mathrm{op}} \times \mathbf{C}}
 \end{align*}
 for some $\mathbf{C}$.
-Here $\mathrm{fam}(\mathbf{C})$ is the category with objects finite lists of elements in $\mathrm{ob}_{\mathbf{C}}$, that is,
+Here $\mathrm{fam}(\mathbf{C})$ is the category whose objects are finite lists of elements in $\mathrm{ob}_{\mathbf{C}}$, that is,
 \begin{align*}
   \mathrm{ob}_{\mathrm{fam}(\mathbf{C})}
   &:=
@@ -1786,7 +1785,7 @@ Here $\mathrm{fam}(\mathbf{C})$ is the category with objects finite lists of ele
   \right\rbrace
 \end{align*}
 where the case $n=0$ is the empty list.
-Further, for $n_{1},n_{2} \in \mathbb{N}$ let
+Further, for $n_{1},n_{2} \in \mathbb{N}$ and given
 \begin{align*}
   (X_{1},\ldots,X_{n_{1}}),
   (X_{1}^{\backprime},\ldots,X_{n_{2}}^{\backprime})
@@ -1810,8 +1809,8 @@ the morphisms are chosen according to
 \end{align*}
 and composed in the usual manner.
 So we must have $n_{1} = n_{2}$ for a morphism to exist at all.
-There is a canonical choice what an algebra of an operad shall be.
-Namely an action on the operad in 
+There is a canonical choice for what an algebra of an operad should be.
+Namely, an action on the operad in 
 \begin{align*}
   \mathrm{sig}(\mathbf{C})
 \end{align*}
@@ -1825,7 +1824,7 @@ riding the so-called tautologous action
   &\rightarrow
   \mathbf{Set}^{\mathbf{C}}
 \end{align*}
-which is on objects given by
+which on objects is given by
 \begin{align*}
   \left(
     A(O,F)
@@ -1845,7 +1844,7 @@ which is on objects given by
 \end{align*}
 This makes the monad part\footnote{$A(O,\cdot)$ can be regarded as an endofunctor on $\mathbf{Set}^{\mathbf{C}}$} of operads clear.
 The operation part is hard to directly see from this but has actually a very simple description.
-In fact, we actually put the cart before the horse and what follows should have been discussed before defining operads.
+In fact, we actually put the cart before the horse, and what follows should have been discussed before defining operads.
 Well, an operad is a functor
 \begin{align*}
   O
@@ -1967,11 +1966,11 @@ then we want the composition illustrated by
     (2,8) node[fill=white] {$X_{31}$};
 \end{tikzpicture}
 \]
-to exist such that this composition is associative and in each set $O(X_{1},X_{2})$ with $X_{1},X_{2}$ arbitrary there is an element for each arrow from $X_{1}$ to $X_{2}$ in $\mathbf{C}$ behaving like an identity for identity arrows under the operad composition.
-Moreover one demands the composition to be {\glqq}stable{\grqq} under permutations of the input.
-What all this means precisely has to be looked up in a source about operads such as \cite{0d7b89ad}.
-It shall be not very surprising that operads abstractly track composition and hence that they have applications in higher category theory.
-Indeed, they are the backbone of a serious attempt to define weak $n$-category by Baez and Dolan in \cite{0d7b89ad}.
-It is not used much any more due to the addressed problems of weak $n$-categories for finite $n$ but it is a landmark paper in higher category theory and provides much intuition about the idea of higher category theory (and also operads).
-However, you might wish to first read \cite{de09a3f9} followed by \cite{c2d89e8a} which escort you more or less softly into the realms of higher category theory.
+to exist such that this composition is associative and in each set $O(X_{1},X_{2})$ with $X_{1},X_{2}$ arbitrary, there is an element for each arrow from $X_{1}$ to $X_{2}$ in $\mathbf{C}$ behaving like an identity for identity arrows under the operad composition.
+Moreover, one demands the composition to be {\glqq}stable{\grqq} under permutations of the inputs.
+What all this means precisely can be looked up in a source about operads, such as \cite{0d7b89ad}.
+It should not be very surprising that operads abstractly track composition, and hence that they have applications in higher category theory.
+Indeed, they are the backbone of a serious attempt to define weak $n$-categories by Baez and Dolan in \cite{0d7b89ad}.
+It is not used much anymore due to the addressed problems of weak $n$-categories for finite $n$, but it is a landmark paper in higher category theory and provides much intuition about the idea of higher category theory (and also operads).
+However, you might wish to first read \cite{de09a3f9} followed by \cite{c2d89e8a}, which escort you more or less softly into the realms of higher category theory.
 In general, all the Baez stuff is highly recommended.

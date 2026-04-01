@@ -20,9 +20,9 @@ This one is not an exception and so some things remain to do:
 - make notation less heavy in some places
 - structure proofs more like programs to ease understanding
 - adding examples from computer science from which physicist might benefit:
-  - the relation of natural transformation to parametricity (system F)
-  - the relation of Yoneda-lemma to continuation-passing-style-transformations
-  - the relation of monads to foobar-passing-style
+  - the relationship between natural transformation and parametricity (system F)
+  - the relationship between Yoneda-lemma and continuation-passing-style-transformations
+  - the relationship between monads and foobar-passing-style
   - the freer monad as further example for Kan-extensions
   - reflective subcategories to understand reflection and reification
   - (co)inductive types
