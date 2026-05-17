@@ -86,7 +86,7 @@ So we can \underline{arbitrarily} choose coordinates without interfering with th
 \item[$\bullet$]
 In ordinary quantum mechanics (Schr\"{o}dinger equation), one usually encodes a massive particle (e.g. an electron) as a normalized element $\psi$ of some (separable) complex Hilbert space.
 But multiplying $\psi$ by a constant phase $\mathrm{exp}(\mathrm{i}\theta)$ (pointwise) does not affect the expectation value $\Braket{\psi|A|\psi}$ of some observable encoded as a densely-defined self-adjoint operator $A$ on the Hilbert space.
-And therefore, it doesn't affect the eigenvalues of $A$, which are what we actually measure.
+And therefore, it doesn't affect the spectrum of $A$, which is what we actually measure.
 Thus, multiplying by a constant phase does not interfere with the measurements of $A$.
 After all, we should more honestly say that the particle is the set made up of all products $\psi\mathrm{exp}(\mathrm{i}\theta)$ with the property that for any two products $\psi\mathrm{exp}(\mathrm{i}\theta_{1})$ and $\psi\mathrm{exp}(\mathrm{i}\theta_{2})$ there is exactly one relative phase $\mathrm{exp}(\mathrm{i}\theta)$ in the sense that
 \begin{align*}
@@ -114,12 +114,13 @@ It is often said that a torsor is like a group that has forgotten its identity e
 \end{enumerate}
 Note that the latter example about the phase in ordinary quantum mechanics suggests that we have real massive particles with an internal symmetry $U(1)$ when ordinary quantum mechanics is given a Bohmian interpretation, where $U(1)$ denotes the $1$-dimensional unitary group.
 And for motivational purposes, we feel encouraged to at least consider massive particles with internal symmetries moving in spacetime, even though ordinary quantum mechanics is not relativistic.
+\\
 But if the particle has an internal symmetry at one point in spacetime, why not at another?
 Now, the principle of locality suggests that the way we look at the situation at one point of spacetime should not affect the way we look at it at a distant point.
 But, of course, the way we look at the situation should vary smoothly (in particular, continuously) with spacetime.
 So, we should be able to smoothly change our perspective while still seeing the same thing.
 This makes sense for both the covariance example and the particle with internal symmetries moving in spacetime.
-So we should have a $G$-torsor $F_{x}$ with action
+We should therefore have a $G$-torsor $F_{x}$ with action
 \begin{align*}
   \mathrm{a}_{x}
   \colon
@@ -130,12 +131,13 @@ So we should have a $G$-torsor $F_{x}$ with action
   F_{x}
 \end{align*}
 at any point $x$ of spacetime that varies smoothly across it.
-So, actually, one should also demand that $G,F_{x}$ and $\mathrm{a}_{x}$ are smooth.
+Actually, one should also demand that $G,F_{x}$ and $\mathrm{a}_{x}$ are smooth.
 \begin{enumerate}
 \item[$\pmb{\hookrightarrow}$]
-Mathematically, we mean a smooth $G$-principal bundle\footnote{We assume these to be locally trivial by definition.} $\pi_{G} \colon E_{G} \rightarrow \Sigma$ over $\Sigma$, where $G$ is a Lie group (a manifold which is a {\glqq}smooth{\grqq} group).
+Mathematically, we mean a smooth $G$-principal bundle\footnote{We assume these to be locally trivial by definition.} $\pi_{G} \colon E_{G} \rightarrow \Sigma$ over $\Sigma$, where $G$ is a Lie group (a manifold that is also a {\glqq}smooth{\grqq} group).
 \end{enumerate}
-Next, the physics described in a given basis, or the particle itself, must obey some physical laws to be interesting at all.
+As a next step, let us bring in some more physics.
+The physics described in a given basis, or the particle itself, must obey some physical laws to be interesting at all.
 These laws might involve the situation's change when moving in spacetime - that is, its derivative - as experience suggests.
 So we should be able to compare events at nearby points in spacetime.
 But there is no preferred identification of $F_{x_{1}}$ and $F_{x_{2}}$ for $x_{1},x_{2} \in \Sigma$ and $x_{1} \neq x_{2}$, since we can clearly identify $F_{x}$ with $G$, but only after an \underline{arbitrary} choice of an element of $F_{x}$.
@@ -146,16 +148,18 @@ Note that the bundle is trivial if and only if there is a (smooth) section.
 This suggests that we only have local sections, since $G$-principal bundles are only locally trivial in general.
 Moreover, note that if $\Sigma$ is contractible, such as $\mathbb{R}^{n+1}$, then $\pi_{G}$ is trivial.
 \end{enumerate}
-So, if we want to compare $F_{x_{1}}$ with $F_{x_{2}}$ for $x_{1},x_{2} \in U \subset \Sigma$ (assuming $\pi_{G}$ is locally trivial over $U$), then the comparison depends on arbitrary choices of elements in $F_{x}$ for $x \in U$.
+If we want to compare $F_{x_{1}}$ with $F_{x_{2}}$ for $x_{1},x_{2} \in U \subset \Sigma$ (assuming $\pi_{G}$ is locally trivial over $U$), then the comparison depends on arbitrary choices of elements in $F_{x}$ for $x \in U$.
 In other words, the comparison cannot be expected to be truly well-defined in general, since it depends on the choice of the local section.
 Note that a local section in our general covariance example is a smooth choice of bases of the tangent spaces over some subspace $U \cong \mathbb{R}^{n+1}$, and comparing tangent spaces depends on this choice.
-So, the demand of general covariance prevents us from defining a derivative of sections of the tangent bundle using this identification.
+In the end, the requirement for general covariance prevents us from defining a derivative of sections of the tangent bundle using this identification.
+\\
 On the other hand, it suggests interpreting local sections of $\pi_{G}$ as local coordinates for it.
-Then, dealing with $\pi_{G}$ is in some sense like dealing with a manifold, but astonishingly somewhat easier, since the action on the fiber makes it more rigid.
+Then, dealing with $\pi_{G}$ is in some sense like dealing with a manifold, but surprisingly somewhat easier, since the action on the fiber makes it more rigid.
 Anyway, in this sense, the sections of a trivial $\pi_{G}$ can be interpreted as global coordinates.
-Now, what we need is a coordinate-free notion of how to identify the fibers $F_{x}$ of $\pi_{G}$.
+\\
+What we need now is a coordinate-free notion of how to identify the fibers $F_{x}$ of $\pi_{G}$.
 We have to say how they are connected, or in other words, how we can parallel transport a point of one fiber to a point of another fiber (without a change), doing so in a way that doesn't use a section or coordinates.
-This means that for any path\footnote{Actually its homotopy class, which however does not matter in contractible spaces such as $\mathbb{R}^{n+1}$.} in $\Sigma$ from $x_{1}$ to $x_{2}$, we must specify an isomorphism from $F_{x_{1}}$ to $F_{x_{2}}$ that respects the action on the fibers, in the sense that the order of applying the action and the parallel transport doesn't matter.\footnote{There are some other requirements one has to make for a sensible conception of parallel transport, such as smoothness and functoriality.}
+This means that for any path\footnote{Actually its homotopy class, which however does not matter in contractible spaces such as $\mathbb{R}^{n+1}$.} in $\Sigma$ from $x_{1}$ to $x_{2}$, we must specify an isomorphism from $F_{x_{1}}$ to $F_{x_{2}}$ that respects the action on the fibers, in the sense that the order of applying the action and the parallel transport doesn't matter.\footnote{There are some other requirements for a sensible conception of parallel transport, such as smoothness and functoriality.}
 \begin{enumerate}
 \item[$\pmb{\hookrightarrow}$]
 Mathematically, we mean a parallel transport functor for $\pi_{G}$.
@@ -317,7 +321,7 @@ First of all, the green arrows parallel to the fibers should have been drawn at 
 For $e \in E_{G}$, let $T_{e}E_{G}$ denote the tangent space of $E_{G}$ at $e$.
 \begin{enumerate}
 \item[$\bullet$]
-The green arrows should be understood symbolically as the subspace $V_{e}E_{G}$ of $T_{e}E_{G}$, which is tangent to the fiber—that is, the kernel of the tangent map $T_{e}\pi_{G} \colon T_{e}E_{G} \rightarrow T_{\pi_{G}(e)}\Sigma$ of $\pi_{G}$ (which is linear).
+The green arrows should be understood symbolically as the subspace $V_{e}E_{G}$ of $T_{e}E_{G}$, which is tangent to the fiber - that is, the kernel of the tangent map $T_{e}\pi_{G} \colon T_{e}E_{G} \rightarrow T_{\pi_{G}(e)}\Sigma$ of $\pi_{G}$ (which is linear).
 $V_{e}E_{G}$ is referred to as the vertical subspace and is independent of any parallel transport.
 \item[$\bullet$]
 The red arrows stand for the vector field on $E_{G}$ corresponding to the flow expressed by the dashed lines.
@@ -342,6 +346,7 @@ What we want to say is that instead of giving a parallel transport, it suffices 
 Mathematically, this smooth choice of horizontal space distribution is usually referred to as an Ehresmann connection on $\pi_{G}$.
 \end{enumerate}
 This picture hopefully makes the terminology {\glqq}connection{\grqq} clear, since it indicates how the fibers are {\glqq}connected{\grqq}.
+\\
 There is a convenient way to specify an Ehresmann connection.
 To this end, consider the tangent bundles $\pi_{TE_{G}} \colon TE_{G} \rightarrow E_{G}$ and $\pi_{T\Sigma} \colon T\Sigma \rightarrow \Sigma$ on $E_{G}$ and $\Sigma$, respectively.
 We then have the vector bundle homomorphism
@@ -367,7 +372,7 @@ Moreover, the vector bundle homomorphism $T\pi_{G}$ induces a unique vector bund
   T\Sigma
 \end{align*}
 from $\pi_{TE_{G}}^{!}$ to $\pi_{T\Sigma}$.
-Now, a smooth section $\sigma$ of $T_{e}\pi_{G}$ that is linear - that is, a linear map
+A smooth section $\sigma$ of $T_{e}\pi_{G}$ that is linear - that is, a linear map
 \begin{align*}
   \sigma
   \colon
@@ -375,9 +380,9 @@ Now, a smooth section $\sigma$ of $T_{e}\pi_{G}$ that is linear - that is, a lin
   &\rightarrow
   T_{e}E_{G}
 \end{align*}
-such that $T_{e}\pi_{G} \circ \sigma$ is the identity - can be shown to already determine a horizontal subspace, using the fact that $\sigma$, as a linear section, maps only $0$ to the vertical subspace.
-Moreover, because it essentially suffices to determine one horizontal subspace in each fiber due to the compatibility with the action, an Ehresmann connection on $\pi_{G}$ can be seen to correspond exactly to a smooth section of $T\pi_{G}^{!}$, considered as a homomorphism of vector bundles.
-So, to define an Ehresmann connection on $\pi_{G}$, we can provide a certain family of linear maps
+such that $T_{e}\pi_{G} \circ \sigma$ is the identity - can then be shown to already determine a horizontal subspace, using the fact that $\sigma$, as a linear section, maps only $0$ to the vertical subspace.
+Furthermore, because it essentially suffices to determine one horizontal subspace in each fiber due to the compatibility with the action, an Ehresmann connection on $\pi_{G}$ can be seen to correspond exactly to a smooth section of $T\pi_{G}^{!}$, regardeded as a homomorphism of vector bundles.
+Therefore, to define an Ehresmann connection on $\pi_{G}$, we can provide a certain family of linear maps
 \begin{align*}
   \sigma_{x}
   \colon
@@ -400,8 +405,8 @@ In other words: an Ehresmann connection is nothing but a smooth section of the \
   \Sigma
 \end{align*}
 where $\pi_{T\Sigma}^{\prime}$ is the fiberwise vector space dual to $\pi_{T\Sigma}$, and $\sigma_{x}$ is then an element (up to isomorphism from tensoring) of a fiber of this bundle.
-So, a connection can be regarded as a section of a fiber bundle.
-Namely, one whose fiber is the vector space of some vector space homomorphisms.
+Eventually, a connection can be regarded as a section of a fiber bundle, namely, one whose fiber is the vector space of some vector space homomorphisms.
+\\
 But there is yet another convenient characterization of the idea described so far.
 This arises from the Ehresmann connection in the following way.
 Because $V_{e}E_{G}$ is regarded as being tangent to the fiber, and the fiber is isomorphic to the Lie group $G$, the vertical subspace $V_{e}E_{G}$ should be isomorphic to the Lie algebra $\mathrm{Lie}_{G}$ of $G$, which is by definition just the tangent space at the identity element of the Lie group.
@@ -426,7 +431,8 @@ Principal Connection on $\pi_{G}$
 This equivalence can be found to some extent in \cite{797789bc}.
 More on this (including sources) can also be found in \cite{wiki-nlab0000}: connection on a bundle.
 \end{enumerate}
-Note that whenever we are given an action $\mathrm{a}_{F}$ of $G$ on a smooth manifold $F$, we can, loosely speaking, replace each fiber $F_{x}$ of $\pi_{G}$ with $F$ to get a fiber bundle $\pi_{\mathrm{a}_{F}}$ over $\Sigma$.
+Having established a general notion of comparison let us turn to how to specialize it for comparing quantities.
+To this end, note that whenever we are given an action $\mathrm{a}_{F}$ of $G$ on a smooth manifold $F$, we can, loosely speaking, replace each fiber $F_{x}$ of $\pi_{G}$ with $F$ to get a fiber bundle $\pi_{\mathrm{a}_{F}}$ over $\Sigma$.
 Each parallel transport then induces a similar notion in $\pi_{\mathrm{a}_{F}}$.
 If $F$ is also a vector space, this parallel transport allows us to define a differential quotient.
 \begin{enumerate}
@@ -436,10 +442,11 @@ The covariant derivative in an associated vector bundle is a coordinate-free way
 Details can be found in \cite{797789bc}.
 \end{enumerate}
 So, whenever we have sections of a vector bundle associated with a principal bundle governing a local symmetry, we should use the covariant derivative w.r.t. this symmetry when we need to determine the change of such a section in spacetime to remain compatible with the symmetry.
+\\
 Now, just as it is instructive to understand a manifold in local coordinates, we expect the same to be true for a bundle.
-So let $s \colon U \rightarrow E_{G}$ be a smooth local section of the $G$-principal bundle $\pi_{G}$ on which we have a principal connection $\omega$.
+Let $s \colon U \rightarrow E_{G}$ be a smooth local section of the $G$-principal bundle $\pi_{G}$ on which we have a principal connection $\omega$.
 We can use the tangent map of $s$ to map a tangent vector of $U$ to one of $E_{G}$, to which we can then apply $\omega$ to get a vector in the Lie algebra.
-So, locally, we expect to get a Lie algebra-valued $1$-form $s^{\ast}(\omega)$ on $U$ from $\omega$, depending on the chosen section $s$.
+Locally, we expect to get a Lie algebra-valued $1$-form $s^{\ast}(\omega)$ on $U$ from $\omega$, depending on the chosen section $s$.
 And by choosing coordinates $q_{\varphi}^{i}$ for $U$, we can write
 \begin{align*}
   s^{\ast}(\omega)(x)
@@ -453,10 +460,10 @@ where the functions $A_{q_{\varphi}^{i}}^{s} \colon U \rightarrow \mathrm{Lie}_{
 \item[$\pmb{\hookrightarrow}$]
 Mathematically, $s^{\ast}(\omega)$ is the pullback of $\omega$ along $s$, and this can be regarded as a smooth local section of the cotangent bundle tensored with the Lie algebra of $G$, which then in particular results in a vector bundle.
 \end{enumerate}
-This is a neat simplification of the connection (locally), and it is an interesting question whether we can reconstruct $\omega$ from such local data on $\Sigma$.
-So, assuming a set $K$ and smooth local sections $s_{k} \colon U_{k} \rightarrow E_{G}$ of $\pi_{G}$ for all $k \in K$ trivializing all of $\pi_{G}$, the question is: can we reconstruct $\omega$ from all the local Lie algebra-valued 1-forms $s_{k}^{\ast}(\omega)$ on $U_{k}$?
+This is a neat simplification of the connection (locally), and it is a really interesting question whether we can reconstruct $\omega$ from such local data on $\Sigma$.
+More precisely, assuming a set $K$ and smooth local sections $s_{k} \colon U_{k} \rightarrow E_{G}$ of $\pi_{G}$ for all $k \in K$ trivializing all of $\pi_{G}$, the question is: can we reconstruct $\omega$ from all the local Lie algebra-valued 1-forms $s_{k}^{\ast}(\omega)$ on $U_{k}$?
 To answer this question, it seems that one should understand what happens on $U_{k_{1}} \cap U_{k_{2}}$ for $(k_{1},k_{2}) \in K \times K$.
-So, we should stick with the coordinate approach and see what a change of local coordinates does.
+Let's stick with the coordinate approach and see what a change of local coordinates does.
 First, note that for smooth local sections $s_{1} \colon U_{1} \rightarrow E_{G}$ and $s_{2} \colon U_{2} \rightarrow E_{G}$ of $\pi_{G}$, we have for each $x \in U_{k_{1}} \cap U_{k_{2}}$ a unique $g_{x} \in G$ such that
 \begin{align*}
   s_{2}(x)
@@ -483,11 +490,10 @@ Then the change of coordinates from $s_{1}$ to $s_{2}$ corresponds exactly to th
   g_{x}
 \end{align*}
 called the transition function.
-Moreover, note that there is an explicit formula—let's label this $\mathfrak{F}_{q_{\varphi}^{i}}^{s_{1},s_{2}}(\omega)$ for the sake of easy reference here—relating $A_{q_{\varphi}^{i}}^{s_{1}}(x)$ and $A_{q_{\varphi}^{i}}^{s_{2}}(x)$ for all $x \in U_{1} \cap U_{2}$ using the transition function $\tau_{s_{1},s_{2}}$.
-For details, see \cite{797789bc}.
-However, we will later write this formula down in the case of matrix groups.
-Now back to the trivializing sections $s_{k}$.
-Then for all pairs $(k_{1},k_{2}) \in K \times K$ we have transition functions $\tau_{s_{k_{1}},s_{k_{2}}}$, and these satisfy the cocycle condition\footnote{Yes, this has to do with cohomology, as we will see more explicitly later in chapter \ref{chap:cattg}.}
+Moreover, note that there is an explicit formula - let's label this $\mathfrak{F}_{q_{\varphi}^{i}}^{s_{1},s_{2}}(\omega)$ for the sake of easy reference here - relating $A_{q_{\varphi}^{i}}^{s_{1}}(x)$ and $A_{q_{\varphi}^{i}}^{s_{2}}(x)$ for all $x \in U_{1} \cap U_{2}$ using the transition function $\tau_{s_{1},s_{2}}$.
+For details, see \cite{797789bc}; yet, we will write this formula down in the case of matrix groups later.
+\\
+Now back to the trivializing sections $s_{k}$: For all pairs $(k_{1},k_{2}) \in K \times K$ we have transition functions $\tau_{s_{k_{1}},s_{k_{2}}}$, and these satisfy the cocycle condition\footnote{Yes, this has to do with cohomology, as we will see more explicitly later in chapter \ref{chap:cattg}.}
 \begin{align*}
   \tau_{s_{k_{1}},s_{k_{2}}}(x)
   \cdot
@@ -510,7 +516,9 @@ where $e_{G}$ denotes the identity element of $G$.
 One can show that from this data - the transition functions satisfying the cocycle condition - $\pi_{G}$ is reconstructable up to isomorphism.
 One can even show that functions $A_{q_{\varphi}^{i}}^{s_{k}} \colon U_{k} \rightarrow \mathrm{Lie}_{G}$ pairwise related by $\mathfrak{F}_{q_{\varphi}^{i}}^{s_{k_{1}},s_{k_{2}}}(\omega)$ on overlaps patch together into a unique connection on $\pi_{G}$.
 So, the $s_{k}^{\ast}(\omega)$ already determine the connection.
-Now assume further smooth local sections $s_{k}^{\backprime} \colon U_{k} \rightarrow E_{G}$ of $\pi_{G}$ for all $k \in K$ trivializing all of $\pi_{G}$.
+\\
+But how does this relate to other reconsctructions?
+Assume further smooth local sections $s_{k}^{\backprime} \colon U_{k} \rightarrow E_{G}$ of $\pi_{G}$ for all $k \in K$ trivializing all of $\pi_{G}$.
 Then there are unique smooth functions
 \begin{align*}
   f_{s_{k},s_{k}^{\backprime}}
@@ -537,7 +545,9 @@ And the connection $\Phi^{\ast}(\omega)$ in the coordinates $s_{k}$ is the same 
 So in the end, if we change the local coordinates of the physical situation we are looking at, we must change the local coordinates of the connection at the same time.
 The common ground of these changes is the isomorphism $\Phi$.
 Thus, it seems better to regard the isomorphisms of the bundle as actual changes of perspective.
-Let's run through a simple class of examples that covers most physically relevant cases.
+This is the point: changes of perspective are bundle automorphisms!
+\\
+Finally, let's run through a simple class of examples that covers most physically relevant cases.
 Namely, $G$ as a Lie subgroup of the $n$-dimensional general linear group $GL(n,\mathbb{K})$ with coefficients in $\mathbb{K} = \mathbb{R},\mathbb{C}$.
 The Lie algebra $\mathrm{Lie}_{G}$ is then also a matrix group, and for an isomorphism $\Phi$ and local coordinates $s$, we have
 \begin{align*}
@@ -610,7 +620,7 @@ where $\cdot$ denotes scalar multiplication, and for a smooth section $\phi$ of 
   \cdot
   \phi(x)
 \end{align*}
-Let's summarize what we have done here.
+As a last step in our discussion of the principle of local symmetry, let's summarize what we have done.
 We proposed a mathematical description of a physical situation that is the same under different viewpoints and respects the principle of locality.
 Then, from the desire to compare changes at nearby points in spacetime, we predicted the need for a section of some fiber bundle (namely the connection $\omega$) from purely geometrical considerations.
 And the view on this section depends on the view on the physical situation.
@@ -629,7 +639,7 @@ wave functions in relativistic quantum mechanics\footnote{Usually only for $\Sig
 which already covers a significant part of traditional\footnote{From the first half of the 20th century.} physics.
 We'll go into more detail in a moment.
 But first, let's settle some terminology.
-The physical quantities we are talking about are usually called fields or field configurations, and one can take the stance that (theoretical) physics is all about the description of fields from a modern perspective.
+The physical quantities we are talking about are usually called fields or field configurations, and,  from a modern perspective, one can take the stance that (theoretical) physics is all about the description of fields.
 \begin{enumerate}
 \item[$\pmb{\hookrightarrow}$]
 Mathematically, a field should be a smooth section of a smooth fiber bundle\footnote{We assume these to be locally trivial by definition.} over spacetime $\Sigma$.
@@ -685,9 +695,11 @@ Note that if, moreover, $U$ is such that $\pi$ is trivial over it, then restrict
   \mathrm{Conf}_{\pi}
 \end{align*}
 And if we even have charts with domain $U$, then locally, a field configuration can be considered a function from $\mathbb{R}^{n+1}$ to $\mathrm{Conf}_{\pi}$.
-Note that fields are often defined as such functions, or perhaps more generally, as functions from $\Sigma$ to $\mathrm{Conf}_{\pi}$.
+Fields are often defined as such functions, or perhaps more generally, as functions from $\Sigma$ to $\mathrm{Conf}_{\pi}$.
 In our language, this means that fields are defined as trivial bundles.
+\\
 While this is appropriate for electrodynamics and relativistic quantum mechanics to some extent, it does not make sense for GR, whose metric is a tensor field over spacetime, which is a section of a certain fiber bundle in general.
+\\
 Anyway, the interpretation of fields as sections of bundles implies that connections on principal bundles are fields, since they can be regarded as sections of the homomorphism bundle
 \begin{align*}
   \pi_{T\Sigma}^{\prime}
@@ -700,21 +712,24 @@ Anyway, the interpretation of fields as sections of bundles implies that connect
 \end{align*}
 from above.
 This qualifies the connections as having a physical meaning, which even seems natural since we predicted them from a physical desire.
-And not only that, we can patch the connection $\omega$ together from local fields $s_{k}^{\ast}(\omega)$ if we track the symmetry transformations.
+And not only that, we can patch the connection $\omega$ together from local fields $s_{k}^{\ast}(\omega)$ if we track the symmetry transformations (this is crucial!).
+\\
 However, we lack an interpretation so far.
 So, let's look at our initial examples from point (3).
 Both of these are a bit unrealistic in light of GR and relativistic quantum mechanics.
-So, let's take a closer look.
+Let's take a closer look.
 \begin{enumerate}
 \item[$\bullet$]
-In GR, we not only assume spacetime to be a smooth manifold, but we also assume a semi-Riemannian metric on it, among other things.
-And this demand has to be compatible with general covariance.
-In the end, one is more or less forced to take the Levi-Civita connection on the frame bundle $\pi_{GL(n+1)}$ over spacetime $\Sigma$ for the purposes of GR.
-This connection is uniquely determined by the semi-Riemannian metric. 
-So, the covariant derivative of GR in any associated bundle (in particular, tensor bundles) is the one obtained from the Levi-Civita connection.
-In GR, all relevant fields are sections of such associated bundles.
+In GR, we do not only assume spacetime to be a smooth manifold, but we also assume that mass/energy determines the geometry of spacetime itself (semi-Riemannian metric, curvature, ...).
+And this demand has to be compatible with general covariance (and the principle of relativity - the global symmetries, or mathematically, spacetime diffeomorphisms, we mostly ignore here).
+\\
+The internal symmetries are something like Lorentz transformations.
+Thus the relevant principal bundle is some reduction of the frame bundle $\pi_{GL(n+1)}$ over spacetime $\Sigma$.
+Connections on that bundle are related to covariant derivates in associated bundles (in particular, tensor bundles) in the same way as in ordinary gauge theory with only local symmetries.
+However, there are some additional constraints from the global symmetries (see tetrad/solder form and Levi-Civita connection).
+In GR, all relevant fields are sections of such associated bundles where some of them (i.p. curvature and metric) are derived from the connection (and solder form) on the principal bundle.
 The $A_{q_{\varphi}^{i}}^{s}(x)$ are known as Christoffel symbols.
-Note that if we take $\Sigma = \mathbb{R}^{4}$ as Minkowski spacetime, we get the ordinary derivative from the Levi-Civita connection, since we have global sections of the principal bundle in this case.
+Also note that if we take $\Sigma = \mathbb{R}^{4}$ as Minkowski spacetime, we get the ordinary derivative from the connection, since we have global sections of the principal bundle in this case.
 \item[$\bullet$]
 If anything is a field on spacetime, then a massive particle with internal symmetry ought to be one as well.
 So, consider a relativistic electron with spin $\psi \colon \mathbb{R}^{4} \rightarrow \mathbb{C}^{4}$ as a solution of the Dirac equation, for example.
@@ -722,9 +737,10 @@ This can be regarded as a section of the bundle associated with the trivial $U(1
 Now, the electron must influence the connection, and the obvious thing an electron influences is the electromagnetic field.
 But the electromagnetic field is a $2$-form, while the connection is a Lie algebra-valued $1$-form here.
 However, the potential of the electromagnetic field can be considered as such.
-So, one might conjecture that the predicted section (the connection) is the potential generated by the electron.
+One might then conjecture that the predicted section (the connection) is the potential generated by the electron and the electormagnetic field is the curvature of the section (the exterior covariant derivative of the connection).
 This is further underpinned by the behaviour of $A_{q_{\varphi}^{i}}^{s}$ under symmetry transformations.
 But note that the Maxwell equations for the potential have vacuum solutions, and one has to take these into account for the connection too.
+\\
 This is the idea of quantum electrodynamics (abbr. QED).
 More generally, this suggests that a massive particle with internal symmetry, modeled by a Lie group $G$, is a section of a bundle associated with a $G$-principal bundle over Minkowski spacetime governing the symmetry, while the connections on this bundle are the fields of the potential of the predicted fundamental force, which also has vacuum solutions.
 This idea was very successful in that three of the four known fundamental forces (all but the gravitational force) were combined into the SMP with a single Lie group $G_{\textrm{SMP}}$.
@@ -732,11 +748,13 @@ So, to understand the SMP locally, we have to look at $G_{\textrm{SMP}}$-princip
 But we want to understand it globally, so we should look at principal bundles over any spacetime $\Sigma$ and connections on them, as well as sections of associated bundles and their covariant derivatives in the case of vector bundles.
 \end{enumerate}
 Physically, a major reason for taking arbitrary principal bundles into account (and hence a further reason for arbitrary field bundles) is that the principal bundle twists encode the theoretically important \textit{instantons}, which are, for instance, relevant to understanding the vacuum state of the SMP.
+\\
 The bundle twists depend only on the isomorphism class of the principal bundle, and people are often tempted to factor isomorphisms out.
 This thinking arises from an often unrecognized misconception regarding symmetry and redundancy.
 On the philosophical level: symmetry is not the same as redundancy.
 Symmetry means that we can look at a situation from different perspectives without observing a difference in the situation, but this does not imply that we can identify these perspectives with each other into one single perspective.
 This would collapse the symmetry information, and we would hence lose information that we wouldn't lose if we merely had redundancy.
+\\
 The physical argument against this is that if we collapse the symmetry information, then we can only regain $\omega$ from the local data $s_{k}^{\ast}(\omega)$ if $\pi_{G}$ is trivial and hence allows for a (global) smooth section.
 So, we would have to give up either the principle of locality or the instantons.
 Or, we could just track the symmetry in the definition of a field.
@@ -749,14 +767,16 @@ If one develops this idea further with symmetry of symmetry\footnote{This can be
 So, it seems reasonable to model physical fields obeying the principle of locality as $\infty$-stacks.
 \end{enumerate}
 For more on this, see \cite{d1ad46b9} and \cite{wiki-nlab0000}: field (physics).
+\\
 After all, we see that homotopy theory and category theory\footnote{E.g., the functors here.} are important in physics.
 But stacks are not the only point where homotopical properties matter in physics.
 For instance, the parallel transport depends on the homotopy class of the path.
 And the Berry phase of an electron we mentioned earlier has its origin in an electron moving along a homotopically non-trivial path.
 But homotopy theory has much to do with category theory, as we hinted earlier, and so we have another way in which category theory becomes important to physics.
+\\
 And this is still not all: Let $X$ be a CW complex.
-Then - when we require only continuous instead of smooth - an isomorphism class of $G$-principal bundles over $X$ corresponds precisely to a homotopy class of maps from $X$ to a CW complex $\mathrm{B}G$ obtained from $G$, which in turn corresponds to a cohomology class in the first cohomology\footnote{Singular if $G$ is abelian.} group with coefficients in $G$.\footnote{For the latter, we should take basepoints into account.}
-We write this boldly as
+Then - when we require only continuous instead of smooth - an isomorphism class of $G$-principal bundles over $X$ corresponds precisely to a homotopy class of maps from $X$ to a CW complex $\mathrm{B}G$ obtained from $G$, which in turn corresponds to a cohomology\footnote{Recall the cocycle and coboundary condition we encountered earlier when changing coordinates.} class in the first cohomology\footnote{Singular if $G$ is abelian.} group with coefficients in $G$.\footnote{For the latter, we should take basepoints into account.}
+We boldly write
 \begin{align*}
   \mathcal{P}_{G}(X)
   &\cong
@@ -796,11 +816,12 @@ Mathematically, this is modeled as a horizontal differential form, of degree equ
 We won't explain what this is here.
 Let's just say that, locally on $U$, one gets what is usually understood as a Lagrangian density.
 \end{enumerate}
+Having discussed some very important physical principle and how they relate to category theory, let us briefly discuss another missing piece, finally.
 So far, we have actually only taken GR into account, but not quantum theory, which is also a pillar of physics.
 To incorporate quantum theory, one has to quantize the classical fields we described so far.
 This is currently one of the main problems in physics.
 One wants to find a process for deriving a formal quantum field theory (abbr. QFT) from the classical field theory (fields and local Lagrangian densities), such as Feynman's path integrals, which are quite successful but not mathematically rigorous.
-The processes of quantization are more thoroughly discussed in \cite{00000011}.
+We will only present two approaches on QFTs on a high level while the processes of quantization are more thoroughly discussed in \cite{00000011}.
 There are essentially two mathematical approaches for formal QFTs: algebraic quantum field theory (abbr. AQFT) and functorial quantum field theory (abbr. FQFT).
 \begin{enumerate}
 \item[$\bullet$]
@@ -808,10 +829,12 @@ AQFT is the approach preferred by most mathematical physicists.
 The idea is to cover spacetime by subspaces, each coming with an operator algebra made up of the observable physical quantities on this subspace.
 On overlaps, the observables are expected to get along with each other in some sense.
 There are two well-known proposals for axiomatizations:\footnote{We want to emphasize the word {\glqq}proposal{\grqq} here.} the Wightman axioms and the Haag-Kastler axioms, respectively.
+\\
 We won't go into detail here.
 We will not discuss AQFTs any further here at all.
-We only want to say that the connection to category theory doesn't look so deep here.
+We only want to say that the connection to category theory doesn't look so deep.
 At least at first glance, it seems as though category theory only provides a convenient language in some places in the guise of presheaves.
+\\
 Presheaves will play a major role in chapter \ref{chap:cattg}, as you will see.
 \item[$\bullet$]
 FQFT is the approach that is obviously pure category theory.
@@ -819,15 +842,17 @@ An FQFT is a (higher) {\glqq}functor{\grqq} from a certain geometric (higher) ca
 A (higher) functor can be understood as a higher-dimensional function if higher categories are considered higher-dimensional sets.
 That is to say, if a higher category is made up of countably many levels, then a higher functor maps levels of some rank to levels of the same rank.
 If you don't understand this yet, we guarantee you will after reading chapter \ref{chap:cattg}.
+\\
 Unfortunately, it is not yet known what the correct categories are.
 While the geometric domain category has to do with cobordisms, as is more or less clear, the algebraic one poses more problems.
+\\
 But there is a special case that is better understood: topological quantum field theory (abbr. TQFT).
 These are quantum field theories that do not depend on the metric of spacetime, but rather on its geometry.
 TQFTs are a sort of reasonably formalized FQFT.
 We will roughly sketch what a TQFT categorically is in chapter \ref{chap:cattg}, but then refer to \cite{00000011}, which precisely defines them together with a motivation from Feynman's path integrals.
 \end{enumerate}
-AQFT and FQFT can be understood as dual\footnote{Roughly: the same from different perspectives.} to each other in the sense that algebra and geometry can be understood as dual to each other.\footnote{This is captured by so-called Isbell duality in category theory and can be traced back to Grothendieck's functorial geometry over Lawvere's idea of a duality of generalized space - a recurring example in chapter \ref{chap:cattg} and quantity.
-However, we will neither prove nor state Isbell duality in these notes.} In physics, this manifests itself in the Heisenberg picture, which is known as the algebraic point of view on quantum mechanics, and the Schr\"odinger picture, which is known as the geometric point of view on quantum mechanics.
+AQFT and FQFT can be understood as dual\footnote{Roughly: one is the complement of the other.} to each other in the sense that algebra and geometry can be understood as dual to each other.\footnote{This is captured by so-called Isbell duality in category theory and can be traced back to Grothendieck's functorial geometry over Lawvere's idea of a duality of generalized space - a recurring example in chapter \ref{chap:cattg} and quantity. However, we will neither prove nor state Isbell duality in these notes.}
+In physics, this manifests itself in the Heisenberg picture, which is known as the algebraic point of view on quantum mechanics, and the Schr\"odinger picture, which is known as the geometric point of view on quantum mechanics.
 \\\\
 Finally, note that in \cite{wiki-nlab0000}, they more or less say a gauge theory is a \textit{QFT} whose \textit{field configurations} are \textit{principal bundles with connection}.
-So, this section was ultimately all about higher category theory in gauge theory, which is a dominant field of research in modern physics.
+Thus, this section was ultimately all about higher category theory in gauge theory, which is a dominant field of research in modern mathematical physics.
